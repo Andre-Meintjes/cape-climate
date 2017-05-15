@@ -98,14 +98,11 @@ body{
     border-color: #0A6FBA;
     color: white;
 }
-.step{
-    height: 100%;
-}
-.get-ac{
-    height: 500px;
-}
+
 .card{
     text-decoration: none;
+    color: black;
+    padding: 0;
 }
 .card:hover{
     background-color: #0A6FBA;
