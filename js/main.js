@@ -12,7 +12,7 @@ function currentSlide(int){
     var slides = ["/img/maldives.jpg", "/img/artcool.jpg", "/img/emura.jpg"];
     var element = document.getElementById("slides");
         
-        element.style.backgroundImage = "url('https://andre-meintjes.github.io/cape-climate/" + slides[int] + "')";
+        element.style.backgroundImage = "url('https://raw.githubusercontent.com/Andre-Meintjes/cape-climate/master/" + slides[int] + "')";
         $('#slides').animateCss('bounceIn');
 }
 
