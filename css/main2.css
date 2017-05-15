@@ -1,0 +1,134 @@
+html, body, .container-fluid{
+    height: 100%;
+}
+.navbar{
+    background-color: #313131;
+    color: #0A6FBA;
+    box-shadow:0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.cape{
+    color: #0A6FBA;
+}
+.climate{
+    color: #2EA9E2;
+}
+.top-banner{
+    padding-top: 50px;
+    background-color: #313131;
+}
+
+html body {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.navbar-right > ul > li > a{
+    color: #2EA9E2;
+}
+.navbar-right > ul > li > a:hover{
+    color: white;
+    background-color: #0A6FBA;
+}
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.row{
+	width: 100%;
+	margin: 0;
+}
+.container-fluid{
+    padding: 0;
+}
+.dark-blue{
+    background-color: #0A6FBA;
+    height: 500px;
+}
+.slides-btn{
+    height: 100%;
+    padding-bottom: auto;
+    text-align: center;
+
+}
+.container-slides{
+    width: 100%;
+    padding: 0;
+}
+.slides-content{
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+}
+.smart-inverter{
+    color: #357400;
+}
+.eco-grass{
+    height: 100px;
+    width: 100%;
+    padding: 0;
+    background-image: url('file:///home/andre/Dropbox/Web%20Projects%20(comercial)/Capeclimate.co.za/img/grass.png');
+    background-position: bottom;
+    background-size: contain;
+    background-repeat: repeat-x;
+}
+.icon-banner{
+    background-color: #313131;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #2EA9E2;
+}
+.icon-banner > a > div > i{
+    font-size: 250%;
+}
+.icon-banner > a{
+    text-decoration: none;
+    color: #2EA9E2;
+}
+.icon-banner > a:hover{
+    color: white;
+}
+.btn-default{
+    background-color: #313131;
+    border-color: #313131;
+    color: #2EA9E2;
+}
+.btn-default:hover{
+    background-color: #0A6FBA;
+    border-color: #0A6FBA;
+    color: white;
+}
+/** Animations **/
+
+
+
+
+/** Media specific**/
+
+@media(max-width:767px){
+.slides-btn{
+    padding-top: 90px;
+
+}
+.container-slides{
+    height: 200px;
+}
+.slides-content{
+      height: 200px;
+}
+}
+@media(min-width:768px){
+.slides-btn{
+    padding-top: 190px;
+
+}
+.container-slides{
+    height: 400px;
+}
+.slides-content{
+      height: 400px;
+}   
+}
+@media(min-width:992px){}
+@media(min-width:1200px){}
+
