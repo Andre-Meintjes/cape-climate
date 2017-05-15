@@ -105,16 +105,13 @@ body{
     height: 500px;
 }
 .card{
-    display: inline-block;
-    height: 200px;
-    border-color: #313131;
-    border: solid;
+    text-decoration: none;
 }
 .card:hover{
-    border-color: white;
     background-color: #0A6FBA;
     color: white;
 }
+
 
 /** Media specific**/
 
