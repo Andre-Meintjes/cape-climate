@@ -13,7 +13,7 @@ function currentSlide(int){
     var element = document.getElementById("slides");
         
         element.style.backgroundImage = "url('https://raw.githubusercontent.com/Andre-Meintjes/cape-climate/master/" + slides[int] + "')";
-        $('#slides').animateCss('bounceIn');
+        $('#slides').animateCss('ZoomInUp');
 }
 
 function nextSlide(){
