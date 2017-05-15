@@ -67,7 +67,7 @@ body{
     height: 100px;
     width: 100%;
     padding: 0;
-    background-image: url('file:///home/andre/Dropbox/Web%20Projects%20(comercial)/Capeclimate.co.za/img/grass.png');
+    background-image: url('/img/grass.png');
     background-position: bottom;
     background-size: contain;
     background-repeat: repeat-x;
