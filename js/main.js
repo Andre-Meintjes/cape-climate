@@ -9,7 +9,7 @@ $(document).ready(function(){
 });
 
 function currentSlide(int){
-    var slides = ["/img/maldives.jpg", "/img/artcool.jpg", "/img/emura.jpg"];
+    var slides = ["../img/maldives.jpg", "/img/artcool.jpg", "/img/emura.jpg"];
     var element = document.getElementById("slides");
         
         element.style.backgroundImage = "url('" + slides[int] + "')";
