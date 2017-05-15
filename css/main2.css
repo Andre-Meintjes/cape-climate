@@ -98,9 +98,13 @@ body{
     border-color: #0A6FBA;
     color: white;
 }
-/** Animations **/
-
-
+.step{
+    height: 100%;
+    background-color: #313131;
+}
+.get-ac{
+    background-color: #0A6FBA;
+}
 
 
 /** Media specific**/
