@@ -12,7 +12,7 @@ function currentSlide(int){
     var slides = ["/img/maldives.jpg", "/img/artcool.jpg", "/img/emura.jpg"];
     var element = document.getElementById("slides");
         
-        element.style.backgroundImage = "url('file:///home/andre/Dropbox/Web%20Projects%20(comercial)/Capeclimate.co.za" + slides[int] + "')";
+        element.style.backgroundImage = "url('" + slides[int] + "')";
         $('#slides').animateCss('bounceIn');
 }
 
