@@ -59,8 +59,8 @@ $.fn.extend({
 });
 
 function calculateBTU(){
-    var width = document.getElementById("width").Value;
-    var length = document.getElementById("length").Value;
+    var width = document.getElementById('width').value;
+    var length = document.getElementById('length').value;
     
     var btu= 0;
 
