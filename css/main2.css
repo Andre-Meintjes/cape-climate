@@ -142,6 +142,9 @@ body{
     box-shadow:10px 0 0 0 rgba(0, 0, 0, 0.2);
     margin-top: 10px;
 }
+.contact-information,.quick-links{
+    text-align: center;
+}
 
 /** Media specific**/
 
@@ -167,6 +170,12 @@ body{
 }
 .slides-content{
       height: 400px;
+}
+.contact-information{
+    text-align: left;
+}
+.quick-links{
+    text-align: right;
 }   
 }
 @media(min-width:992px){}
