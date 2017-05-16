@@ -103,7 +103,8 @@ body{
     text-decoration: none;
     color: black;
     padding: 5px;
-    padding-top: 80px;
+    border-color: black;
+    margin: 5px;
 }
 .card:hover{
     background-color: #0A6FBA;
