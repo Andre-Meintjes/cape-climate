@@ -136,7 +136,12 @@ body{
 .portable{
     background-image: url('../img/portable.jpg');
 }
-
+.step-content-1{
+    position: absolute;
+}
+.step-content-1 > h4{
+    bottom: 5px;
+}
 
 /** Media specific**/
 
