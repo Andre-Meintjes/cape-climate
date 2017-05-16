@@ -94,14 +94,18 @@ var allianceProducts = [{"model":"Caspian Inverter", "url":"/img/caspian.jpg", "
 /** Directory **/
 var dir = "file:///home/andre/Github-reposository/cape-climate/cape-climate";
 
-function renderHTML(model, url, description){
-    document.getElementById('products').innerHTML = '<div class="col-xs-6 col-md-3 product-card"><div class="product-card-head"><h4>' + model + '</h4></div><div class="product-card-content"><div class="product-image" style="background-image: url(\'' + url + '\')"></div><p>' + description + '</p></div></div>';
+function createHTML(model, url, description){
+    return '<div class="col-xs-6 col-md-3 product-card"><div class="product-card-head"><h4>' + model + '</h4></div><div class="product-card-content"><div class="product-image" style="background-image: url(\'' + url + '\')"></div><p>' + description + '</p></div></div>';
 }
-
+function renderHTML(createdHtml){
+    document.getElementById('products').innerHTML = createdHtml
+}
 function selectSamsung(){
+    var createdHtml = '';
     for (var i = 0; i < samsungProducts.length; i++){
-        renderHTML(samsungProducts[i].model, dir + samsungProducts[i].url, samsungProducts[i].description);  
+        createdHTML += createHtml(samsungProducts[i].model, dir + samsungProducts[i].url, samsungProducts[i].description);  
     }
+    renderHTML(createdHtml);
 }
 function selectLG(){
     hideAllCards();
