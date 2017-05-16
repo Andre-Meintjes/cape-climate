@@ -63,7 +63,7 @@ function calculateBTU(){
     var length = document.getElementById('length').value;
     var btu = width * length * 500;
 
-    document.getElementById('btu').innerHTML = "BTUs needed: " + parseInt(btu);
+    document.getElementById('btu').innerHTML = parseInt(btu);
     $('#btu').animateCss('rollIn');
 
 }
