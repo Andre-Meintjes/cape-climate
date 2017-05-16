@@ -116,7 +116,7 @@ body{
 }
 
 .underceiling, .ducted, .cassette, .split, .portable{
-    height: 200px;
+    height: 100px;
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -136,12 +136,7 @@ body{
 .portable{
     background-image: url('../img/portable.jpg');
 }
-.step-content-1{
-    position: absolute;
-}
-.step-content-1 > h4{
-    bottom: 5px;
-}
+
 
 /** Media specific**/
 
