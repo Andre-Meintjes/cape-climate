@@ -129,7 +129,9 @@ body{
 .portable{
     background-image: url('../img/portable.jpg');
 }
-
+.centered-padding{
+    padding-top: calc(50% - h4 - h3);
+}
 
 /** Media specific**/
 
