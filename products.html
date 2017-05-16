@@ -101,6 +101,7 @@ function renderHTML(createdHtml){
     document.getElementById('products').innerHTML = createdHtml;
 }
 function selectSamsung(){
+    clearPanel();
     var createdHTML = '';
     for (var i = 0; i < samsungProducts.length; i++){
         createdHTML += createHTML(samsungProducts[i].model, dir + samsungProducts[i].url, samsungProducts[i].description);  
@@ -108,22 +109,20 @@ function selectSamsung(){
     renderHTML(createdHTML);
 }
 function selectLG(){
-    hideAllCards();
+    clearPanel();
+    var createdHTML = '';
     for (var i = 0; i < lgProducts.length; i++){
-        document.getElementById('model-' + (i+1) + '-head').innerHTML = lgProducts[i].model;
-        document.getElementById('model-' + (i+1) + '-image').style.backgroundImage = "url('" + dir + lgProducts[i].url + "')";
-        document.getElementById('model-' + (i+1) + '-description').innerHTML = lgProducts[i].description;
-        document.getElementById('model-' + (i+1) + '-card').style.visibility = "visible";  
+        createdHTML += createHTML(lgProducts[i].model, dir + lgProducts[i].url, lgProducts[i].description);  
     }
+    renderHTML(createdHTML);
 }
 function selectAlliance(){
-    hideAllCards();
+    clearPanel();
+    var createdHTML = '';
     for (var i = 0; i < allianceProducts.length; i++){
-        document.getElementById('model-' + (i+1) + '-head').innerHTML = allianceProducts[i].model;
-        document.getElementById('model-' + (i+1) + '-image').style.backgroundImage = "url('" + dir + allianceProducts[i].url + "')";
-        document.getElementById('model-' + (i+1) + '-description').innerHTML = allianceProducts[i].description;
-        document.getElementById('model-' + (i+1) + '-card').style.visibility = "visible";  
+        createdHTML += createHTML(allianceProducts[i].model, dir + allianceProducts[i].url, allianceProducts[i].description);  
     }
+    renderHTML(createdHTML);
 }
 function selectAll(){
 
