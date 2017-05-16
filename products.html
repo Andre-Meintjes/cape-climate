@@ -98,14 +98,14 @@ function createHTML(model, url, description){
     return '<div class="col-xs-6 col-md-3 product-card"><div class="product-card-head"><h4>' + model + '</h4></div><div class="product-card-content"><div class="product-image" style="background-image: url(\'' + url + '\')"></div><p>' + description + '</p></div></div>';
 }
 function renderHTML(createdHtml){
-    document.getElementById('products').innerHTML = createdHtml
+    document.getElementById('products').innerHTML = createdHtml;
 }
 function selectSamsung(){
     var createdHTML = '';
     for (var i = 0; i < samsungProducts.length; i++){
         createdHTML += createHTML(samsungProducts[i].model, dir + samsungProducts[i].url, samsungProducts[i].description);  
     }
-    renderHTML(createdHtml);
+    renderHTML(createdHTML);
 }
 function selectLG(){
     hideAllCards();
