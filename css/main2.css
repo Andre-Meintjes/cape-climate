@@ -130,7 +130,12 @@ body{
     background-image: url('../img/portable.jpg');
 }
 .centered-padding{
-    padding-top: calc(50% - h4 - h3);
+    padding-top: 50%;
+}
+.centered-padding > div{
+    transform: translate(0, 50%);
+}
+
 }
 
 /** Media specific**/
