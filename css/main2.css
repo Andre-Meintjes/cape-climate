@@ -112,6 +112,11 @@ body{
     background-position: center;
     background-repeat: no-repeat;
 }
+.something-else{
+   height: 200px;
+   padding-top: auto;
+   padding-bottom: auto;  
+}
 .underceiling{
     background-image: url('../img/underceiling.jpg');
 }
