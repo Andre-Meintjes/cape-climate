@@ -130,6 +130,7 @@ body{
     background-image: url('../img/portable.jpg');
 }
 
+
 /** Media specific**/
 
 @media(max-width:767px){
