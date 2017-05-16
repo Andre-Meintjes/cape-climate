@@ -61,12 +61,9 @@ $.fn.extend({
 function calculateBTU(){
     var width = document.getElementById('width').value;
     var length = document.getElementById('length').value;
-    
-    var btu= 0;
+    var btu = width * length * 500;
 
-    btu = width * length * 500;
-console.log(width + " " + length + " " + btu);
-    document.getElementById('btu').innerHTML = "BTUs nedded: " + parseInt(btu);
-
+    document.getElementById('btu').innerHTML = "BTUs needed: " + parseInt(btu);
+    $('#btu').animateCss('rollin');
 
 }
