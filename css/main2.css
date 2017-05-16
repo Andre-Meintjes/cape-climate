@@ -178,7 +178,10 @@ body{
 }
 .quick-links{
     text-align: right;
-} 
+}
+.btu-needed{
+    padding-top: 25px;
+}
 }
 @media(min-width:992px){}
 @media(min-width:1200px){}
