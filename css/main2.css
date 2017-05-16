@@ -98,7 +98,9 @@ body{
     border-color: #0A6FBA;
     color: white;
 }
-
+.center-y{
+    transform: translate(0,50%);
+}
 .card{
     text-decoration: none;
     color: black;
@@ -111,11 +113,6 @@ body{
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-}
-.something-else{
-   height: 200px;
-   padding-top: 30%;
-   padding-bottom: 30%;  
 }
 .underceiling{
     background-image: url('../img/underceiling.jpg');
