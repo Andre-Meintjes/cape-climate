@@ -101,9 +101,9 @@ function renderHTML(createdHtml){
     document.getElementById('products').innerHTML = createdHtml
 }
 function selectSamsung(){
-    var createdHtml = '';
+    var createdHTML = '';
     for (var i = 0; i < samsungProducts.length; i++){
-        createdHTML += createHtml(samsungProducts[i].model, dir + samsungProducts[i].url, samsungProducts[i].description);  
+        createdHTML += createHTML(samsungProducts[i].model, dir + samsungProducts[i].url, samsungProducts[i].description);  
     }
     renderHTML(createdHtml);
 }
