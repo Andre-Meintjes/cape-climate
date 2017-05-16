@@ -105,11 +105,8 @@ body{
     padding: 5px;
     text-align: center;
 }
-.card:hover{
-    background-color: #0A6FBA;
-    color: white;
-}
-.underceiling, .ducted, .cassette, .split{
+
+.underceiling, .ducted, .cassette, .split, .portable{
     height: 200px;
     background-size: contain;
     background-position: center;
@@ -126,6 +123,9 @@ body{
 }
 .split{
     background-image: url('../img/maldives.jpg');
+}
+.portable{
+    background-image: url('../img/portable.jpg');
 }
 
 /** Media specific**/
