@@ -129,14 +129,7 @@ body{
 .portable{
     background-image: url('../img/portable.jpg');
 }
-.centered-padding{
-    padding-top: 50%;
-}
-.centered-padding > div{
-    transform: translate(0, -50%);
-}
 
-}
 
 /** Media specific**/
 
