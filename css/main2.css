@@ -162,6 +162,9 @@ body{
     padding: 5px;
     margin: 0;
 }
+.product-card-content > p{
+    padding-top: 10px;
+}
 
 
 
