@@ -57,3 +57,15 @@ $.fn.extend({
         });
     }
 });
+
+function calculateBTU(){
+    var width = parseInt(document.getElementById("width").Value);
+    var length = parseInt(document.getElementById("length").Value);
+    var btu= 0;
+
+    btu = width * length * 500;
+
+    document.getElementById('btu').innerHTML = "BTUs nedded: " + parseInt(btu);
+
+
+}
