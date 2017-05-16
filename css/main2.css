@@ -102,13 +102,32 @@ body{
 .card{
     text-decoration: none;
     color: black;
-    padding: 0;
+    padding: 5px;
+    padding-top: 80px;
 }
 .card:hover{
     background-color: #0A6FBA;
     color: white;
 }
-
+.underceiling, .ducted, .cassette, .split{
+    height: 200px;
+    width: 100%;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.underceiling{
+    background-image: url('../img/underceiling.jpg');
+}
+.ducted{
+    background-image: url('../img/ducted.jpg');
+}
+.cassette{
+    background-image: url('../img/cassette.jpg');
+}
+.split{
+    background-image: url('../img/maldives.jpg');
+}
 
 /** Media specific**/
 
