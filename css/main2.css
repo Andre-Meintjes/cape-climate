@@ -196,6 +196,7 @@ body{
 /** product page **/
 .brands{
     border-right: 2px solid black;
+    height: 100%;
 }
 }
 @media(min-width:992px){}
