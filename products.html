@@ -65,101 +65,8 @@
                 </ul>
             </div>
             <div class="col-xs-12 col-md-10">
-                <div class="container-fluid product-panel">
-                    <div class="col-xs-12 spinner">
-                        <i class="fa fa-arrow spin"></i>
-                    </div>
-                    <div id="model-1-card" class="col-xs-6 col-md-3 product-card">
-                        <div class="product-card-head">
-                            <h4 id="model-1-head"></h4>
-                        </div>
-                        <div class="product-card-content">
-                            <div id="model-1-image" class="product-image"></div>
-                            <p id="model-1-description"></p>
-                        </div>
-                    </div>
-                    <div id="model-2-card" class="col-xs-6 col-md-3 product-card">
-                        <div class="product-card-head">
-                            <h4 id="model-2-head"></h4>
-                        </div>
-                        <div class="product-card-content">
-                            <div id="model-2-image" class="product-image"></div>
-                            <p id="model-2-description"></p>
-                        </div>
-                    </div>
-                    <div id="model-3-card" class="col-xs-6 col-md-3 product-card">
-                        <div class="product-card-head">
-                            <h4 id="model-3-head"></h4>
-                        </div>
-                        <div class="product-card-content">
-                            <div id="model-3-image" class="product-image"></div>
-                            <p id="model-3-description"></p>
-                        </div>
-                    </div>
-                    <div id="model-4-card" class="col-xs-6 col-md-3 product-card">
-                        <div class="product-card-head">
-                            <h4 id="model-4-head"></h4>
-                        </div>
-                        <div class="product-card-content">
-                            <div id="model-4-image" class="product-image"></div>
-                            <p id="model-4-description"></p>
-                        </div>
-                    </div>
-                    <div id="model-5-card" class="col-xs-6 col-md-3 product-card">
-                        <div class="product-card-head">
-                            <h4 id="model-5-head"></h4>
-                        </div>
-                        <div class="product-card-content">
-                            <div id="model-5-image" class="product-image"></div>
-                            <p id="model-5-description"></p>
-                        </div>
-                    </div>
-                    <div id="model-6-card" class="col-xs-6 col-md-3 product-card">
-                        <div class="product-card-head">
-                            <h4 id="model-6-head"></h4>
-                        </div>
-                        <div class="product-card-content">
-                            <div id="model-6-image" class="product-image"></div>
-                            <p id="model-6-description"></p>
-                        </div>
-                    </div>
-                    <div id="model-7-card" class="col-xs-6 col-md-3 product-card">
-                        <div class="product-card-head">
-                            <h4 id="model-7-head"></h4>
-                        </div>
-                        <div class="product-card-content">
-                            <div id="model-7-image" class="product-image"></div>
-                            <p id="model-7-description"></p>
-                        </div>
-                    </div>
-                    <div id="model-8-card" class="col-xs-6 col-md-3 product-card">
-                        <div class="product-card-head">
-                            <h4 id="model-8-head"></h4>
-                        </div>
-                        <div class="product-card-content">
-                            <div id="model-8-image" class="product-image"></div>
-                            <p id="model-8-description"></p>
-                        </div>
-                    </div>
-                    <div id="model-9-card" class="col-xs-6 col-md-3 product-card">
-                        <div class="product-card-head">
-                            <h4 id="model-9-head"></h4>
-                        </div>
-                        <div class="product-card-content">
-                            <div id="model-9-image" class="product-image"></div>
-                            <p id="model-9-description"></p>
-                        </div>
-                    </div>
-                    <div id="model-10-card" class="col-xs-6 col-md-3 product-card">
-                        <div class="product-card-head">
-                            <h4 id="model-10-head"></h4>
-                        </div>
-                        <div class="product-card-content">
-                            <div id="model-10-image" class="product-image"></div>
-                            <p id="model-10-description"></p>
-                        </div>
-                    </div>
-                        
+                <div id="products" class="container-fluid product-panel">
+                    <!-- content by js -->        
                 </div>
             </div>
 	</div>
@@ -187,13 +94,13 @@ var allianceProducts = [{"model":"Caspian Inverter", "url":"/img/caspian.jpg", "
 /** Directory **/
 var dir = "file:///home/andre/Github-reposository/cape-climate/cape-climate";
 
+function renderHTML(model, url, description){
+    document.getElementById('products').innerHTML = '<div class="col-xs-6 col-md-3 product-card"><div class="product-card-head"><h4>' + model + '</h4></div><div class="product-card-content"><divclass="product-image" style="background-image: url(\'' + url + '\')"></div><p>' + description + '</p></div></div>';
+}
+
 function selectSamsung(){
-    hideAllCards();
     for (var i = 0; i < samsungProducts.length; i++){
-        document.getElementById('model-' + (i+1) + '-head').innerHTML = samsungProducts[i].model;
-        document.getElementById('model-' + (i+1) + '-image').style.backgroundImage = "url('" + dir + samsungProducts[i].url + "')";
-        document.getElementById('model-' + (i+1) + '-description').innerHTML = samsungProducts[i].description;
-        document.getElementById('model-' + (i+1) + '-card').style.visibility = "visible";  
+        renderHTML(samsungProducts[i].model, dir + samsungProducts[i].url, samsungProducts[i].description);  
     }
 }
 function selectLG(){
@@ -214,10 +121,19 @@ function selectAlliance(){
         document.getElementById('model-' + (i+1) + '-card').style.visibility = "visible";  
     }
 }
-function hideAllCards(){
-    for (var i = 1; i <= 10; i++){
-         document.getElementById('model-' + i + '-card').style.visibility = "hidden";
+function selectAll(){
+
+    hideAllCards();
+    
+    for (var i = 0; i < allianceProducts.length; i++){
+        document.getElementById('model-' + (i+1) + '-head').innerHTML = allianceProducts[i].model;
+        document.getElementById('model-' + (i+1) + '-image').style.backgroundImage = "url('" + dir + allianceProducts[i].url + "')";
+        document.getElementById('model-' + (i+1) + '-description').innerHTML = allianceProducts[i].description;
+        document.getElementById('model-' + (i+1) + '-card').style.visibility = "visible";  
     }
+}
+function clearPanel(){
+    document.getElementById('products').innerHTML = '';
 }
 </script>
 
