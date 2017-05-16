@@ -108,6 +108,10 @@ body{
     text-align: center;
 }
 
+.message{
+    padding-top: 30px;
+}
+
 .underceiling, .ducted, .cassette, .split, .portable{
     height: 200px;
     background-size: contain;
