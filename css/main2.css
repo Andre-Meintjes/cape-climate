@@ -114,8 +114,8 @@ body{
 }
 .something-else{
    height: 200px;
-   padding-top: auto;
-   padding-bottom: auto;  
+   padding-top: 30%;
+   padding-bottom: 30%;  
 }
 .underceiling{
     background-image: url('../img/underceiling.jpg');
