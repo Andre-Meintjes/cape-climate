@@ -111,6 +111,9 @@ body{
 .message{
     padding-top: 30px;
 }
+.btn-stretch{
+    width: 100%;
+}
 
 .underceiling, .ducted, .cassette, .split, .portable{
     height: 200px;
