@@ -128,13 +128,13 @@ function selectAll(){
     clearPanel();
     var createdHTML = '';
     for (var i = 0; i < samsungProducts.length; i++){
-        createdHTML += createHTML(samsungProducts[i].model, dir + samsungProducts[i].url, samsungProducts[i].description);  
+        createdHTML += createHTML('SAMSUNG - ' + samsungProducts[i].model, dir + samsungProducts[i].url, samsungProducts[i].description);  
     }
     for (var i = 0; i < lgProducts.length; i++){
-        createdHTML += createHTML(lgProducts[i].model, dir + lgProducts[i].url, lgProducts[i].description);  
+        createdHTML += createHTML('LG - ' + lgProducts[i].model, dir + lgProducts[i].url, lgProducts[i].description);  
     }
     for (var i = 0; i < allianceProducts.length; i++){
-        createdHTML += createHTML(allianceProducts[i].model, dir + allianceProducts[i].url, allianceProducts[i].description);  
+        createdHTML += createHTML('Alliance - ' + allianceProducts[i].model, dir + allianceProducts[i].url, allianceProducts[i].description);  
     }
     renderHTML(createdHTML);
 }
