@@ -151,9 +151,14 @@ body{
 /** product page **/
 .product-image{
     height: 100px;
+    margin: 0;
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
+}
+.product-card{
+    padding: 5px;
+    margin: 0;
 }
 
 
