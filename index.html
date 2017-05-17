@@ -40,7 +40,7 @@
         </div>
     </nav>
 	</header>
-	<div class="background-image">
+	<div id="image-back" class="background-image">
 		<!-- background image container -->
 	</div>
 	<div class="container-fluid">
@@ -204,10 +204,10 @@ $(document).ready(function(){
 
 function currentSlide(int){
     var slides = ["/img/maldives.jpg", "/img/artcool.jpg", "/img/emura.jpg"];
-    var element = document.getElementsByClassName('background-image');
+    var element = document.getElementById('image-back');
         
         element.style.backgroundImage = "url('https://raw.githubusercontent.com/Andre-Meintjes/cape-climate/master/" + slides[int] + "')";
-        $('#background-image').animateCss('zoomInUp');
+        $('#image-back').animateCss('zoomInUp');
 }
 
 function nextSlide(){
