@@ -200,7 +200,12 @@ var slideAnimation;
 $(document).ready(function(){
     currentSlide(index);
     slideAnimation = setInterval(nextSlide, 5000);
+	document.onscroll(function name(params) {
+		document.getElementById('image-back').style.position = 'fixed';
+		document.getElementById('image-back').style.top = 0;
+	});
 });
+
 
 function currentSlide(int){
     var slides = ["/img/maldives.jpg", "/img/artcool.jpg", "/img/emura.jpg"];
