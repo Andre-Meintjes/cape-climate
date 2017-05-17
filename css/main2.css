@@ -158,7 +158,9 @@ body{
     background-position: center;
     background-repeat: no-repeat;
 }
-
+.space{
+    display: none;
+}
 
 /** Media specific**/
 
@@ -198,6 +200,9 @@ body{
 .brands{
     border-right: 2px solid black;
     height: 100%;
+}
+.space{
+    display: block;
 }
 }
 @media(min-width:992px){}
