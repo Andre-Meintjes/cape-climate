@@ -93,6 +93,8 @@ body{
 }
 .get-ac{
     background-color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 .underceiling, .ducted, .cassette, .split, .portable{
     height: 100px;
