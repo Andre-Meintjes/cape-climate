@@ -195,8 +195,6 @@ var index = 0; //index for slides
 var slideAnimation;
 
 $(document).ready(function(){
-    currentSlide(index);
-    slideAnimation = setInterval(nextSlide, 5000);
 	document.onscroll = function name(params) {
 		if (document.body.scrollTop > 250 || document.documentElement.scrollTop > 250){
 		document.getElementById('parallax').style.backgroundImage = "url('../img/maldives.jpg')";
