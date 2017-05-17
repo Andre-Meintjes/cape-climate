@@ -12,9 +12,8 @@ html, body, .container-fluid{
     position: fixed;
     top: 50px;
     left: 0;
+    right: 0;
     max-height: 100%;
-    width: 100%;
-    width: 100vw;
     z-index: -99;
 }
 html body {
