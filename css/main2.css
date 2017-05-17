@@ -37,9 +37,9 @@ body{
     position: fixed;
     top: 0;
     left: 0;
-    height: 100vh;
+    height: 50vh;
     width: 100vw;
-    background-image: url('../img/maldives.jpg');
+    z-index: -99;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
