@@ -93,7 +93,9 @@ body{
 .btn-stretch{
     width: 100%;
 }
-
+.get-ac{
+    background-color: white;
+}
 .underceiling, .ducted, .cassette, .split, .portable{
     height: 100px;
     background-size: contain;
