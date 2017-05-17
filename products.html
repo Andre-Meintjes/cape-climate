@@ -141,7 +141,30 @@ function clearPanel(){
 <script>
 /** url listner **/
 $(document).ready(function(){
-    console.log(location.href);
+    var url = location.href;
+    var urlParam = url.substring(url.indexOf('?' + 1));
+    switch (urlParam){
+        case 'samsung': 
+            selectSamsung();
+            break;
+        case 'lg' :
+            selectLG();
+            break;
+        case 'lg' :
+            selectDaiken();
+            break;
+        case 'midea' :
+            selectMidea();
+            break;
+        case 'alliance' :
+            selectAlliance();
+            break;
+        case 'york' :
+            selectYork();
+            break;
+        default : selectAll();
+    }
+
 });
 </script>
 
