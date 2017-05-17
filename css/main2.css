@@ -172,7 +172,13 @@ body{
 .filter-by-brand:hover{
     cursor: pointer;
 }
-
+.logo-container{
+    width: 200px;
+    height: 100px;
+    background-image: url('../img/logo2.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
 
 /** Media specific**/
