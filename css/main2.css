@@ -165,7 +165,13 @@ body{
 .product-card-content > p{
     padding-top: 10px;
 }
-
+.active{
+    background-color: #0A6FBA;
+    color: white;
+}
+.filter-by-brand:hover{
+    cursor: pointer;
+}
 
 
 
