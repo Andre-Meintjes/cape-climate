@@ -143,6 +143,7 @@ function clearPanel(){
 $(document).ready(function(){
     var url = location.href;
     var urlParam = url.substring(url.indexOf('?' + 1));
+    console.log(urlParam);
     switch (urlParam){
         case 'samsung': 
             selectSamsung();
