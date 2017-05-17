@@ -49,14 +49,14 @@
         <div class="row product-content">
             <div class="col-xs-12 col-md-2 brands">
                 <h4>Filter by brand</h4>
-                <ul>
-                    <li><a onclick="selectAll()">All</a></li>
-                    <li><a onclick="selectSamsung()">Samsung</a></li>
-                    <li><a onclick="selectLG()">LG</a></li>
-                    <li><a onclick="selectDaiken()">Daiken</a></li>
-                    <li><a onclick="selectMidea()">Midea</a></li>
-                    <li><a onclick="selectAlliance()">Alliance</a></li>
-                    <li><a onclick="selectYork()">York</a></li>
+                <ul class="nav nav-pills nav-stacked">
+                    <li><a id="all" class="filter-by-brand" onclick="selectAll()">All</a></li>
+                    <li><a id="samsung" class="filter-by-brand" onclick="selectSamsung()">Samsung</a></li>
+                    <li><a id="lg" class="filter-by-brand" onclick="selectLG()">LG</a></li>
+                    <li><a id="daiken" class="filter-by-brand" onclick="selectDaiken()">Daiken</a></li>
+                    <li><a id="midea" class="filter-by-brand" onclick="selectMidea()">Midea</a></li>
+                    <li><a id="alliance" class="filter-by-brand" onclick="selectAlliance()">Alliance</a></li>
+                    <li><a id="york" class="filter-by-brand" onclick="selectYork()">York</a></li>
                 </ul>
             </div>
             <div class="col-xs-12 col-md-10">
@@ -103,6 +103,7 @@ function selectSamsung(){
         createdHTML += createHTML(samsungProducts[i].model, dir + samsungProducts[i].url, samsungProducts[i].description);  
     }
     renderHTML(createdHTML);
+    $('#samsung').addClass('active');
 }
 function selectLG(){
     clearPanel();
@@ -111,6 +112,7 @@ function selectLG(){
         createdHTML += createHTML(lgProducts[i].model, dir + lgProducts[i].url, lgProducts[i].description);  
     }
     renderHTML(createdHTML);
+    $('#lg').addClass('active');
 }
 function selectAlliance(){
     clearPanel();
@@ -119,6 +121,7 @@ function selectAlliance(){
         createdHTML += createHTML(allianceProducts[i].model, dir + allianceProducts[i].url, allianceProducts[i].description);  
     }
     renderHTML(createdHTML);
+    $('#alliance').addClass('active');
 }
 function selectAll(){
     clearPanel();
@@ -133,9 +136,11 @@ function selectAll(){
         createdHTML += createHTML('Alliance - ' + allianceProducts[i].model, dir + allianceProducts[i].url, allianceProducts[i].description);  
     }
     renderHTML(createdHTML);
+    $('#all').addClass('active');
 }
 function clearPanel(){
     document.getElementById('products').innerHTML = '';
+    $('.filter-by-brand').removeClass('active');
 }
 </script>
 <script>
