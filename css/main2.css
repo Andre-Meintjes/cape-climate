@@ -22,7 +22,7 @@ html body {
     font-family: 'Quicksand', sans-serif;
 }
 .navbar-left{
-    padding-left: 10%;
+    margin-left: 10px;
 }
 .navbar-right > ul > li > a{
     color: #2EA9E2;
