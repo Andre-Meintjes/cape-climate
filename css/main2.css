@@ -21,7 +21,7 @@ html, body, .container-fluid{
     padding-top: 100px;
     height: 50vh;
     width: 100%;
-    z-index: 10;
+    z-index: -5;
 }
 #parallax{
     background-position: center;
