@@ -14,7 +14,7 @@ html, body, .container-fluid{
     color: #2EA9E2;
 }
 .top-banner{
-    padding-top: 50px;
+    padding-top: 60px;
     background-color: #313131;
 }
 
@@ -97,9 +97,6 @@ body{
     background-color: #0A6FBA;
     border-color: #0A6FBA;
     color: white;
-}
-.center-y{
-    transform: translate(0,50%);
 }
 .card{
     text-decoration: none;
