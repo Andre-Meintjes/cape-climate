@@ -204,6 +204,9 @@ $(document).ready(function(){
 		if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500){
 		document.getElementById('image-back').style.position = 'fixed';
 		document.getElementById('image-back').style.top = 0;
+	} else {
+		document.getElementById('image-back').style.position = '';
+		document.getElementById('image-back').style.top = '';
 	}
 	};
 });
