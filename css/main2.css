@@ -25,6 +25,7 @@ html, body, .container-fluid{
 }
 #parallax{
     background-position: center;
+    background-size: contain;
     background-repeat: no-repeat;
 }
 html body {
