@@ -33,14 +33,6 @@ body{
     padding: 0;
     margin: 0;
 }
-.background-image{
-    height: 50vh;
-    width: 100vw;
-    z-index: -99;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}
 .row{
 	width: 100%;
 	margin: 0;
