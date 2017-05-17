@@ -42,7 +42,7 @@
 	</header>
 	<div class="container-fluid">
 		<div class="row top-banner">
-			<div class="col-xs-12 text-center">
+			<div id="parallax" class="col-xs-12 text-center">
 				<div class="logo-container center-block"></div>
 				<h1 style="font-size: 300%"><span class="cape">Cape </span><span class="climate"> Climate</span></h1>
 				<h4 class="climate">Air Conditioning</h4>
@@ -198,13 +198,9 @@ $(document).ready(function(){
     currentSlide(index);
     slideAnimation = setInterval(nextSlide, 5000);
 	document.onscroll = function name(params) {
-		if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500){
-		document.getElementById('image-back').style.position = 'fixed';
-		document.getElementById('image-back').style.top = 0;
-	} else {
-		document.getElementById('image-back').style.position = '';
-		document.getElementById('image-back').style.top = '';
-	}
+		if (document.body.scrollTop > 250 || document.documentElement.scrollTop > 250){
+		document.getElementById('parallax').style.backgroundImage = "url('../img/logo2.png')";
+		}
 	};
 });
 

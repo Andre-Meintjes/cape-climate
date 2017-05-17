@@ -3,6 +3,7 @@ html, body, .container-fluid{
 }
 .navbar{
     background-color: #313131;
+    z-index: 99;
     color: #0A6FBA;
     box-shadow:0 0 10px 0 rgba(0, 0, 0, 0.2);
 }
@@ -14,10 +15,18 @@ html, body, .container-fluid{
     color: #2EA9E2;
 }
 .top-banner{
-    padding-top: 60px;
-    background-color: #313131;
+    position: fixed;
+    top: 0;
+    padding: 0;
+    padding-top: 100px;
+    height: 50vh;
+    width: 100%;
+    z-index: 10;
 }
-
+#parallax{
+    background-position: center;
+    background-repeat: no-repeat;
+}
 html body {
     font-family: 'Quicksand', sans-serif;
 }
@@ -36,6 +45,7 @@ body{
 .row{
 	width: 100%;
 	margin: 0;
+    z-index: 20;
 }
 .container-fluid{
     padding: 0;
