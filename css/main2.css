@@ -5,6 +5,7 @@ html, body, .container-fluid{
     background-color: #313131;
     z-index: 99;
     color: #0A6FBA;
+    padding-left: 10px;
     box-shadow:0 0 10px 0 rgba(0, 0, 0, 0.2);
 }
 
@@ -21,9 +22,7 @@ html, body, .container-fluid{
 html body {
     font-family: 'Quicksand', sans-serif;
 }
-.navbar-left{
-    margin-left: 10px;
-}
+
 .navbar-right > ul > li > a{
     color: #2EA9E2;
 }
