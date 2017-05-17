@@ -33,7 +33,17 @@ body{
     padding: 0;
     margin: 0;
 }
-
+.backgound-image{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -999;
+    height: 100vh;
+    width: 100vw;
+    background-image: url('../img/maldives.jpg');
+    background-size: contain;
+    background-position: center;
+}
 .row{
 	width: 100%;
 	margin: 0;
@@ -44,24 +54,6 @@ body{
 .dark-blue{
     background-color: #0A6FBA;
     height: 500px;
-}
-.slides-btn{
-    height: 100%;
-    padding-bottom: auto;
-    text-align: center;
-
-}
-.container-slides{
-    width: 100%;
-    padding: 0;
-}
-.slides-content{
-      background-position: center;
-      background-size: contain;
-      background-repeat: no-repeat;
-}
-.smart-inverter{
-    color: #357400;
 }
 .eco-grass{
     height: 100px;
