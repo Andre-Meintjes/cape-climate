@@ -8,25 +8,14 @@ html, body, .container-fluid{
     box-shadow:0 0 10px 0 rgba(0, 0, 0, 0.2);
 }
 
-.cape{
-    color: #0A6FBA;
-}
-.climate{
-    color: #2EA9E2;
-}
-.top-banner{
-    position: fixed;
-    top: 0;
-    padding: 0;
-    padding-top: 100px;
-    height: 50vh;
-    width: 100%;
-    z-index: -5;
-}
 #parallax{
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
+}
+.parallax-space{
+    height: 100vh;
+    width: 100%;
 }
 html body {
     font-family: 'Quicksand', sans-serif;
@@ -46,7 +35,6 @@ body{
 .row{
 	width: 100%;
 	margin: 0;
-    z-index: 20;
 }
 .container-fluid{
     padding: 0;
