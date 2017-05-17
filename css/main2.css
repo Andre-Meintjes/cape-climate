@@ -151,16 +151,7 @@ body{
 .filter-by-brand:hover{
     cursor: pointer;
 }
-.logo-container{
-    width: 200px;
-    height: 100px;
-    background-image: url('../img/logo2.png');
-    background-position: center;
-    background-repeat: no-repeat;
-}
-.space{
-    display: none;
-}
+
 
 /** Media specific**/
 
@@ -201,9 +192,7 @@ body{
     border-right: 2px solid black;
     height: 100%;
 }
-.space{
-    display: block;
-}
+
 }
 @media(min-width:992px){}
 @media(min-width:1200px){}

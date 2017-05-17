@@ -187,54 +187,8 @@ var index = 0; //index for slides
 var slideAnimation;
 
 $(document).ready(function(){
-	document.onscroll = function name(params) {
-		if (document.body.scrollTop > 250 || document.documentElement.scrollTop > 250){
-		document.getElementById('parallax').style.backgroundImage = "url('https://raw.githubusercontent.com/Andre-Meintjes/cape-climate/master/img/maldives.jpg')";
-		}
-	};
-});
-
-
-function currentSlide(int){
-    var slides = ["/img/maldives.jpg", "/img/artcool.jpg", "/img/emura.jpg"];
-    var element = document.getElementById('image-back');
-        
-        element.style.backgroundImage = "url('https://raw.githubusercontent.com/Andre-Meintjes/cape-climate/master/" + slides[int] + "')";
-        $('#image-back').animateCss('zoomInUp');
-}
-
-function nextSlide(){
-    if (index == 2){
-        index = 0;
-    } else {
-        index++;
-    }
-
-    currentSlide(index);
-}
-
-function prevSlide(){
-    if (index == 0){
-        index = 2;
-    } else {
-        index--;
-    }
-    currentSlide(index);
-}
-
-function reset(){
-    clearInterval(slideAnimation);
-    slideAnimation = setInterval(nextSlide, 5000);
-}
-
-function prevSlideCall(){
-    prevSlide();
-    reset();
-}
-function nextSlideCall(){ 
-    nextSlide();
-    reset();
-}
+	document.getElementsByClassName('space').style.height = document.getElementById('bg').style.height;
+});	
 
 $.fn.extend({
     animateCss: function (animationName) {
