@@ -202,6 +202,10 @@ body{
     overflow-y: scroll;
     max-height: 100vh;
 }
+.product-content{
+    padding: 0;
+    margin: 0;
+}
 .contact-information{
     text-align: left;
 }
