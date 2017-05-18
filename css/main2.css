@@ -168,12 +168,12 @@ body{
     background-repeat: no-repeat;
 }
 .boxes{
-    padding: 2px;
     margin: 2px;
-    color: #0A6FBA;
+    color: #313131;
+    font-weight: bold;
     text-align: center;
-border-style: solid;
-    border-color: #0A6FBA;
+    border-style: solid;
+    border-color: #313131;
 }
 
 /** Media specific**/
