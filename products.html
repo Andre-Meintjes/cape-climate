@@ -425,7 +425,7 @@ var dir = "https://raw.githubusercontent.com/Andre-Meintjes/cape-climate/master"
 var sizeBTU = ["9","12","13","15","18","24","28","29","30","32","36","42","48","55","60","72","76","96","150","205"];
 var borderInfoBox = '<div class="col-xs-12 col-md-4 boxes"><p>' + '</p></div>';
 function createHTML(model, url, boxes, description){
-    return '<div class="col-xs-6 col-md-3 product-card">' +
+    return '<div class="col-xs-12 col-md-3 product-card">' +
     '<div class="product-card-head">' +
         '<h4>' + model + '</h4>' +
     '</div>' +
@@ -452,14 +452,14 @@ function selectBrand(brand){
         if (products[i].brand == brand || brand == "all"){
 
             if (products[i]['inverter'] > 0){
-                    boxes += '<div class="col-xs-12 col-md-12 boxes"><h5>' + 'Inverter' + '</h5></div>';
+                    boxes += '<div class="col-xs-12 boxes"><h5>' + 'Inverter' + '</h5></div>';
                 }
             if (products[i]['Non-inverter'] > 0){
-                    boxes += '<div class="col-xs-12 col-md-12 boxes"><h5>' + 'Non-Inverter' + '</h5></div>';
+                    boxes += '<div class="col-xs-12 boxes"><h5>' + 'Non-Inverter' + '</h5></div>';
                 }
             for (var k = 0; k < sizeBTU.length; k++){
                 if (products[i].hasOwnProperty(sizeBTU[k])){
-                    boxes += '<div class="col-xs-12 col-md-4 boxes"><h5>' + sizeBTU[k] + ' 000</h5></div>';
+                    boxes += '<div class="col-xs-12 boxes"><h5>' + sizeBTU[k] + ' 000 BTU</h5></div>';
                 }
             }
             createdHTML += createHTML(products[i].brand.toUpperCase() + ' ' + products[i].model, dir + products[i].url, boxes, products[i].description);
