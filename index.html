@@ -66,6 +66,16 @@
 				<a class="center-block center-text" href="products.html?alliance"><img src="img/alliance.png" alt="ALLIANCE"></a>
 			</div>
 		</div>
+		<div class="row slides-banner text-center">
+			<div class="col-xs-12">
+				<h2>Earth friendly Inverter technology</h2>
+			</div>
+			<div id="slides" class="col-xs-12">
+				<!-- slides -->
+			</div>
+			<div class="col-xs-12 grass">
+				<a class="btn btn-default btn-stretch">View more</a>
+			</div>
 
 		<div class="row icon-banner text-center">
 			<div class="col-xs-12">
@@ -205,6 +215,8 @@ var index = 0; //index for slides
 var slideAnimation;
 
 $(document).ready(function(){
+	currentSlide(index);
+    slideAnimation = setInterval(nextSlide, 5000);
 	var waitForImg = setInterval(setHeight, 100);
 	window.addEventListener('resize', resize);
 	function setHeight(){
@@ -215,10 +227,28 @@ $(document).ready(function(){
 	}
 
 	function resize(){
-	var timed = setTimeout(function() {
-		setHeight();
-		clearTimeout(timed);
-	}, 500);
+		var timed = setTimeout(function() {
+			setHeight();
+			clearTimeout(timed);
+		}, 500);
+	}
+
+	function currentSlide(int){
+    var slides = ["/img/maldives.jpg", "/img/artcool.jpg", "/img/emura.jpg"];
+    var element = document.getElementById("slides");
+        
+        element.style.backgroundImage = "url('https://raw.githubusercontent.com/Andre-Meintjes/cape-climate/master/" + slides[int] + "')";
+        $('#slides').animateCss('zoomInUp');
+}
+
+	function nextSlide(){
+    	if (index == 2){
+    	    index = 0;
+    	} else {
+        	index++;
+    	}		
+
+    currentSlide(index);
 }
 });	
 

@@ -168,20 +168,13 @@ body{
 .container-slides{
     height: 200px;
 }
-.slides-content{
+#slides{
       height: 200px;
 }
 }
 @media(min-width:768px){
-.slides-btn{
-    padding-top: 190px;
-
-}
-.container-slides{
+#Sslides{
     height: 400px;
-}
-.slides-content{
-      height: 400px;
 }
 .contact-information{
     text-align: left;
