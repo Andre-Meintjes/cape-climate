@@ -205,8 +205,9 @@ var index = 0; //index for slides
 var slideAnimation;
 
 $(document).ready(function(){
-	document.getElementById('space').style.height = (document.getElementById('bg').getBoundingClientRect().height + 50) + 'px';
-	console.log(document.getElementById('bg').getBoundingClientRect().height);
+	$('#bg').ready(function(){
+    	document.getElementById('space').style.height = (document.getElementById('bg').getBoundingClientRect().height + 50) + 'px';
+	});
 });	
 
 $.fn.extend({
@@ -229,3 +230,5 @@ function calculateBTU(){
 }
 </script>
 </html>
+
+
