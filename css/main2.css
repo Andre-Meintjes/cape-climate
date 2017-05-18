@@ -126,13 +126,13 @@ body{
 }
 .product-card{
     background-color: white;
-    height: 450px;
+    height: 300px;
     font-size: 1em;
     padding: 5px;
     margin: 0;
 }
 
-.product-card-content > p{
+.product-card-content{
     padding-top: 10px;
 }
 .active{
