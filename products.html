@@ -452,14 +452,14 @@ function selectBrand(brand){
         if (products[i].brand == brand || brand == "all"){
 
             if (products[i]['inverter'] > 0){
-                    boxes += '<div class="col-xs-12 col-md-12 boxes"><h4>' + 'Inverter' + '</h4></div>';
+                    boxes += '<div class="col-xs-12 col-md-12 boxes"><h5>' + 'Inverter' + '</h5></div>';
                 }
             if (products[i]['Non-inverter'] > 0){
-                    boxes += '<div class="col-xs-12 col-md-12 boxes"><h4>' + 'Non-Inverter' + '</h4></div>';
+                    boxes += '<div class="col-xs-12 col-md-12 boxes"><h5>' + 'Non-Inverter' + '</h5></div>';
                 }
             for (var k = 0; k < sizeBTU.length; k++){
                 if (products[i].hasOwnProperty(sizeBTU[k])){
-                    boxes += '<div class="col-xs-12 col-md-4 boxes"><h4>' + sizeBTU[k] + ' 000</h4></div>';
+                    boxes += '<div class="col-xs-12 col-md-4 boxes"><h5>' + sizeBTU[k] + ' 000</h5></div>';
                 }
             }
             createdHTML += createHTML(products[i].brand.toUpperCase() + ' ' + products[i].model, dir + products[i].url, boxes, products[i].description);
