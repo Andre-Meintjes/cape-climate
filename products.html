@@ -430,11 +430,11 @@ function createHTML(model, url, list, description){
     '</div>' +
     '<div class="product-card-content">' +
             '<div class="product-image" style="background-image: url(\'' + url + '\')"></div>' +
-           + '<p>' + description + '</p><div class="dropdown">' +
-    '<button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Available in' +
+           + '<div class="dropdown">' +
+    '<button class="btn btn-default btn-stretch dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Available in' +
     '<span class="caret"></span></button>' +
     '<ul class="dropdown-menu" role="menu" aria-labelledby="menu1">' + list + '</ul></div>'+
-            '</div></div></div>';
+            '<p>' + description + '</p></div></div></div>';
 }
 function renderHTML(createdHtml){
     document.getElementById('products').innerHTML = createdHtml;
