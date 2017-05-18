@@ -153,8 +153,16 @@ body{
 }
 
 .brand-banner{
-    background-color: #ffffff;
-    
+    background-color: white;
+
+}
+.brand-banner > div > a{
+    background-color: white;
+    cursor: pointer;
+}
+.brand-banner > div > a:hover{
+    background-color: white;
+    cursor: pointer;
 }
 /** Media specific**/
 
