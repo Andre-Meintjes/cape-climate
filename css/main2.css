@@ -164,6 +164,11 @@ body{
 .grass{
     background-image: url('../img/grass.png');
 }
+#slides{
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
 /** Media specific**/
 
 @media(max-width:767px){
@@ -179,7 +184,7 @@ body{
 }
 }
 @media(min-width:768px){
-#Sslides{
+#Slides{
     height: 400px;
 }
 .contact-information{
