@@ -433,7 +433,7 @@ function createHTML(model, url, boxes, description){
             '<div class="product-image" style="background-image: url(\'' + url + '\')"></div>'
            + '<p>' + description + '</p>' +
             '<div class="container-fluid">' +
-                '<div class="row boxes-container">' + boxes +
+                '<div class="row boxes-container center-text">' + boxes +
 
                 '</div>' +
             '</div>' +
@@ -454,7 +454,8 @@ function selectSamsung(){
                     boxes += '<div class="col-xs-12 col-md-4 boxes"><p>' + sizeBTU[k] + ' 000</p></div>';
                 }
             }
-            createdHTML += createHTML(products[i].model, dir + products[i].url, boxes, products[i].description);  
+            createdHTML += createHTML(products[i].model, dir + products[i].url, boxes, products[i].description);
+            boxes = '';  
         }
 }
     renderHTML(createdHTML);
