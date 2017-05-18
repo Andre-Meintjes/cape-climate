@@ -433,6 +433,7 @@ function createHTML(model, url, boxes, description){
             '<div class="product-image" style="background-image: url(\'' + url + '\')"></div>'
            + '<p>' + description + '</p>' +
             '<div class="container-fluid">' +
+                '<5>Available in:</5>' +
                 '<div class="row boxes-container">' + boxes +
 
                 '</div>' +
@@ -449,15 +450,16 @@ function selectBrand(brand){
     var boxes = '';
     for (var i = 0; i < products.length; i++){
         if (products[i].brand == brand || brand == "all"){
+
             if (products[i]['inverter'] > 0){
-                    boxes += '<div class="col-xs-12 col-md-12 boxes center-text"><p>' + 'Inverter' + '</p></div>';
+                    boxes += '<div class="col-xs-12 col-md-12 boxes"><p>' + 'Inverter' + '</p></div>';
                 }
-            if (products[i]['non-inverter'] > 0){
-                    boxes += '<div class="col-xs-12 col-md-12 boxes center-text"><p>' + 'Fixed speed' + '</p></div>';
+            if (products[i]['Non-inverter'] > 0){
+                    boxes += '<div class="col-xs-12 col-md-12 boxes"><p>' + 'Non-Inverter' + '</p></div>';
                 }
             for (var k = 0; k < sizeBTU.length; k++){
                 if (products[i].hasOwnProperty(sizeBTU[k])){
-                    boxes += '<div class="col-xs-12 col-md-4 boxes center-text"><p>' + sizeBTU[k] + ' 000</p></div>';
+                    boxes += '<div class="col-xs-12 col-md-4 boxes"><p>' + sizeBTU[k] + ' 000</p></div>';
                 }
             }
             createdHTML += createHTML(products[i].brand.toUpperCase() + ' ' + products[i].model, dir + products[i].url, boxes, products[i].description);
