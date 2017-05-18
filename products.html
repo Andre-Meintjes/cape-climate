@@ -63,28 +63,382 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script>
 /** Products **/
-var samsungProducts = [{"model":"4 Way mini cassette", "url":"/img/cassette.jpg", "description":"Compact and out of the way. Four way wind direction for efficient air distribution. Available in 9, 12, 18 and 24 thousand BTU."},
-{"model":"Maldives split (inverter)", "url":"/img/maldives.jpg", "description":"Quiet, powerfull and eco-friendly. Save on your energy bill with inverter technology. Full HD filter. Available in 9, 12, 18 and 24 thousand BTU"},
-{"model":"Boracay split", "url":"/img/boracay.jpg", "description":"Powerfull cooling and heating. Full HD Filter and anti corrosion fin. Available in 9, 12, 18 and 24 thousand BTU"},
-{"model":"AF9000 Floor-standing", "url":"/img/af9000.jpg","description":"Sleek & Stylish. Energy efficient inverter compressor, Magnetic air filtration and Virus Doctor. Available in 28 000 BTU."}];
-var lgProducts = [{"model":"M-range split (inverter)", "url":"/img/lg.png", "description":"Sleek & quiet. Eco-friendly Digital Inverter technology. Turbo fan mode for fast cooling. Available in 9, 12, 18 and 24 thousand BTU"},
-{"model":"K-range split", "url":"/img/k-range.jpg", "description":"Auto airflow direction control. Moisture removal and filter for better quality air. Available in 9, 12, 18 and 24 thousand BTU"},
-{"model":"Cassette", "url":"/img/lg-cassette.jpg", "description":"Quiet with Smart Inverter technology. Clean air filtration system. Four way airflow with independent vane operation."},
-{"model":"Duct", "url":"/img/lg-hideaway.jpg", "description":"Cover your whole home/office with one unit. Weekly timer program. Inverter compressor that saves up to 60% on energy consumption"},
-{"model":"Artcool", "url":"/img/artcool.jpg", "description":"Beautifully designed. Powerful airflow and dual protection filter with IONIZER. Energy efficient Digital Inverter. Available in 9, 12, 18 and 24 thousand BTU"}];
-var daikenProducts = [];
-var allianceProducts = [{"model":"Caspian Inverter", "url":"/img/caspian.jpg", "description":"Energy efficient Inverter technology. LED temperature display. Swing mode for better air distribution. Available in 9, 12, 18 and 24 thousand BTU"},
-{"model":"INAA32", "url":"/img/inaa32.jpg", "description":"*New* Sleek and eco-friendly. Hidden LED display for temperature. Energy saving Eco mode with sleep and auto restart"},
-{"model":"Atlantic", "url":"/img/atlantic.jpg", "description":"Cost-effective. Perfect for home and office use.Swing mode and 3 fan speeds. Available in 9, 12, 18 and 24 thousand BTU"},
-{"model":"G-series cassette", "url":"/img/g-series.jpg", "description":"Covers a big space, Four way airflow for maximum cooling/heating. Available in 12 to 60 thousand BTU"},
-{"model":"Duct", "url":"/img/g-duct.jpg", "description":"Perfect for big areas, One unit for the whole home/office. Available in 36, 60, 96, 120 and 205  thousand BTU"},
-{"model":"Under-ceiling", "url":"/img/g-underceiling.jpg", "description":"Powerful fan makes it ideal for long rooms and big spaces. Both inverter and non-inverter units available in 36, 48, 60 and 120 thousand BTU"},
-{"model":"Portable", "url":"/img/portable.jpg", "description":"Portable with wheels. 12 000 BTU cooling/heating capacity. Auto swing. Runs off a 220v mains plug."}];
+var products = [
+  {
+    "brand": "samsung",
+    "model": "Cassette",
+    "type": "cassette",
+    "url": "/img/samsung-cassette.jpg",
+    "Non-inverter": 1,
+    "inverter": 1,
+    "9": 1,
+    "12": 1,
+    "18": 1,
+    "24": 1,
+    "36": 1,
+    "48": 1,
+    "description": "Compact and out of the way. Four way wind direction for efficient air distribution."
+  },
+  {
+    "brand": "samsung",
+    "model": "360 Cassette",
+    "type": "cassette",
+    "url": "/img/samsung-cassette-round.jpg",
+    "Non-inverter": 0,
+    "inverter": 1,
+    "24": 1,
+    "30": 1,
+    "36": 1,
+    "42": 1,
+    "48": 1,
+    "description": "World’s first truly round design. Booster fans for extra airflow distrobution"
+  },
+  {
+    "brand": "samsung",
+    "model": "Ducted",
+    "type": "duct",
+    "url": "/img/samsung-duct.jpg",
+    "Non-inverter": 0,
+    "inverter": 1,
+    "24": 1,
+    "36": 1,
+    "48": 1,
+    "60": 1,
+    "72": 1,
+    "76": 1,
+    "96": 1,
+    "description": "Powerful and efficient. Perfect for big spaces, homes and offices. "
+  },
+  {
+    "brand": "samsung",
+    "model": "Maldives",
+    "type": "split",
+    "url": "/img/samsung-maldives.jpg",
+    "Non-inverter": 0,
+    "inverter": 1,
+    "9": 1,
+    "12": 1,
+    "18": 1,
+    "24": 1,
+    "description": "Quiet and eco-friendly. Save on your energy bill with inverter technology. Full HD filter."
+  },
+  {
+    "brand": "samsung",
+    "model": "Boracay",
+    "type": "split",
+    "url": "/img/samsung-boracay.jpg",
+    "Non-inverter": 1,
+    "inverter": 0,
+    "9": 1,
+    "12": 1,
+    "18": 1,
+    "24": 1,
+    "description": "Powerfull cooling and heating. Full HD Filter and anti corrosion fin."
+  },
+  {
+    "brand": "samsung",
+    "model": "Q9000",
+    "type": "floorstanding",
+    "url": "/img/samsung-floor-standing.jpg",
+    "Non-inverter": 0,
+    "inverter": 1,
+    "28": 1,
+    "description": "Sleek & Stylish. Energy efficient inverter compressor, Magnetic air filtration and Virus Doctor."
+  },
+  {
+    "brand": "lg",
+    "model": "M-range",
+    "type": "split",
+    "url": "/img/lg-m-range.jpg",
+    "Non-inverter": 0,
+    "inverter": 1,
+    "9": 1,
+    "12": 1,
+    "18": 1,
+    "24": 1,
+    "description": "Sleek & quiet. Eco-friendly Digital Inverter technology. Turbo fan mode for fast cooling."
+  },
+  {
+    "brand": "lg",
+    "model": "Cassette",
+    "type": "cassette",
+    "url": "/img/lg-cassette.jpg",
+    "Non-inverter": 1,
+    "inverter": 1,
+    "18": 1,
+    "24": 1,
+    "36": 1,
+    "48": 1,
+    "description": "Quiet with Smart Inverter technology. Clean air filtration system. Four way airflow with independent vane operation."
+  },
+  {
+    "brand": "lg ",
+    "model": "Artcool",
+    "type": "split",
+    "url": "/img/lg-artcool-black",
+    "Non-inverter": 0,
+    "inverter": 1,
+    "9": 1,
+    "12": 1,
+    "18": 1,
+    "24": 1,
+    "description": "Cover your whole home/office with one unit. Weekly timer program."
+  },
+  {
+    "brand": "york",
+    "model": "High wall split",
+    "type": "split",
+    "url": "/img/york-split.jpg",
+    "Non-inverter": 0,
+    "inverter": 1,
+    "9": 1,
+    "12": 1,
+    "18": 1,
+    "24": 1,
+    "description": "Quiet and safe. Energy efficient digital Inverter compressor for maximum savings."
+  },
+  {
+    "brand": "york",
+    "model": "Cassette",
+    "type": "cassette",
+    "url": "/img/york-cassette.jpg",
+    "Non-inverter": 0,
+    "inverter": 1,
+    "12": 1,
+    "18": 1,
+    "24": 1,
+    "36": 1,
+    "48": 1,
+    "55": 1,
+    "description": "Clean air filtration system. Four way airflow with autot vane operation."
+  },
+  {
+    "brand": "york",
+    "model": "Ducted",
+    "type": "duct",
+    "url": "/img/york-duct.jpg",
+    "Non-inverter": 1,
+    "inverter": 1,
+    "12": 1,
+    "18": 1,
+    "24": 1,
+    "36": 1,
+    "48": 1,
+    "60": 1,
+    "description": "Hidden and quiet. Ideal for buildings with big floors or homes."
+  },
+  {
+    "brand": "york",
+    "model": "Underceiling",
+    "type": "underceiling",
+    "url": "/img/york-underceiling.jpg",
+    "Non-inverter": 1,
+    "inverter": 1,
+    "12": 1,
+    "18": 1,
+    "24": 1,
+    "36": 1,
+    "48": 1,
+    "60": 1,
+    "description": "Powerful fan makes it perfect for long spaces. Can be wall-mounted too. "
+  },
+  {
+    "brand": "york",
+    "model": "Console",
+    "type": "console",
+    "url": "/img/york-console.jpg",
+    "Non-inverter": 1,
+    "inverter": 1,
+    "9": 1,
+    "13": 1,
+    "15": 1,
+    "18": 1,
+    "description": "Complete unit. Fits into wall. Great for offices with exsternal walls."
+  },
+  {
+    "brand": "york",
+    "model": "Floor standing",
+    "type": "floorstanding",
+    "url": "/img/york-floorstanding.jpg",
+    "Non-inverter": 1,
+    "inverter": 0,
+    "55": 1,
+    "description": "Ideal for glass buildings/offices with limited wall space. Best suited for big spaces."
+  },
+  {
+    "brand": "midea",
+    "model": "Neola",
+    "type": "split",
+    "url": "/img/midea-neola.jpg",
+    "Non-inverter": 1,
+    "inverter": 1,
+    "9": 1,
+    "12": 1,
+    "18": 1,
+    "24": 1,
+    "32": 1,
+    "description": "Affordable quality. Energy effiecent Inverter compressor. Auto swing mode."
+  },
+  {
+    "brand": "midea",
+    "model": "Portable",
+    "type": "portable",
+    "url": "/img/midea-portable",
+    "Non-inverter": 1,
+    "inverter": 0,
+    "12": 1,
+    "description": "Perfect for temporary placement or server room backup."
+  },
+  {
+    "brand": "midea",
+    "model": "Cassette",
+    "type": "cassette",
+    "url": "/img/midea-cassette.jpg",
+    "Non-inverter": 1,
+    "inverter": 1,
+    "12": 1,
+    "18": 1,
+    "24": 1,
+    "36": 1,
+    "48": 1,
+    "60": 1,
+    "description": "Well suited for offices,boardroom or open floors. Big capacity models available."
+  },
+  {
+    "brand": "midea",
+    "model": "Underceiling",
+    "type": "underceiling",
+    "url": "/img/midea-underceiling.jpg",
+    "Non-inverter": 1,
+    "inverter": 1,
+    "24": 1,
+    "36": 1,
+    "48": 1,
+    "60": 1,
+    "description": "Powerful and efficient,ideal for big spaces. Can be wall-mounted too. "
+  },
+  {
+    "brand": "alliance",
+    "model": "INAA32",
+    "type": "split",
+    "url": "/img/alliance-inaa.jpg",
+    "Non-inverter": 0,
+    "inverter": 1,
+    "29": 1,
+    "description": "Sleek and eco-friendly. Hidden LED display for temperature. Energy saving Eco mode with sleep and auto restart."
+  },
+  {
+    "brand": "alliance",
+    "model": "Atlantic",
+    "type": "split",
+    "url": "/img/alliance-atlantic.jpg",
+    "Non-inverter": 1,
+    "inverter": 0,
+    "9": 1,
+    "12": 1,
+    "18": 1,
+    "24": 1,
+    "32": 1,
+    "description": "Cost-effective. Perfect for home and office use.Swing mode and 3 fan speeds."
+  },
+  {
+    "brand": "alliance",
+    "model": "Caspien",
+    "type": "split",
+    "url": "/img/alliance-caspien.jpg",
+    "Non-inverter": 0,
+    "inverter": 1,
+    "9": 1,
+    "12": 1,
+    "18": 1,
+    "24": 1,
+    "description": "Energy efficient Inverter technology. LED temperature display. Swing mode for better air distribution."
+  },
+  {
+    "brand": "alliance",
+    "model": "Underceiling",
+    "type": "underceiling",
+    "url": "/img/alliance-underceiling.jpg",
+    "Non-inverter": 1,
+    "inverter": 1,
+    "36": 1,
+    "48": 1,
+    "60": 1,
+    "description": "Powerful cooling/heating,ideal for big spaces or server rooms. Can be wall-mounted too. "
+  },
+  {
+    "brand": "alliance",
+    "model": "Ducted",
+    "type": "duct",
+    "url": "/img/alliance-duct.jpg",
+    "Non-inverter": 1,
+    "inverter": 1,
+    "36": 1,
+    "48": 1,
+    "60": 1,
+    "96": 1,
+    "150": 1,
+    "205": 1,
+    "description": "Hidden and powerfull. Covers multiple rooms. Fresh cappable."
+  },
+  {
+    "brand": "alliance",
+    "model": "Portable",
+    "type": "portable",
+    "url": "/img/alliance-portable.jpg",
+    "Non-inverter": 1,
+    "inverter": 0,
+    "12": 1,
+    "description": "Portable with wheels. 12 000 BTU cooling/heating capacity. Auto swing. Runs off a 220v mains plug."
+  },
+  {
+    "brand": "alliance",
+    "model": "Cassette",
+    "type": "cassette",
+    "url": "/img/alliance-cassette.jpg",
+    "Non-inverter": 1,
+    "inverter": 1,
+    "12": 1,
+    "18": 1,
+    "24": 1,
+    "36": 1,
+    "48": 1,
+    "60": 1,
+    "description": "Covers a big space, Four way airflow for maximum cooling/heating."
+  },
+  {
+    "brand": "daikin",
+    "model": "Emura",
+    "type": "split",
+    "url": "/img/daikin-split.jpg",
+    "Non-inverter": 0,
+    "inverter": 1,
+    "9": 1,
+    "12": 1,
+    "18": 1,
+    "24": 1,
+    "description": "\nDaikin Emura has been awarded many times, thanks to its excellent design. Whisper quiet, available in white and silver."
+  }
+];
 /** Directory **/
 var dir = "https://raw.githubusercontent.com/Andre-Meintjes/cape-climate/master";
+var sizeBTU = ["9","12","13","15","18","24","28","29","30","32","36","42","48","55","60","72","76","96","150","205"];
+var borderInfoBox = '<div class="col-xs-12 col-md-4 boxes"><p>' + '</p></div>';
+function createHTML(model, url, boxes, description){
+    return '<div class="col-xs-6 col-md-3 product-card">' +
+    '<div class="product-card-head">' +
+        '<h4>' + model + '</h4>' +
+    '</div>' +
+    '<div class="product-card-content">' +
+            '<div class="product-image" style="background-image: url(\'' + url + '\')"></div>'
+           + '<p>' + description + '</p>' +
+            '<div class="container-fluid">' +
+                '<div class="row boxes-container">' +
 
-function createHTML(model, url, description){
-    return '<div class="col-xs-6 col-md-3 product-card"><div class="product-card-head"><h4>' + model + '</h4></div><div class="product-card-content"><div class="product-image" style="background-image: url(\'' + url + '\')"></div><p>' + description + '</p></div></div>';
+                '</div>' +
+            '</div>' +
+        '</div>' +
+    '</div>';
 }
 function renderHTML(createdHtml){
     document.getElementById('products').innerHTML = createdHtml;
@@ -92,9 +446,17 @@ function renderHTML(createdHtml){
 function selectSamsung(){
     clearPanel();
     var createdHTML = '';
-    for (var i = 0; i < samsungProducts.length; i++){
-        createdHTML += createHTML(samsungProducts[i].model, dir + samsungProducts[i].url, samsungProducts[i].description);  
-    }
+    var boxes = '';
+    for (var i = 0; i < products.length; i++){
+        if (products[i].brand == "samsung"){
+            for (var k = 0; k < sizeBTU.length; k++){
+                if (products[i].hasOwnProperty(sizeBTU[k])){
+                    boxes += '<div class="col-xs-12 col-md-4 boxes"><p>' + sizeBTU[k] + ' 000</p></div>';
+                }
+            }
+            createdHTML += createHTML(Products[i].model, dir + Products[i].url, boxes, Products[i].description);  
+        }
+}
     renderHTML(createdHTML);
     $('#samsung').addClass('active');
 }
