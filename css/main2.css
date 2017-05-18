@@ -75,7 +75,6 @@ body{
     text-align: bottom;
 }
 
-
 .btn-stretch{
     width: 100%;
 }
@@ -85,7 +84,7 @@ body{
     padding-bottom: 10px;
 }
 .underceiling, .ducted, .cassette, .split, .portable{
-    height: 100px;
+    height: 200px;
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
