@@ -215,6 +215,13 @@ $(document).ready(function(){
 	}
 });	
 
+function resize(){
+	var timed = setTimeout(function() {
+		document.getElementById('space').style.height = (document.getElementById('bg').getBoundingClientRect().height + 50) + 'px';
+		clearTimeout(timed);
+	}, 1000);
+}
+
 $.fn.extend({
     animateCss: function (animationName) {
         var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
