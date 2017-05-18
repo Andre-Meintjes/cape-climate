@@ -179,6 +179,9 @@ body{
 #slides{
       height: 200px;
 }
+.body-cover{
+    padding-top: 50px;
+}
 }
 @media(min-width:768px){
 #slides{
