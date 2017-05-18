@@ -173,6 +173,7 @@ body{
     background-size: contain;
     background-repeat: no-repeat;
 }
+
 /** Media specific**/
 
 @media(max-width:767px){
@@ -190,6 +191,10 @@ body{
 @media(min-width:768px){
 #slides{
     height: 400px;
+}
+.product-panel{
+    overflow-y: hidden;
+    max-height: 100vh;
 }
 .contact-information{
     text-align: left;
