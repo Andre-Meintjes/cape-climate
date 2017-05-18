@@ -419,15 +419,15 @@ function selectProducts(brand, type, size){
     
     renderHTML(createdHTML);
 }
-function selectBrand(brand);
+function selectBrand(brand){
     filterBrand = brand;
     selectProducts(filterBrand, filterType, filterSize);
 }
-function selectType(brand);
+function selectType(brand){
     filterType = type;
     selectProducts(filterBrand, filterType, filterSize);
 }
-function selectSize(brand);
+function selectSize(brand){
     filterSize = size;
     selectProducts(filterBrand, filterType, filterSize);
 }
