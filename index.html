@@ -205,9 +205,14 @@ var index = 0; //index for slides
 var slideAnimation;
 
 $(document).ready(function(){
-	$('#bg').ready(function(){
-    	document.getElementById('space').style.height = (document.getElementById('bg').getBoundingClientRect().height + 50) + 'px';
-	});
+	var waitForImg = setInterval(setHeight, 100);
+
+	function setHeight(){
+		if (document.getElementById("myImg").complete === true){
+		document.getElementById('space').style.height = (document.getElementById('bg').getBoundingClientRect().height + 50) + 'px';
+		clearInterval(waitForImg);
+		}
+	}
 });	
 
 $.fn.extend({
