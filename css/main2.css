@@ -182,6 +182,7 @@ body{
       height: 200px;
 }
 .body-cover{
+    padding: 0;
     padding-top: 50px;
 }
 }
@@ -195,6 +196,7 @@ body{
     left: 0;
     width: 100%;
     max-height: 100%;
+    padding: 0;
 }
 .product-panel{
     overflow-y: scroll;
