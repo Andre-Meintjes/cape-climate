@@ -158,6 +158,12 @@ body{
     background-color: white;
     cursor: pointer;
 }
+.slides-banner{
+    background-color: white;
+}
+.grass{
+    background-image: url('../img/grass.png');
+}
 /** Media specific**/
 
 @media(max-width:767px){
