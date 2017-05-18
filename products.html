@@ -454,7 +454,7 @@ function selectSamsung(){
                     boxes += '<div class="col-xs-12 col-md-4 boxes"><p>' + sizeBTU[k] + ' 000</p></div>';
                 }
             }
-            createdHTML += createHTML(Products[i].model, dir + Products[i].url, boxes, Products[i].description);  
+            createdHTML += createHTML(products[i].model, dir + products[i].url, boxes, products[i].description);  
         }
 }
     renderHTML(createdHTML);
@@ -500,7 +500,7 @@ function clearPanel(){
 </script>
 <script>
 /** url listner **/
-$(document).ready(function(){
+/**$(document).ready(function(){
     var url = location.href;
     var urlParam = url.substring(url.indexOf('?') + 1);
     console.log(urlParam);
@@ -526,7 +526,7 @@ $(document).ready(function(){
         default : selectAll();
     }
 
-});
+});**/
 </script>
 
 </html>
