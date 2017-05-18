@@ -433,7 +433,7 @@ function createHTML(model, url, boxes, description){
             '<div class="product-image" style="background-image: url(\'' + url + '\')"></div>'
            + '<p>' + description + '</p>' +
             '<div class="container-fluid">' +
-                '<div class="row boxes-container center-text">' + boxes +
+                '<div class="row boxes-container">' + boxes +
 
                 '</div>' +
             '</div>' +
@@ -443,15 +443,15 @@ function createHTML(model, url, boxes, description){
 function renderHTML(createdHtml){
     document.getElementById('products').innerHTML = createdHtml;
 }
-function selectSamsung(){
+function selectBrand(brand){
     clearPanel();
     var createdHTML = '';
     var boxes = '';
     for (var i = 0; i < products.length; i++){
-        if (products[i].brand == "samsung"){
+        if (products[i].brand == brand || brand == "all"){
             for (var k = 0; k < sizeBTU.length; k++){
                 if (products[i].hasOwnProperty(sizeBTU[k])){
-                    boxes += '<div class="col-xs-12 col-md-4 boxes"><p>' + sizeBTU[k] + ' 000</p></div>';
+                    boxes += '<div class="col-xs-12 col-md-4 boxes center-text"><p>' + sizeBTU[k] + ' 000</p></div>';
                 }
             }
             createdHTML += createHTML(products[i].model, dir + products[i].url, boxes, products[i].description);
@@ -459,41 +459,9 @@ function selectSamsung(){
         }
 }
     renderHTML(createdHTML);
-    $('#samsung').addClass('active');
+    $('#' + brand).addClass('active');
 }
-function selectLG(){
-    clearPanel();
-    var createdHTML = '';
-    for (var i = 0; i < lgProducts.length; i++){
-        createdHTML += createHTML(lgProducts[i].model, dir + lgProducts[i].url, lgProducts[i].description);  
-    }
-    renderHTML(createdHTML);
-    $('#lg').addClass('active');
-}
-function selectAlliance(){
-    clearPanel();
-    var createdHTML = '';
-    for (var i = 0; i < allianceProducts.length; i++){
-        createdHTML += createHTML(allianceProducts[i].model, dir + allianceProducts[i].url, allianceProducts[i].description);  
-    }
-    renderHTML(createdHTML);
-    $('#alliance').addClass('active');
-}
-function selectAll(){
-    clearPanel();
-    var createdHTML = '';
-    for (var i = 0; i < samsungProducts.length; i++){
-        createdHTML += createHTML('SAMSUNG - ' + samsungProducts[i].model, dir + samsungProducts[i].url, samsungProducts[i].description);  
-    }
-    for (var i = 0; i < lgProducts.length; i++){
-        createdHTML += createHTML('LG - ' + lgProducts[i].model, dir + lgProducts[i].url, lgProducts[i].description);  
-    }
-    for (var i = 0; i < allianceProducts.length; i++){
-        createdHTML += createHTML('Alliance - ' + allianceProducts[i].model, dir + allianceProducts[i].url, allianceProducts[i].description);  
-    }
-    renderHTML(createdHTML);
-    $('#all').addClass('active');
-}
+
 function clearPanel(){
     document.getElementById('products').innerHTML = '';
     $('.filter-by-brand').removeClass('active');
@@ -501,33 +469,33 @@ function clearPanel(){
 </script>
 <script>
 /** url listner **/
-/**$(document).ready(function(){
+$(document).ready(function(){
     var url = location.href;
     var urlParam = url.substring(url.indexOf('?') + 1);
     console.log(urlParam);
     switch (urlParam){
         case 'samsung': 
-            selectSamsung();
+            selectBrand('samsung');
             break;
         case 'lg' :
-            selectLG();
+            selectBrand('lg');
             break;
-        case 'lg' :
-            selectDaiken();
+        case 'daikin' :
+            selectBrand('daikin');
             break;
         case 'midea' :
-            selectMidea();
+            selectBrand('midea');
             break;
         case 'alliance' :
-            selectAlliance();
+            selectBrand('alliance');
             break;
         case 'york' :
-            selectYork();
+            selectBrand('york');
             break;
-        default : selectAll();
+        default : selectBrand('all');
     }
 
-});**/
+});
 </script>
 
 </html>
