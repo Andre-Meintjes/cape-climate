@@ -431,7 +431,7 @@ function createHTML(model, url, list, description){
     '<div class="product-card-content">' +
             '<div class="product-image" style="background-image: url(\'' + url + '\')"></div>' +
            + '<div class="dropdown">' +
-    '<button class="btn btn-default btn-stretch dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Available in' +
+    '<button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Available in ' +
     '<span class="caret"></span></button>' +
     '<ul class="dropdown-menu" role="menu" aria-labelledby="menu1">' + list + '</ul></div>'+
             '<p>' + description + '</p></div></div></div>';
@@ -446,14 +446,15 @@ function selectBrand(brand){
     for (var i = 0; i < products.length; i++){
         if (products[i].brand == brand || brand == "all"){
                 if (products[i]['inverter'] > 0){
-                    list += '<li role="presentation"><p role="menuitem" tabindex="-1">Inverter</p></li>';
+                    list += '<li role="presentation"><p role="menuitem" tabindex="-1">  Inverter</p></li>';
                 } else 
                 if (products[i]['Non-inverter'] > 0){
-                    list += '<li role="presentation"><p role="menuitem" tabindex="-1">Non-Inverter</p></li>';
+                    list += '<li role="presentation"><p role="menuitem" tabindex="-1">  Non-Inverter</p></li>';
                 }
+                list += '<li role="presentation" class="divider></li>';
             for (var k = 0; k < sizeBTU.length; k++){
                 if (products[i].hasOwnProperty(sizeBTU[k])){
-                    list += '<li role="presentation"><p role="menuitem" tabindex="-1">' + sizeBTU[k] + ' 000 BTU</p></li>';
+                    list += '<li role="presentation"><p role="menuitem" tabindex="-1">  ' + sizeBTU[k] + ' 000 BTU</p></li>';
                 }
             }
             createdHTML += createHTML(products[i].brand.toUpperCase() + ' ' + products[i].model, dir + products[i].url, list, products[i].description);
