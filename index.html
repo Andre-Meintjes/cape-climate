@@ -208,7 +208,7 @@ $(document).ready(function(){
 	var waitForImg = setInterval(setHeight, 100);
 
 	function setHeight(){
-		if (document.getElementById("myImg").complete === true){
+		if (document.getElementById("bg").complete === true){
 		document.getElementById('space').style.height = (document.getElementById('bg').getBoundingClientRect().height + 50) + 'px';
 		clearInterval(waitForImg);
 		}
