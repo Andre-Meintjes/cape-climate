@@ -152,7 +152,10 @@ body{
     cursor: pointer;
 }
 
-
+.brand-banner{
+    background-color: #ffffff;
+    
+}
 /** Media specific**/
 
 @media(max-width:767px){
