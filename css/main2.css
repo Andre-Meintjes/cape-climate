@@ -58,16 +58,10 @@ body{
     background-color: #313131;
     padding-top: 10px;
     padding-bottom: 10px;
-    color: #2EA9E2;
+    color: white;;
 }
-.icon-banner > a > div > i{
+.icon-banner> div > i{
     font-size: 250%;
-}
-.icon-banner > a{
-    text-decoration: none;
-    color: #2EA9E2;
-}
-.icon-banner > a:hover{
     color: white;
 }
 .btn-default{
