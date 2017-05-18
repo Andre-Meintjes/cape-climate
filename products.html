@@ -91,7 +91,7 @@ var products = [
     "36": 1,
     "42": 1,
     "48": 1,
-    "description": "World’s first truly round design. Booster fans for extra airflow distrobution"
+    "description": "World’s first truly round design. Booster fans for extra airflow distribution"
   },
   {
     "brand": "samsung",
@@ -424,22 +424,16 @@ var products = [
 var dir = "https://raw.githubusercontent.com/Andre-Meintjes/cape-climate/master";
 var sizeBTU = ["9","12","13","15","18","24","28","29","30","32","36","42","48","55","60","72","76","96","150","205"];
 var borderInfoBox = '<div class="col-xs-12 col-md-4 boxes"><p>' + '</p></div>';
-function createHTML(model, url, boxes, description){
+function createHTML(model, url, list, description){
     return '<div class="col-xs-12 col-md-3 product-card">' +
     '<div class="product-card-head">' +
         '<h4>' + model + '</h4>' +
     '</div>' +
     '<div class="product-card-content">' +
             '<div class="product-image" style="background-image: url(\'' + url + '\')"></div>'
-           + '<p>' + description + '</p>' +
-            '<div class="container-fluid">' +
-                '<h5>Available in:</h5>' +
-                '<div class="row boxes-container">' + boxes +
-
-                '</div>' +
-            '</div>' +
-        '</div>' +
-    '</div>';
+           + '<p>' + description + '</p><p>Available in:</p>' +
+                '<ul>' + list + '</ul>'+
+            '</div></div></div>';
 }
 function renderHTML(createdHtml){
     document.getElementById('products').innerHTML = createdHtml;
@@ -447,25 +441,21 @@ function renderHTML(createdHtml){
 function selectBrand(brand){
     clearPanel();
     var createdHTML = '';
-    var boxes = '';
+    var list = '';
     for (var i = 0; i < products.length; i++){
         if (products[i].brand == brand || brand == "all"){
-
-            if (products[i]['inverter'] > 0 && products[i]['Non-inverter'] > 0 ){
-                    boxes += '<div class="col-xs-12 boxes"><h4>Type:</h4><p>' + 'Inverter and Non-Inverter' + '</p></div>';
-                } else if (products[i]['inverter'] > 0){
-                    boxes += '<div class="col-xs-12 boxes"><h4>Type:</h4><p>' + 'Inverter' + '</p></div>';
-                } else if (products[i]['Non-inverter'] > 0){
-                    boxes += '<div class="col-xs-12 boxes"><h4>Type:</h4><p>' + 'Non-Inverter' + '</p></div>';
+                if (products[i]['inverter'] > 0){
+                    boxes += '<li>Inverter</li>';
+                } else 
+                if (products[i]['Non-inverter'] > 0){
+                    boxes += '<li>non-Inverter</li>';
                 }
-            boxes += '<div class="col-xs-12 boxes"><h4>Size:<h/4><p>';
             for (var k = 0; k < sizeBTU.length; k++){
                 if (products[i].hasOwnProperty(sizeBTU[k])){
-                    boxes += ' ' + sizeBTU[k]
+                    boxes += '<li>' + sizeBTU[k] + ' 000 BTU</li>';
                 }
             }
-            boxes += '000 BTU</p></div>';
-            createdHTML += createHTML(products[i].brand.toUpperCase() + ' ' + products[i].model, dir + products[i].url, boxes, products[i].description);
+            createdHTML += createHTML(products[i].brand.toUpperCase() + ' ' + products[i].model, dir + products[i].url, list, products[i].description);
             boxes = '';  
         }
 }
