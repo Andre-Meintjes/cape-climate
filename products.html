@@ -423,16 +423,17 @@ var products = [
 /** Directory **/
 var dir = "https://raw.githubusercontent.com/Andre-Meintjes/cape-climate/master";
 var sizeBTU = ["9","12","13","15","18","24","28","29","30","32","36","42","48","55","60","72","76","96","150","205"];
-var borderInfoBox = '<div class="col-xs-12 col-md-4 boxes"><p>' + '</p></div>';
 function createHTML(model, url, list, description){
     return '<div class="col-xs-12 col-md-3 product-card">' +
     '<div class="product-card-head">' +
         '<h4>' + model + '</h4>' +
     '</div>' +
     '<div class="product-card-content">' +
-            '<div class="product-image" style="background-image: url(\'' + url + '\')"></div>'
-           + '<p>' + description + '</p><p>Available in:</p>' +
-                '<ul>' + list + '</ul>'+
+            '<div class="product-image" style="background-image: url(\'' + url + '\')"></div>' +
+           + '<p>' + description + '</p><div class="dropdown">' +
+    '<button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Available in' +
+    '<span class="caret"></span></button>' +
+    '<ul class="dropdown-menu" role="menu" aria-labelledby="menu1">' + list + '</ul></div>'+
             '</div></div></div>';
 }
 function renderHTML(createdHtml){
@@ -445,14 +446,14 @@ function selectBrand(brand){
     for (var i = 0; i < products.length; i++){
         if (products[i].brand == brand || brand == "all"){
                 if (products[i]['inverter'] > 0){
-                    list += '<li>Inverter</li>';
+                    list += '<li role="presentation"><p role="menuitem" tabindex="-1">Inverter</p></li>';
                 } else 
                 if (products[i]['Non-inverter'] > 0){
-                    list += '<li>non-Inverter</li>';
+                    list += '<li role="presentation"><p role="menuitem" tabindex="-1">Non-Inverter</p></li>';
                 }
             for (var k = 0; k < sizeBTU.length; k++){
                 if (products[i].hasOwnProperty(sizeBTU[k])){
-                    list += '<li>' + sizeBTU[k] + ' 000 BTU</li>';
+                    list += '<li role="presentation"><p role="menuitem" tabindex="-1">' + sizeBTU[k] + ' 000 BTU</p></li>';
                 }
             }
             createdHTML += createHTML(products[i].brand.toUpperCase() + ' ' + products[i].model, dir + products[i].url, list, products[i].description);
