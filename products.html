@@ -445,18 +445,18 @@ function selectBrand(brand){
     for (var i = 0; i < products.length; i++){
         if (products[i].brand == brand || brand == "all"){
                 if (products[i]['inverter'] > 0){
-                    boxes += '<li>Inverter</li>';
+                    list += '<li>Inverter</li>';
                 } else 
                 if (products[i]['Non-inverter'] > 0){
-                    boxes += '<li>non-Inverter</li>';
+                    list += '<li>non-Inverter</li>';
                 }
             for (var k = 0; k < sizeBTU.length; k++){
                 if (products[i].hasOwnProperty(sizeBTU[k])){
-                    boxes += '<li>' + sizeBTU[k] + ' 000 BTU</li>';
+                    list += '<li>' + sizeBTU[k] + ' 000 BTU</li>';
                 }
             }
             createdHTML += createHTML(products[i].brand.toUpperCase() + ' ' + products[i].model, dir + products[i].url, list, products[i].description);
-            boxes = '';  
+            list = '';  
         }
 }
     renderHTML(createdHTML);
