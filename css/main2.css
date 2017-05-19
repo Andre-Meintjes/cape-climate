@@ -83,7 +83,7 @@ body{
     padding-top: 10px;
     padding-bottom: 10px;
 }
-.underceiling, .ducted, .cassette, .split, .portable{
+.underceiling, .ducted, .cassette, .split, .portable, .floorstanding{
     height: 200px;
     background-size: contain;
     background-position: center;
