@@ -454,7 +454,7 @@ function selectProducts(brand, type, size){
         createdHTML += createHTML(selectedProducts[i].brand.toUpperCase(), selectedProducts[i].model, selectedProducts[i].url, selectedProducts[i].description, selectedProducts[i].compressor, size)
     }
     if (createdHTML == ''){
-        createdHTML = '<h2>No products found</h2><a onclick="" class="btn btn-primary">Clear filters</a>';
+        createdHTML = '<h2>No products found</h2><a onclick="clearFilters()" class="btn btn-primary">Clear filters</a>';
     }
     renderHTML(createdHTML);
 }
