@@ -381,7 +381,7 @@ function selectProducts(brand, type, size){
         var propName = x[0];
         var propValue = x[1];
         for (var i = 0; i < arr.length; i++){
-            if (arr[i].propName == propValue){
+            if (arr[i][propName] == propValue){
                 selectedProducts.push(arr[i]);
             }
         }    
@@ -392,7 +392,7 @@ function selectProducts(brand, type, size){
         var propNameY = y[0];
         var propValueY = y[1];
         for (var i = 0; i < arr.length; i++){
-            if (arr[i].propNameX == propValueX && arr[i].propNameY == propValueY){
+            if (arr[i][propNameX] == propValueX && arr[i][propNameY] == propValueY){
                 selectedProducts.push(arr[i]);
             }
         }
