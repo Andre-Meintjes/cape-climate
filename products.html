@@ -416,7 +416,7 @@ function selectProducts(brand, type, size){
 
         createdHTML += createHTML(selectedProducts[i].brand, selectedProducts[i].model, selectedProducts[i].url, selectedProducts[i].description, selectedProducts[i].compressor, size)
     }
-    
+    console.log(createdHTML);
     renderHTML(createdHTML);
 }
 function selectBrand(brand){
