@@ -119,6 +119,7 @@
 						<div class="btu-needed text-center">
 							<h2>BTU SIZE</h2>
 							<h3 id="btu">0</h3>
+							<h3 id="btu-recommendation"></h3>
 						</div>	
 					</div>
 			</div>
@@ -271,9 +272,32 @@ function calculateBTU(){
     var width = document.getElementById('width').value;
     var length = document.getElementById('length').value;
     var btu = width * length * 500;
-
     document.getElementById('btu').innerHTML = parseInt(btu);
     $('#btu').animateCss('rollIn');
+	if (btu > 60){
+		// show nothing	
+	} else if (btu > 48){
+		document.getElementById('btu-recommendation').innerHTML = '<a href="products.html?size=60">View recommendations</a>';
+		$('#btu-recomendation').animateCss('fadeIn');
+	} else if (btu > 36){
+		document.getElementById('btu-recommendation').innerHTML = '<a href="products.html?size=48">View recommendations</a>';
+		$('#btu-recomendation').animateCss('fadeIn');
+	} else if (btu > 24){
+		document.getElementById('btu-recommendation').innerHTML = '<a href="products.html?size=36">View recommendations</a>';
+		$('#btu-recomendation').animateCss('fadeIn');
+	} else if (btu > 18){
+		document.getElementById('btu-recommendation').innerHTML = '<a href="products.html?size=24">View recommendations</a>';
+		$('#btu-recomendation').animateCss('fadeIn');
+	} else if (btu > 12){
+		document.getElementById('btu-recommendation').innerHTML = '<a href="products.html?size=18">View recommendations</a>';
+		$('#btu-recomendation').animateCss('fadeIn');
+	} else if (btu > 9){
+		document.getElementById('btu-recommendation').innerHTML = '<a href="products.html?size=12">View recommendations</a>';
+		$('#btu-recomendation').animateCss('fadeIn');
+	} else {
+		document.getElementById('btu-recommendation').innerHTML = '<a href="products.html?size=9">View recommendations</a>';
+		$('#btu-recomendation').animateCss('fadeIn');
+	}
 
 }
 </script>
