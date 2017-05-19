@@ -391,6 +391,7 @@ function selectProducts(brand, type, size){
     clearPanel();
     var createdHTML = '';
     var selectedProducts = [];
+    var sizeInfo = '';
     // filter products by brand > type > size
     if (brand == "all"){
         selectedProducts = products;
@@ -432,15 +433,15 @@ function selectProducts(brand, type, size){
     }
 
     for (var i = 0; i < selectedProducts.length; i++){
-        var size = 'Available in ';
+        var sizeInfo = 'Available in ';
         if (selectedProducts[i].size.length == 1){
-            size += selectedProducts[i].size[0] + ' 000 BTU'
+            sizeInfo += selectedProducts[i].size[0] + ' 000 BTU'
         } else {
             for (var k = 0; k < selectedProducts[i].size.length - 1; k++){
                 if (k == (selectedProducts[i].size.length - 2)){
-                size += selectedProducts[i].size[k] + ' and ' + selectedProducts[i].size[k + 1] + ' 000 BTU'; 
+                sizeInfo += selectedProducts[i].size[k] + ' and ' + selectedProducts[i].size[k + 1] + ' 000 BTU'; 
                 } else {
-                    size += selectedProducts[i].size[k] + ', '
+                    sizeInfo += selectedProducts[i].size[k] + ', '
                 }
             }
         }
