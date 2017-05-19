@@ -391,52 +391,46 @@ function selectProducts(brand, type, size){
     clearPanel();
     var createdHTML = '';
     var selectedProducts = [];
-    // select by brand
-    if (brand == "all" && type == "all" && size == "all"){
+    // filter products by brand > type > size
+    if (brand == "all"){
         selectedProducts = products;
-    } else if (brand == "all" && type == "all"){
-        selectBySize(size);
-    } else if (brand == "all" && size == "all"){
-        selectByOneParamater(["type", type], products);
-    } else if (type == "all" && size == "all"){
-        selectByOneParamater(["brand", brand], products);
-    } else if (brand == "all"){
-        selectBySize(size);
-        selectByOneParamater(["type", type], selectedProducts);
+    }   else {
+        selectedProducts = selectByOneParamater(["brand", brand], products);
     }
-     else if (type == "all"){
-        selectBySize(size);
-        selectByOneParamater(["brand", type], selectedProducts);
-    } else if (size == "all"){
-        selectByTwoParamaters(["brand", brand], ["type", type], products);
+    if (type == "all"){
+        //skip
+    }   else {
+        selectedProducts = selectByOneParamater(["type", type], selectedProducts);
     }
+    if (size == "all"){
+        //skip
+    }   else {
+        selectedProducts = selectBySize(size);
+    }
+
+    // --------------------------------
     function selectByOneParamater(x, arr){
+        var temp = [];
         var propName = x[0];
         var propValue = x[1];
         for (var i = 0; i < arr.length; i++){
             if (arr[i][propName] == propValue){
-                selectedProducts.push(arr[i]);
+                temp.push(arr[i]);
             }
-        }    
+        } 
+        return temp;   
     }
-    function selectByTwoParamaters(x, y, arr){
-        var propNameX = x[0];
-        var propValueX = x[1];
-        var propNameY = y[0];
-        var propValueY = y[1];
-        for (var i = 0; i < arr.length; i++){
-            if (arr[i][propNameX] == propValueX && arr[i][propNameY] == propValueY){
-                selectedProducts.push(arr[i]);
-            }
-        }
-    }
+
     function selectBySize(x){
-        for (var i = 0; i < products.length; i++){
-            if (products[i].size.indexOf(x) >= 0){
-                selectedProducts.push(products[i]);
+        var temp = [];
+        for (var i = 0; i < selectedProducts.length; i++){
+            if (selectedProducts[i].size.indexOf(x) >= 0){
+                temp.push(s[i]);
             }
-        }         
+        } 
+        return temp;       
     }
+    
     for (var i = 0; i < selectedProducts.length; i++){
         var size = 'Available in ';
         if (selectedProducts[i].size.length == 1){
