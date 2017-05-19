@@ -69,6 +69,7 @@ body{
     color: white;
 }
 .card{
+    height: 200;
     text-decoration: none;
     color: black;
     padding: 5px;
@@ -84,7 +85,7 @@ body{
     padding-bottom: 10px;
 }
 .underceiling, .ducted, .cassette, .split, .portable, .floorstanding{
-    height: 200px;
+    height: 100px;
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
