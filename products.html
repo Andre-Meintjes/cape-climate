@@ -425,7 +425,7 @@ function selectProducts(brand, type, size){
     function selectBySize(x){
         var temp = [];
         for (var i = 0; i < selectedProducts.length; i++){
-            console.log(selectedProducts[i].size.indexOf(x))
+            console.log(selectedProducts[i].size.indexOf(x) + 'i of ' + selectedProducts.length)
             if (selectedProducts[i].size.indexOf(x) >= 0){
                 temp.push([i]);
             }
