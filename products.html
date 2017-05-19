@@ -406,17 +406,22 @@ function selectProducts(brand, type, size){
     }
     for (var i = 0; i < selectedProducts.length; i++){
         var size = 'Available in ';
+        if (selectedProducts[i].size.length == 1){
+            size += selectedProducts[i].size[0] + ' 000 BTU'
+        }
         for (var k = 0; k < selectedProducts[i].size.length - 1; k++){
             if (k == (selectedProducts[i].size.length - 2)){
-            size += selectedProducts[i].size[k] + ' and ' + selectedProducts[i].size[k + 1]  
+            size += selectedProducts[i].size[k] + ' and ' + selectedProducts[i].size[k + 1] + ' 000 BTU'; 
             } else {
                 size += selectedProducts[i].size[k] + ', '
             }
         }
 
-        createdHTML += createHTML(selectedProducts[i].brand, selectedProducts[i].model, selectedProducts[i].url, selectedProducts[i].description, selectedProducts[i].compressor, size)
+        createdHTML += createHTML(toUpperCase(selectedProducts[i].brand), selectedProducts[i].model, selectedProducts[i].url, selectedProducts[i].description, selectedProducts[i].compressor, size)
     }
-    console.log(createdHTML);
+    if (createdHTML == ''){
+        createdHTML = '<h2>None found</h2>';
+    }
     renderHTML(createdHTML);
 }
 function selectBrand(brand){
