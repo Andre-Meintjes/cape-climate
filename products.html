@@ -375,7 +375,7 @@ function selectProducts(brand, type, size){
         selectBySize(size);
         selectByOneParamater(["brand", type], selectedProducts);
     } else if (size == "all"){
-        selectByTwoParamaters(["brand", brand], ["type", type], Products);
+        selectByTwoParamaters(["brand", brand], ["type", type], products);
     }
     function selectByOneParamater(x, arr){
         var propName = x[0];
