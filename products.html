@@ -42,27 +42,59 @@
         <div class="row product-content" style="height: 100%">
             <div class="col-xs-12 col-md-2 brands">
                 <h4>Filter by brand</h4>
-                <ul class="nav nav-pills nav-stacked">
-                    <li><a id="all-brand" class="filter-by-brand" onclick="selectBrand('all')">All</a></li>
-                    <li><a id="samsung" class="filter-by-brand" onclick="selectBrand('samsung')">Samsung</a></li>
-                    <li><a id="lg" class="filter-by-brand" onclick="selectBrand('lg')">LG</a></li>
-                    <li><a id="daikin" class="filter-by-brand" onclick="selectBrand('daikin')">Daikin</a></li>
-                    <li><a id="midea" class="filter-by-brand" onclick="selectBrand('midea')">Midea</a></li>
-                    <li><a id="alliance" class="filter-by-brand" onclick="selectBrand('alliance')">Alliance</a></li>
-                    <li><a id="york" class="filter-by-brand" onclick="selectBrand('york')">York</a></li>
-                </ul>
+                <div class="dropdown">
+                    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"><span id="type">All</span><span class="caret"></span></button>
+                    <ul class="drop-menu">
+                        <li><a onclick="selectBrand('all')">All</a></li>
+                        <li><a onclick="selectBrand('samsung')">Samsung</a></li>
+                        <li><a onclick="selectBrand('lg')">LG</a></li>
+                        <li><a onclick="selectBrand('daikin')">Daikin</a></li>
+                        <li><a onclick="selectBrand('midea')">Midea</a></li>
+                        <li><a onclick="selectBrand('alliance')">Alliance</a></li>
+                        <li><a onclick="selectBrand('york')">York</a></li>
+                    </ul>
+                </div>
                 <h4>Filter by type</h4>
-                <ul class="nav nav-pills nav-stacked">
-                    <li><a id="all-type" class="filter-by-type" onclick="selectType('all')">All</a></li>
-                    <li><a id="split" class="filter-by-type" onclick="selectType('split')">Split</a></li>
-                    <li><a id="cassette" class="filter-by-type" onclick="selectType('cassette')">Cassette</a></li>
-                    <li><a id="underceiling" class="filter-by-type" onclick="selectType('underceiling')">Under-ceiling</a></li>
-                    <li><a id="ducted" class="filter-by-type" onclick="selectType('ducted')">Ducted</a></li>
-                    <li><a id="console" class="filter-by-type" onclick="selectType('console')">Console</a></li>
-                    <li><a id="portable" class="filter-by-type" onclick="selectType('portable')">Portable</a></li>
-                    <li><a id="floorstanding" class="filter-by-type" onclick="selectType('floorstanding')">Floor-standing</a></li>
-                </ul>
-            </div>
+                <div class="dropdown">
+                    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"><span id="type">All</span><span class="caret"></span></button>
+                    <ul class="drop-menu">
+                        <li><a onclick="selectType('all')">All</a></li>
+                        <li><a onclick="selectType('split')">Split</a></li>
+                        <li><a onclick="selectType('cassette')">Cassette</a></li>
+                        <li><a onclick="selectType('underceiling')">Under-ceiling</a></li>
+                        <li><a onclick="selectType('ducted')">Ducted</a></li>
+                        <li><a onclick="selectType('console')">Console</a></li>
+                        <li><a onclick="selectType('portable')">Portable</a></li>
+                        <li><a onclick="selectType('floorstanding')">Floor-standing</a></li>
+                    </ul>
+                </div>
+                <h4 class="hidden-xs">Filter by size</h4>
+                <div class="dropdown hidden-xs">
+                    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"><span id="size">All</span><span class="caret"></span></button>
+                    <ul class="drop-menu">
+                        <li><a onclick="selectSize('all')">All</a></li>
+                        <li><a onclick="selectSize('9')">9 000</a></li>
+                        <li><a onclick="selectSize('12')">12 000</a></li>
+                        <li><a onclick="selectSize('13')">13 000</a></li>
+                        <li><a onclick="selectSize('15')">15 000</a></li>
+                        <li><a onclick="selectSize('18')">18 000</a></li>
+                        <li><a onclick="selectSize('24')">24 000</a></li>
+                        <li><a onclick="selectSize('28')"></a>28 000</li>
+                        <li><a onclick="selectSize('29')"></a>29 000</li>
+                        <li><a onclick="selectSize('30')"></a>30 000</li>
+                        <li><a onclick="selectSize('32')"></a>32 000</li>
+                        <li><a onclick="selectSize('36')"></a>36 000</li>
+                        <li><a onclick="selectSize('42')"></a>42 000</li>
+                        <li><a onclick="selectSize('48')"></a>48 000</li>
+                        <li><a onclick="selectSize('55')"></a>55 000</li>
+                        <li><a onclick="selectSize('60')"></a>60 000</li>
+                        <li><a onclick="selectSize('72')"></a>72 000</li>
+                        <li><a onclick="selectSize('76')"></a>76 000</li>
+                        <li><a onclick="selectSize('96')"></a>96 000</li>
+                        <li><a onclick="selectSize('150')"></a>150 000</li>
+                        <li><a onclick="selectSize('205')"></a>205 000</li>
+                    </ul>
+                </div>
             <div class="col-xs-12 col-md-10">
                 <div id="products" class="container-fluid product-panel">
                     <!-- content by js -->
@@ -427,14 +459,17 @@ function selectProducts(brand, type, size){
 }
 function selectBrand(brand){
     filterBrand = brand;
+    $('#' + brand).addClass('active');
     selectProducts(filterBrand, filterType, filterSize);
 }
 function selectType(type){
     filterType = type;
+    $('#' + type).addClass('active');
     selectProducts(filterBrand, filterType, filterSize);
 }
 function selectSize(size){
     filterSize = size;
+    $('#' + size).addClass('active');
     selectProducts(filterBrand, filterType, filterSize);
 }
 
