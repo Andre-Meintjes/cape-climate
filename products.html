@@ -43,7 +43,7 @@
             <div class="col-xs-12 col-md-2 brands">
                 <h4>Filter by brand</h4>
                 <div class="dropdown">
-                    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"><span id="type">All</span><span class="caret"></span></button>
+                    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"><span id="type">All</span> <span class="caret"></span></button>
                     <ul class="dropdown-menu">
                         <li><a onclick="selectBrand('all')">All</a></li>
                         <li><a onclick="selectBrand('samsung')">Samsung</a></li>
@@ -56,7 +56,7 @@
                 </div>
                 <h4>Filter by type</h4>
                 <div class="dropdown">
-                    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"><span id="type">All</span><span class="caret"></span></button>
+                    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"><span id="type">All</span> <span class="caret"></span></button>
                     <ul class="dropdown-menu">
                         <li><a onclick="selectType('all')">All</a></li>
                         <li><a onclick="selectType('split')">Split</a></li>
@@ -70,7 +70,7 @@
                 </div>
                 <h4 class="hidden-xs">Filter by size</h4>
                 <div class="dropdown hidden-xs">
-                    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"><span id="size">All</span><span class="caret"></span></button>
+                    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"><span id="size">All</span> <span class="caret"></span></button>
                     <ul class="dropdown-menu">
                         <li><a onclick="selectSize('all')">All</a></li>
                         <li><a onclick="selectSize('9')">9 000</a></li>
@@ -79,20 +79,20 @@
                         <li><a onclick="selectSize('15')">15 000</a></li>
                         <li><a onclick="selectSize('18')">18 000</a></li>
                         <li><a onclick="selectSize('24')">24 000</a></li>
-                        <li><a onclick="selectSize('28')"></a>28 000</li>
-                        <li><a onclick="selectSize('29')"></a>29 000</li>
-                        <li><a onclick="selectSize('30')"></a>30 000</li>
-                        <li><a onclick="selectSize('32')"></a>32 000</li>
-                        <li><a onclick="selectSize('36')"></a>36 000</li>
-                        <li><a onclick="selectSize('42')"></a>42 000</li>
-                        <li><a onclick="selectSize('48')"></a>48 000</li>
-                        <li><a onclick="selectSize('55')"></a>55 000</li>
-                        <li><a onclick="selectSize('60')"></a>60 000</li>
-                        <li><a onclick="selectSize('72')"></a>72 000</li>
-                        <li><a onclick="selectSize('76')"></a>76 000</li>
-                        <li><a onclick="selectSize('96')"></a>96 000</li>
-                        <li><a onclick="selectSize('150')"></a>150 000</li>
-                        <li><a onclick="selectSize('205')"></a>205 000</li>
+                        <li><a onclick="selectSize('28')">28 000</a></li>
+                        <li><a onclick="selectSize('29')">29 000</a></li>
+                        <li><a onclick="selectSize('30')">30 000</a></li>
+                        <li><a onclick="selectSize('32')">32 000</a></li>
+                        <li><a onclick="selectSize('36')">36 000</a></li>
+                        <li><a onclick="selectSize('42')">42 000</a></li>
+                        <li><a onclick="selectSize('48')">48 000</a></li>
+                        <li><a onclick="selectSize('55')">55 000</a></li>
+                        <li><a onclick="selectSize('60')">60 000</a></li>
+                        <li><a onclick="selectSize('72')">72 000</a></li>
+                        <li><a onclick="selectSize('76')">76 000</a></li>
+                        <li><a onclick="selectSize('96')">96 000</a></li>
+                        <li><a onclick="selectSize('150')">150 000</a></li>
+                        <li><a onclick="selectSize('205')">205 000</a></li>
                     </ul>
                 </div>
             </div>
@@ -454,29 +454,80 @@ function selectProducts(brand, type, size){
         createdHTML += createHTML(selectedProducts[i].brand.toUpperCase(), selectedProducts[i].model, selectedProducts[i].url, selectedProducts[i].description, selectedProducts[i].compressor, size)
     }
     if (createdHTML == ''){
-        createdHTML = '<h2>None found</h2>';
+        createdHTML = '<h2>No products found</h2><a onclick="" class="btn btn-primary">Clear filters</a>';
     }
     renderHTML(createdHTML);
 }
 function selectBrand(brand){
     filterBrand = brand;
-    $('#' + brand).addClass('active');
+    document.getElementById('brand').innerHTML = getName(brand);
     selectProducts(filterBrand, filterType, filterSize);
 }
 function selectType(type){
     filterType = type;
-    $('#' + type).addClass('active');
+    document.getElementById('type').innerHTML = getName(type);
     selectProducts(filterBrand, filterType, filterSize);
 }
 function selectSize(size){
     filterSize = size;
-    $('#' + size).addClass('active');
+    document.getElementById('size').innerHTML = size;
     selectProducts(filterBrand, filterType, filterSize);
+}
+function clearFilters(){
+    filterBrand = "all";
+    filterType = "all";
+    filterSize = "all";
+    document.getElementById('brand').innerHTML = "All";
+    document.getElementById('type').innerHTML = "All";
+    document.getElementById('size').innerHTML = "All; 
+    selectProducts(filterBrand, filterType, filterSize); 
 }
 
 function clearPanel(){
     document.getElementById('products').innerHTML = '';
-    $('.filter-by-brand').removeClass('active');
+}
+function getName(x){
+    switch (x){
+        case "samsung" : 
+            return "Samsung";
+            break;
+        case "lg" : 
+            return "LG";
+            break;
+        case "daikin" : 
+            return "Daikin";
+            break;
+        case "midea" : 
+            return "Midea";
+            break;
+        case "alliance" : 
+            return "Alliance";
+            break;
+        case "york" : 
+            return "York";
+            break;
+        case "split" : 
+            return "Split";
+            break;
+        case "cassette" : 
+            return "Cassette";
+            break;
+        case "underceiling" : 
+            return "Under-celing";
+            break;
+        case "ducted" : 
+            return "Ducted";
+            break;
+        case "console" : 
+            return "Console";
+            break;
+        case "portable" : 
+            return "Portable";
+            break;
+        case "floorstanding" : 
+            return "Floor-standing";
+            break;
+    }
 }
 </script>
 <script>
