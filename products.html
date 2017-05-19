@@ -530,28 +530,22 @@ function getName(x){
 /** url listner **/
 $(document).ready(function(){
     var url = location.href;
-    var urlParam = url.substring(url.indexOf('?') + 1);
+    var urlParam = url.substring(url.indexOf('?') + 1).split('=');
+    var name = urlParam[0];
+    var value = urlParam[1]; 
     console.log(urlParam);
-    switch (urlParam){
-        case 'samsung': 
-            selectBrand('samsung');
+    switch (name){
+        case 'brand': 
+            selectBrand(value);
             break;
-        case 'lg' :
-            selectBrand('lg');
+        case 'type' :
+            selectType(value);
             break;
-        case 'daikin' :
-            selectBrand('daikin');
+        case 'size' :
+            selectSize(value);
             break;
-        case 'midea' :
-            selectBrand('midea');
-            break;
-        case 'alliance' :
-            selectBrand('alliance');
-            break;
-        case 'york' :
-            selectBrand('york');
-            break;
-        default : selectBrand('all');
+       
+        default : clearFilters();
     }
 
 });
