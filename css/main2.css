@@ -105,6 +105,9 @@ body{
 .portable{
     background-image: url('../img/portable.jpg');
 }
+.floorstanding{
+    background-image: url('../img/floorstanding.jpg');
+}
 .bottom-banner{
     background-color: #313131;
     color: #2EA9E2;
