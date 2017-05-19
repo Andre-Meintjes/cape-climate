@@ -142,6 +142,9 @@ body{
 .filter-by-brand:hover{
     cursor: pointer;
 }
+.filter-by-type:hover{
+    cursor: pointer;
+}
 
 .brand-banner{
     background-color: white;

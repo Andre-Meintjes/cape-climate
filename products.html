@@ -364,7 +364,7 @@ function selectProducts(brand, type, size){
     } else if (brand == "all" && type == "all"){
         selectBySize(size);
     } else if (brand == "all" && size == "all"){
-        selectByOneParamater(["type", type]);
+        selectByOneParamater(["type", type], products);
     } else if (type == "all" && size == "all"){
         selectByOneParamater(["brand", brand], products);
     } else if (brand == "all"){
