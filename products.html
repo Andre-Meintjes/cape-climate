@@ -426,13 +426,12 @@ function selectProducts(brand, type, size){
         var temp = [];
         for (var i = 0; i < selectedProducts.length; i++){
             if (selectedProducts[i].size.indexOf(x) >= 0){
-                temp.push([i]);
+                temp.push(selectedProducts[i]);
             }
         } 
         return temp;       
     }
     
-            console.log(selectedProducts);
     for (var i = 0; i < selectedProducts.length; i++){
         var sizeInfo = 'Available in ';
         if (selectedProducts[i].size.length == 1){
