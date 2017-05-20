@@ -162,12 +162,11 @@ body{
     background-color: white;
 }
 .grass{
-    height: 200px;
+    height: 150px;
     padding-top: 10px;
     padding-bottom: 10px;
     background-image: url('../img/grass.png');
     background-size: contain;
-    background-position: center;
     background-repeat: repeat-x;
 }
 #slides{
