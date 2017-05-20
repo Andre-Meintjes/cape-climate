@@ -33,7 +33,13 @@ html body {
     color: white;
     background-color: #0A6FBA;
 }
-
+.navbar-left{
+    color: #2EA9E2;
+}
+.navbar-left:hover{
+    color: white;
+    background-color: #0A6FBA;
+}
 body{
     padding: 0;
     margin: 0;
