@@ -121,6 +121,9 @@ body{
 .btu-needed{
     padding-top: 10px;
 }
+.shadow-heading{
+    box-shadow: 0 0 5px 2px black; margin-bottom: 10px;
+}
 /** product page **/
 .product-image{
     box-shadow:0 0 10px 0 rgba(0, 0, 0, 0.2);
