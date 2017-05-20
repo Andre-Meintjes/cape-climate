@@ -162,10 +162,10 @@ body{
     background-color: white;
 }
 .grass{
+    height: 200;
     padding-top: 10px;
     padding-bottom: 10px;
     background-image: url('../img/grass.png');
-    background-size: contain;
     background-repeat: repeat-x;
 }
 #slides{
@@ -176,20 +176,7 @@ body{
 .eco{
     color: #12ad2a;
 }
-.clouds{
-    background-image: url('../img/clouds-placeholder.png');
-    background-position: center;
-    background-size: contain;
-    background-repeat: repeat-x;
-    animation-name: scrolling;
-    animation-duration: 5s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-}
-@keyframes scrolling{
-    from {background-position: 0 0;}
-    to {background-position: 1000px 0}
-} 
+
 /** Media specific**/
 
 @media(max-width:767px){
