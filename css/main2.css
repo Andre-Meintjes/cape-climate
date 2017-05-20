@@ -43,11 +43,6 @@ body{
 .container-fluid{
     padding: 0;
 }
-.dark-blue{
-    background-color: #0A6FBA;
-    height: 500px;
-}
-
 .icon-banner{
     background-color: #313131;
     padding-top: 10px;
@@ -140,8 +135,8 @@ body{
     padding-top: 10px;
 }
 .active{
-    background-color: #0A6FBA;
-    color: white;
+    background-color: #0A6FBA !important;
+    color: white !important;
 }
 .brand-banner{
     background-color: white;
