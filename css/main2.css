@@ -167,6 +167,7 @@ body{
     padding-bottom: 10px;
     background-image: url('../img/grass.png');
     background-size: contain;
+    background-position: center;
     background-repeat: repeat-x;
 }
 #slides{
