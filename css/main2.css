@@ -182,12 +182,13 @@ body{
     background-size: contain;
     background-repeat: repeat-x;
     animation-name: scrolling;
-    animation-duration: 50s;
+    animation-duration: 5s;
+    animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
 @keyframes scrolling{
     from {background-position: 0 0;}
-    to {background-position: 9999px 0}
+    to {background-position: 1000px 0}
 } 
 /** Media specific**/
 
