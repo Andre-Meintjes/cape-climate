@@ -7,7 +7,7 @@ html, body, .container-fluid{
     z-index: 99;
     color: #0A6FBA;
     padding-left: 10px;
-    box-shadow:0 0 10px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 5px 2px black;
 }
 .navbar-header > a:hover{
     border-radius: 0;
@@ -120,8 +120,8 @@ body{
     padding-top: 10px;
 }
 .shadow-heading{
+    box-shadow: 0 0 5px 2px black; 
     margin-bottom: 10px;
-    box-shadow:0 0 10px 0 rgba(0, 0, 0, 0.2);
 }
 /** product page **/
 .product-image{
