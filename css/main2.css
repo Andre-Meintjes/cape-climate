@@ -3,6 +3,7 @@ html, body, .container-fluid{
 }
 .navbar{
     background-color: #313131;
+    width: 100%;
     z-index: 99;
     color: #0A6FBA;
     padding-left: 10px;
