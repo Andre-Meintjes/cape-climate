@@ -33,12 +33,7 @@ html body {
     color: white;
     background-color: #0A6FBA;
 }
-.navbar-header > p{
-    line-height: 20px;
-    padding: 15px;
-    margin: 0;
-    color: white;    
-}
+
 body{
     padding: 0;
     margin: 0;
