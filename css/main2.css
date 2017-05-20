@@ -160,6 +160,7 @@ body{
 }
 .slides-banner{
     background-color: white;
+    margin: 0;
 }
 .grass{
     height: 150px;
@@ -168,6 +169,7 @@ body{
     background-image: url('../img/grass.png');
     background-size: contain;
     background-repeat: repeat-x;
+    margin: 0;
 }
 #slides{
     background-position: center;
