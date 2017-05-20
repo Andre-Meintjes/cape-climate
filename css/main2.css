@@ -162,7 +162,7 @@ body{
     background-color: white;
 }
 .grass{
-    height: 200;
+    height: 200px;
     padding-top: 10px;
     padding-bottom: 10px;
     background-image: url('../img/grass.png');
