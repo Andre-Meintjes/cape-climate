@@ -173,8 +173,20 @@ body{
     background-size: contain;
     background-repeat: no-repeat;
 }
-
-
+.eco{
+    color: #12ad2a;
+}
+.clouds{
+    background-image: url('../img/clouds-placeholder.png');
+    background-position: center;
+    background-repeat: repeat-x;
+    animation-name: scrolling;
+    animation-duration: infinite;
+}
+@keyframes scrolling{
+    from {background-position: 0 0;}
+    to {background-position: 9999px 0}
+} 
 /** Media specific**/
 
 @media(max-width:767px){
