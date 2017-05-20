@@ -179,9 +179,11 @@ body{
 .clouds{
     background-image: url('../img/clouds-placeholder.png');
     background-position: center;
+    background-size: contain;
     background-repeat: repeat-x;
     animation-name: scrolling;
-    animation-duration: infinite;
+    animation-duration: 10000;
+    animation-iteration-count: infinite;
 }
 @keyframes scrolling{
     from {background-position: 0 0;}
