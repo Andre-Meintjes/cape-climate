@@ -217,6 +217,9 @@ h1, h2{
     background-color: #313131;
     color: white;
 }
+.bigger-font{
+    font-size: 1.2em;
+}
 /** Media specific**/
 
 @media(max-width:767px){
