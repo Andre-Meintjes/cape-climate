@@ -159,11 +159,13 @@ h1, h2{
 }
 .contact-information > h4 > i{
     padding-right: 10px;
-    width: 20px;
+    width: 30px;
     text-align: center;
 }
 .contact-information > h3 > i{
     padding-right: 10px;
+    width: 30px;
+    text-align: center;
 }
 /** product page **/
 .product-image{
