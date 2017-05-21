@@ -163,7 +163,8 @@ h1, h2{
 }
 .product-card{
     background-color: white;
-    outline-style: 2px;
+    outline-style: solid;
+    outline-width: 1px;
     outline-color: gray;
     height: 400px;
     padding: 5px;
