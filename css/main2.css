@@ -118,6 +118,7 @@ h1, h2{
 }
 .contact-information,.quick-links{
     text-align: center;
+    color: white;
 }
 .btu-needed{
     padding-top: 10px;
@@ -152,7 +153,7 @@ h1, h2{
 .alliance{
     background-image: url('../img/brands/alliance.png');
 }
-.contact-information > h4{
+.contact-information > h4 > a{
     text-decoration: none;
     color: white;
 }
