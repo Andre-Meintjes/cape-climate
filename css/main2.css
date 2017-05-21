@@ -205,7 +205,10 @@ h1, h2{
 .eco{
     color: #12ad2a;
 }
-
+.family{
+    background-color: #313131;
+    color: white;
+}
 /** Media specific**/
 
 @media(max-width:767px){
