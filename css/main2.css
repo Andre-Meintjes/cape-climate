@@ -214,9 +214,15 @@ h1, h2{
 body {
         font-size: 1em;
 }
+.navbar-toggle{
+    font-size: 1em;
+}
 .slides-btn{
     padding-top: 90px;
 
+}
+.btn{
+    font-size: 1em;
 }
 .container-slides{
     height: 200px;
@@ -232,6 +238,9 @@ body {
 @media(min-width:768px){
 body {
         font-size: 1.2em;
+}
+.btn{
+    font-size: 1.2em;
 }
 #slides{
     height: 400px;
@@ -267,12 +276,18 @@ body {
 }
 @media(min-width:992px){
 body {
-        font-size: 1.5em;
+        font-size: 1.3em;
+}
+.btn{
+    font-size: 1.3em;
 }
 }
 @media(min-width:1200px){
 body {
-        font-size: 2em;
-}    
+        font-size: 1.5em;
+} 
+.btn{
+    font-size: 1.5em;
+}   
 }
 
