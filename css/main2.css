@@ -133,6 +133,7 @@ h1, h2{
     background-repeat: no-repeat;
     background-size: contain;
 }
+
 .samsung{
     background-image: url('../img/brands/samsung.png');
 }
@@ -276,9 +277,9 @@ body {
 .btu-needed{
     padding-top: 30px;
 }
-/** product page **/
-
-
+.brands:hover{
+    transform: scale(10%,10%);
+}
 }
 @media(min-width:992px){
 body {
