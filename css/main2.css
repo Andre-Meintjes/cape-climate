@@ -152,6 +152,10 @@ h1, h2{
 .alliance{
     background-image: url('../img/brands/alliance.png');
 }
+.contact-information > h4{
+    text-decoration: none;
+    color: white;
+}
 /** product page **/
 .product-image{
     height: 100px;
