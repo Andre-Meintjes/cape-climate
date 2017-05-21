@@ -60,9 +60,9 @@ body{
     color: white;
 }
 .btn-default{
-    background-color: #313131;
+    background-color: #2EA9E2;
     border-color: #313131;
-    color: #2EA9E2;
+    color: white;
 }
 .btn-default:hover{
     background-color: #0A6FBA;
@@ -120,8 +120,8 @@ body{
     padding-top: 10px;
 }
 .shadow-heading{
-    background-color: #2EA9E2; 
-    margin-bottom: 10px;
+    background-color: #2EA9E2;
+    color: white;
 }
 /** product page **/
 .product-image{
