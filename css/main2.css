@@ -124,6 +124,7 @@ h1, h2{
 }
 .shadow-heading{
     background-color: #2EA9E2;
+    margin-bottom: 10px;
     color: white;
 }
 /** product page **/
