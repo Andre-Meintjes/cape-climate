@@ -167,6 +167,12 @@ h1, h2{
     width: 40px;
     text-align: center;
 }
+.footer-logo{
+    height: 100%;
+    background-image: url('../img/logo2.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
 /** product page **/
 .product-image{
     height: 100px;
