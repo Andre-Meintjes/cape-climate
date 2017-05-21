@@ -278,7 +278,7 @@ body {
     padding-top: 30px;
 }
 .brands:hover{
-    transform: scale(10% 10%);
+    transform: scale3d(50px);
 }
 }
 @media(min-width:992px){
