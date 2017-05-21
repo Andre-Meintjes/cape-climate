@@ -277,9 +277,6 @@ body {
 .btu-needed{
     padding-top: 30px;
 }
-.brands:hover{
-    transform: scale3d(50px);
-}
 }
 @media(min-width:992px){
 body {
