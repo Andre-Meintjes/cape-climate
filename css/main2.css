@@ -225,7 +225,7 @@ h1, h2{
     background-repeat: repeat-x;
 }
 #slides{
-    background-position: 0 10px;
+    background-position: 0 50px;
     background-size: contain;
     background-repeat: no-repeat;
 }
