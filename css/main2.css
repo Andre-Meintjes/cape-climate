@@ -163,13 +163,17 @@ h1, h2{
 }
 .product-card{
     background-color: white;
-    outline-style: solid;
-    outline-width: 1px;
-    outline-color: gray;
     height: 400px;
     padding: 5px;
     margin: 0;
 }
+.product-header{
+    background-color: #2EA9E2;
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+
 
 .product-card-content{
     padding-top: 10px;
