@@ -134,22 +134,22 @@ h1, h2{
     background-size: contain;
 }
 .samsung{
-    background-image: url('../img/samsung.png');
+    background-image: url('../img/brands/samsung.png');
 }
 .lg{
-    background-image: url('../img/lg.png');
+    background-image: url('../img/brands/lg.png');
 }
 .daikin{
-    background-image: url('../img/daikin.png');
+    background-image: url('../img/brands/daikin.png');
 }
 .midea{
-    background-image: url('../img/midea.png');
+    background-image: url('../img/brands/midea.png');
 }
 .york{
-    background-image: url('../img/york.png');
+    background-image: url('../img/brands/york.png');
 }
 .alliance{
-    background-image: url('../img/alliance.png');
+    background-image: url('../img/brands/alliance.png');
 }
 /** product page **/
 .product-image{
@@ -213,6 +213,9 @@ h1, h2{
 @media(max-width:767px){
 body {
         font-size: 1em;
+}
+.grass{
+    height: 100px;
 }
 .navbar-toggle{
     font-size: 1.2em;
