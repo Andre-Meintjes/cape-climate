@@ -127,6 +127,30 @@ h1, h2{
     margin-bottom: 10px;
     color: white;
 }
+.brands{
+    height: 200px;
+    background-position: center;
+    background-repeat: none;
+    background-size: contain;
+}
+.samsung{
+    background-image: url('../img/samsung.png');
+}
+.lg{
+    background-image: url('../img/lg.png');
+}
+.daikin{
+    background-image: url('../img/daikin.png');
+}
+.midea{
+    background-image: url('../img/midea.png');
+}
+.york{
+    background-image: url('../img/york.png');
+}
+.alliance{
+    background-image: url('../img/alliance.png');
+}
 /** product page **/
 .product-image{
     box-shadow:0 0 10px 0 rgba(0, 0, 0, 0.2);
