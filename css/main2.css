@@ -171,7 +171,7 @@ h1, h2{
 .footer-logo{
     height: 200px;
     background-image: url('../img/logo2.png');
-    background-position: right;
+    background-position: center;
     background-repeat: no-repeat
 }
 /** product page **/
