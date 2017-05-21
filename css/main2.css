@@ -130,7 +130,7 @@ h1, h2{
 .brands{
     height: 200px;
     background-position: center;
-    background-repeat: none;
+    background-repeat: no-repeat;
     background-size: contain;
 }
 .samsung{
