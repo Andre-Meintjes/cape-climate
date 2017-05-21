@@ -214,6 +214,9 @@ h1, h2{
 body {
         font-size: 1em;
 }
+.brands{
+    height: 50px;
+}
 .grass{
     height: 100px;
 }
