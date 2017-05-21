@@ -181,6 +181,9 @@ body{
 /** Media specific**/
 
 @media(max-width:767px){
+body {
+        font-size: 0.9em;
+}
 .slides-btn{
     padding-top: 90px;
 
@@ -197,6 +200,9 @@ body{
 }
 }
 @media(min-width:768px){
+body {
+        font-size: 1em;
+}
 #slides{
     height: 400px;
 }
@@ -229,6 +235,14 @@ body{
 
 
 }
-@media(min-width:992px){}
-@media(min-width:1200px){}
+@media(min-width:992px){
+body {
+        font-size: 1.2em;
+}
+}
+@media(min-width:1200px){
+body {
+        font-size: 1.3em;
+}    
+}
 
