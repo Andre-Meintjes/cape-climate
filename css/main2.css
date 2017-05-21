@@ -171,7 +171,7 @@ h1, h2{
 .footer-logo{
     height: 200px;
     background-image: url('../img/logo2.png');
-    background-position: center;
+    background-position: right;
     background-repeat: no-repeat
 }
 /** product page **/
@@ -266,6 +266,9 @@ body {
 .body-cover{
     padding: 0;
     padding-top: 100px;
+}
+.footer-logo{
+    background-position: center;
 }
 }
 @media(min-width:768px){
