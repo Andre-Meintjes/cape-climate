@@ -157,6 +157,12 @@ h1, h2{
     text-decoration: none;
     color: white;
 }
+.contact-information > h4 > i{
+    padding-right: 10px;
+}
+.contact-information > h3 > i{
+    padding-right: 10px;
+}
 /** product page **/
 .product-image{
     height: 100px;
