@@ -164,7 +164,7 @@ h1, h2{
 .product-card{
     background-color: white;
     outline-style: solid;
-    outline-color: #313131;
+    outline-color: gray;
     height: 400px;
     padding: 5px;
     margin: 0;
