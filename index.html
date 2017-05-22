@@ -226,7 +226,7 @@ var slideAnimation;
 $(document).ready(function(){
 	currentSlide(index);
     slideAnimation = setInterval(nextSlide, 5000);
-	var waitForImg = setInterval(setHeight, 500);
+	var waitForImg = setInterval(setHeight, 1000);
 	window.addEventListener('resize', resize);
 	function setHeight(){
 		if (document.getElementById("bg").complete === true){
