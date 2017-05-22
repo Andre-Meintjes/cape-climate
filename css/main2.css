@@ -172,6 +172,7 @@ h1, h2{
     height: 200px;
     background-image: url('../img/engraved-logo.png');
     background-position: center;
+    background-size: contain;
     background-repeat: no-repeat
 }
 /** product page **/
