@@ -253,6 +253,7 @@ body {
 }
 .grass{
     height: 100px;
+    padding-top: 50px;
 }
 .navbar-toggle{
     font-size: 1.2em;
