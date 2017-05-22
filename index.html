@@ -230,10 +230,15 @@ $(document).ready(function(){
 	window.addEventListener('resize', resize);
 	function setHeight(){
 		if (document.getElementById("bg").complete === true){
+			if (document.getElementById('navigation').getBoundingClientRect().height <= 50){
 				document.getElementById('space').style.height = (document.getElementById('bg').getBoundingClientRect().height + 50) + 'px';
-		}
+			} else {
+				document.getElementById('space').style.height = (document.getElementById('bg').getBoundingClientRect().height + 100) + 'px';
+				document.getElementById('bg').style.top = 100;
+			}
+
 		clearInterval(waitForImg);
-		
+		}
 	}
 
 	function resize(){
