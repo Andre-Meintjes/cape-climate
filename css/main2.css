@@ -110,7 +110,7 @@ h1, h2{
     background-image: url('../img/portable.jpg');
 }
 .floorstanding{
-    background-image: url('../img/floorstanding.jpg');
+    background-image: url('../img/af9000.jpg');
 }
 .bottom-banner{
     background-color: #313131;
@@ -168,13 +168,7 @@ h1, h2{
     width: 40px;
     text-align: center;
 }
-.footer-logo{
-    height: 200px;
-    background-image: url('../img/engraved-logo.png');
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat
-}
+
 /** product page **/
 .product-image{
     height: 100px;
