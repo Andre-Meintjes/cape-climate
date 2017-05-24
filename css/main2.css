@@ -126,8 +126,9 @@ h1, h2{
 }
 .heading-box{
     background-color: white;
-    border-bottom: dashed #0A6FBA;
+    border-bottom: dashed #313131;
     font-weight: bold;
+    color: #313131;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 
