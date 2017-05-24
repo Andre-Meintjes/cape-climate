@@ -124,10 +124,13 @@ h1, h2{
 .btu-needed{
     padding-top: 10px;
 }
-.shadow-heading{
-    background-color: #2EA9E2;
-    margin-bottom: 10px;
-    color: white;
+.heading-box{
+    background-color: white;
+    border-bottom: dashed #0A6FBA;
+    font-weight: bold;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
 }
 .brands{
     height: 200px;
