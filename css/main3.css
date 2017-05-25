@@ -44,9 +44,11 @@ html, body{
     padding: 0;
     text-align: center;
 }
-.navigation-menu > li > a{
+.navigation-menu > li{
     padding-top: 5px;
     padding-bottom: 5px;
+}
+.navigation-menu > li > a{
     text-decoration: none;
     color: grey;   
 }
