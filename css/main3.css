@@ -22,13 +22,60 @@ html, body{
 .hello-box{
     height: 80vh;
     background-image: url('../img/backgrounds/background.jpg');
-    background-position: right;
+    background-position: right; /** change on small **/
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
 }
-
+.underceiling, .ducted, .cassette, .split, .portable, .floorstanding{
+    height: 100px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.underceiling{
+    background-image: url('../img/underceiling.jpg');
+}
+.ducted{
+    background-image: url('../img/ducted.jpg');
+}
+.cassette{
+    background-image: url('../img/cassette.jpg');
+}
+.split{
+    background-image: url('../img/maldives.jpg');
+}
+.portable{
+    background-image: url('../img/portable.jpg');
+}
+.floorstanding{
+    background-image: url('../img/af9000.jpg');
+}
+.brands{
+    height: 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.samsung{
+    background-image: url('../img/brands/samsung.png');
+}
+.lg{
+    background-image: url('../img/brands/lg.png');
+}
+.daikin{
+    background-image: url('../img/brands/daikin.png');
+}
+.midea{
+    background-image: url('../img/brands/midea.png');
+}
+.york{
+    background-image: url('../img/brands/york.png');
+}
+.alliance{
+    background-image: url('../img/brands/alliance.png');
+}
 /** navigation **/
 .navigation-box{
     background-color: #131313;
