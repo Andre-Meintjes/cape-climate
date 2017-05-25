@@ -26,6 +26,18 @@ h4, h3{
     padding-bottom: 10px;
     color: white;
 }
+.btn-custom{
+    padding: 5px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: transparent;
+    border: 1px solid #313131;
+    color: #0b70b6;
+}
+.btn-custom:hover{
+    border-color: #0b70b6;
+}
+
 
 /** ---Index page **/
 .dark-blue{
