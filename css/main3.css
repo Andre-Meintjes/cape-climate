@@ -20,13 +20,17 @@ html, body{
     color: #32a9d6;
 }
 .hello-box{
+    height: 20vh;
+    background-color: #131313;
+    color: white;
+}
+.hello-image{
     height: 80vh;
     background-image: url('../img/backgrounds/background.jpg');
-    background-position: right; /** change on small **/
+    background-position: center; /** change on small **/
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-    color: white;
 }
 .underceiling, .ducted, .cassette, .split, .portable, .floorstanding{
     height: 100px;
