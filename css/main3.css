@@ -32,7 +32,9 @@ html, body{
 @media(max-width:767px){
 }
 @media(min-width:768px){
-    /** ---Index page **/
+}
+@media(min-width:992px){
+      /** ---Index page **/
 .navigation-box{
     position: fixed;
     height: 100%;
@@ -43,8 +45,6 @@ html, body{
     margin: 0;
     padding: 0;
 }
-}
-@media(min-width:992px){
 }
 @media(min-width:1200px){
 }
