@@ -9,6 +9,20 @@ html, body{
 
 
 /** navigation **/
+.navigation-box{
+    background-color: #131313;
+    text-align: center;
+}
+.logo{
+    padding-left: auto;
+    padding-right: auto;
+    height: 100px;
+    width: 200px;
+    background-image: url('../img/logo-hd.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
 .navigation-menu{
     list-style: none;
     padding: 0;
@@ -36,8 +50,6 @@ html, body{
     left: 0;
     margin: 0;
     padding: 0;
-
-    background-color: #131313;
 }
 .content-box{
     margin-left: 200px; 
