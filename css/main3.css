@@ -107,10 +107,12 @@ h4, h3{
     color: white;
 }
 .btu-output{
+    padding: 10px;
     height: 200px;
     width: 100%;
     background-color: #eeeeee;
-    border-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
 }
 .type-box{
     height: 300px;
