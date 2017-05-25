@@ -6,7 +6,8 @@ html, body{
     width: 100%;
 }
 .divider-line{
-    border-bottom-style: 1px;
+    border-bottom-style: solid;
+    border-width: 1px;
     border-bottom-color: #0b70b6;
     padding-top: 10px;
     margin-bottom: 10px;
