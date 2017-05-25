@@ -12,6 +12,10 @@ html, body{
     margin: 0;
     background-color: #313131;
 }
+.row {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
 /** ---Index page **/
 .dark-blue{
     color: #0b70b6;
