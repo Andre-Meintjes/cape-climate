@@ -173,7 +173,7 @@
                         <div class="col-xs-12 col-md-6">
                             <div class="btu-output">
                                 <p>Output:</p>
-                                <div class="center-block">
+                                <div>
                                     <!-- btu output by js -->
                                     <p id="btu"></p>
                                     <div id="btu-recommendation"></div>
@@ -234,6 +234,8 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script>
+var index = 0; //index for slides
+var slideAnimation;
 
 $(document).ready(function(){
 	currentSlide(index);
