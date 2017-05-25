@@ -15,10 +15,7 @@ html, body{
 .navigation-box{
     
 }
-.content-box{
-    overflow-x: hidden;
-    overflow-y: scroll; /** medium screen size and up **/
-}
+
 /** navigation **/
 .navigation-menu{
     list-style: none;
