@@ -19,6 +19,12 @@ html, body{
 .light-blue{
     color: #32a9d6;
 }
+.hello-box{
+    background-image: url('../img/backgrounds/background-blur.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 /** navigation **/
 .navigation-box{
@@ -62,7 +68,7 @@ html, body{
 @media(min-width:768px){
 }
 @media(min-width:992px){
-      /** ---Index page **/
+      /** ---Navigation **/
 .navigation-box{
     position: fixed;
     height: 100%;
@@ -74,12 +80,12 @@ html, body{
     padding: 0;
     padding-top: 10px;
 }
-.content-box{
-    margin-left: 200px; 
-}
 .contact-box{
     position: absolute;
     bottom: 0;
+}
+.content-box{
+    margin-left: 200px; 
 }
 }
 @media(min-width:1200px){
