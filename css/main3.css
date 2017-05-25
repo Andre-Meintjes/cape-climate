@@ -12,7 +12,8 @@ html, body{
     width: 100;
 }
 
-.navigation-box{
+.navigation-box > div > div{
+    padding: 0;
     
 }
 
