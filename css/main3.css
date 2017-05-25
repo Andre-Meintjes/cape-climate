@@ -45,6 +45,8 @@ html, body{
     text-align: center;
 }
 .navigation-menu > li > a{
+    padding-top: 5px;
+    padding-bottom: 5px;
     text-decoration: none;
     color: grey;   
 }
