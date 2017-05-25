@@ -83,6 +83,10 @@ html, body{
 .alliance{
     background-image: url('../img/brands/alliance.png');
 }
+.footer-note{
+    width: 100%;
+    margin: 0;
+}
 /** navigation **/
 .navigation-box{
     background-color: #131313;
