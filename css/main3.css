@@ -111,8 +111,8 @@ h4, h3{
     height: 200px;
     width: 100%;
     background-color: #eeeeee;
-    border-top-right-radius: 5px;
-    border-bottom-left-radius: 5px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
 }
 .type-box{
     height: 300px;
