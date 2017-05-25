@@ -48,7 +48,7 @@ a {
     color: #0b70b6;
 }
 .active > a{
-    color: #0b70b6;
+    color: #0b70b6 !important;
 }
 /** ---Index page **/
 .dark-blue{
