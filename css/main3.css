@@ -73,6 +73,10 @@ html, body{
 .content-box{
     margin-left: 200px; 
 }
+.contact-box{
+    position: absolute;
+    bottom: 0;
+}
 }
 @media(min-width:1200px){
 }
