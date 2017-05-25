@@ -140,6 +140,11 @@ a {
 .type-box{
     height: 300px;
 }
+.inverter-slides{
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 /** navigation **/
 .navigation-box{
     background-color: #131313;

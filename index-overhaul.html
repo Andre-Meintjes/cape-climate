@@ -107,7 +107,7 @@
                     </div>
                     <div class="row">
                         <div class="col-xs-12">
-                            <h3>Earth friendly INVERTER technology</h3>
+                            <h3><span style="color: #44A94B;"><i class="fa fa-leaf"></i></span> Earth friendly INVERTER technology</h3>
                         </div>
                         <div class="col-xs-12 center-block text-center">
                             <h4 class="no-style">What is it?</h4>
@@ -116,7 +116,7 @@
                         </div>
                         <div class="col-xs-12">
                             <h4>Our inverter range</h4>
-                            <div class="inverter-slides"></div>
+                            <div id="slides" class="inverter-slides"></div>
                         </div>
                         <div class="col-xs-12">
                             <h3>Types of air Conditioning systems</h3>
@@ -175,6 +175,8 @@
                                 <p>Output:</p>
                                 <div id="btu-output-box">
                                     <!-- btu output by js -->
+                                    <p id="btu"></p>
+                                    <div id="btu-recommendation" class="center-block"></div>
                                 </div>
                             </div>
                         </div>
@@ -229,4 +231,60 @@
 
     </div>
 </body>
+<script>
+
+$(document).ready(function(){
+	currentSlide(index);
+    slideAnimation = setInterval(nextSlide, 5000);
+	function currentSlide(int){
+    var slides = ["/img/maldives.jpg", "/img/artcool.jpg", "/img/emura.jpg"];
+    var element = document.getElementById("slides");
+        
+        element.style.backgroundImage = "url('https://raw.githubusercontent.com/Andre-Meintjes/cape-climate/master/" + slides[int] + "')";
+        $('#slides').animateCss('fadeIn');
+}
+
+	function nextSlide(){
+    	if (index == 2){
+    	    index = 0;
+    	} else {
+        	index++;
+    	}		
+
+    currentSlide(index);
+}
+});	
+    function calculateBTU(){
+    var width = document.getElementById('width').value;
+    var length = document.getElementById('length').value;
+    var btu = width * length * 500;
+    document.getElementById('btu').innerHTML = "BTU: " + parseInt(btu);
+    $('#btu').animateCss('tada');
+	if (btu > 60000){
+		// show nothing	
+	} else if (btu > 48000){
+		document.getElementById('btu-recommendation').innerHTML = '<a class="btn btn-lg" href="products.html?size=60">View recommendations</a>';
+		$('#btu-recommendation').animateCss('tada');
+	} else if (btu > 36000){
+		document.getElementById('btu-recommendation').innerHTML = '<a class="btn btn-lg" href="products.html?size=48">View recommendations</a>';
+		$('#btu-recommendation').animateCss('tada');
+	} else if (btu > 24000){
+		document.getElementById('btu-recommendation').innerHTML = '<a class="btn btn-lg" href="products.html?size=36">View recommendations</a>';
+		$('#btu-recommendation').animateCss('tada');
+	} else if (btu > 18000){
+		document.getElementById('btu-recommendation').innerHTML = '<a class="btn btn-lg" href="products.html?size=24">View recommendations</a>';
+		$('#btu-recommendation').animateCss('tada');
+	} else if (btu > 12000){
+		document.getElementById('btu-recommendation').innerHTML = '<a class="btn btn-lg" href="products.html?size=18">View recommendations</a>';
+		$('#btu-recommendation').animateCss('tada');
+	} else if (btu > 9000){
+		document.getElementById('btu-recommendation').innerHTML = '<a class="btn btn-lg" href="products.html?size=12">View recommendations</a>';
+		$('#btu-recommendation').animateCss('tada');
+	} else {
+		document.getElementById('btu-recommendation').innerHTML = '<a class="btn btn-lg" href="products.html?size=9">View recommendations</a>';
+		$('#btu-recommendation').animateCss('tada');
+	}
+
+}
+
 </html>
