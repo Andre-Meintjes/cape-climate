@@ -39,8 +39,8 @@ html, body{
     margin: 0;
 }
 .logo{
-    padding-left: auto;
-    padding-right: auto;
+    margin-left: auto;
+    margin-right: auto;
     height: 100px;
     width: 200px;
     background-image: url('../img/logo-hd.png');
