@@ -124,6 +124,7 @@ h1, h2{
 .btu-needed{
     padding-top: 10px;
 }
+<<<<<<< HEAD
 .heading-box{
     background-color: white;
     border-bottom: dashed #313131;
@@ -131,6 +132,12 @@ h1, h2{
     color: #313131;
     border-top-right-radius: 50px;
 
+=======
+.shadow-heading{
+    background-color: #0A6FBA;
+    margin-bottom: 10px;
+    color: white;
+>>>>>>> 14b6017243b86c97e4493f71d73519d781b50885
 }
 .brands{
     height: 200px;
