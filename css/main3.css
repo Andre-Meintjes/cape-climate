@@ -11,6 +11,7 @@ html, body{
 /** navigation **/
 .navigation-menu{
     list-style: none;
+    list-style-position: inside;
 }
 .navigation-menu > li > a{
     text-decoration: none;
