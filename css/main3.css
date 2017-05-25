@@ -23,6 +23,7 @@ html, body{
     height: 300px;
     background-image: url('../img/backgrounds/background-blur.jpg');
     background-position: center;
+    background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
     color: ;
