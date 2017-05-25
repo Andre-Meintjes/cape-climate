@@ -26,7 +26,7 @@ h4, h3{
     margin: 5px;
     color: white;
 }
-.btn-custom{
+.btn{
     text-decoration: none;
     padding: 5px;
     border-top-right-radius: 10px;
@@ -35,7 +35,7 @@ h4, h3{
     border: 1px solid #313131;
     color: #0b70b6;
 }
-.btn-custom:hover{
+.btn:hover{
     border-color: #0b70b6;
 }
 a {
