@@ -12,11 +12,10 @@ html, body{
 .navigation-menu{
     list-style: none;
     padding: 0;
+    text-align: center;
 }
 .navigation-menu > li > a{
-    text-decoration: none;
-    text-align: center;
-    
+    text-decoration: none;   
 }
 .navigation-menu > li > a:hover{
     background-color: #0b70b6;
@@ -37,6 +36,8 @@ html, body{
     left: 0;
     margin: 0;
     padding: 0;
+
+    background-color: #131313;
 }
 .content-box{
     margin-left: 200px; 
