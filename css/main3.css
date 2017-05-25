@@ -106,6 +106,15 @@ h4, h3{
     background-color: #131313;
     color: white;
 }
+.btu-output{
+    height: 100%;
+    width: 100%;
+    background-color: #eeeeee;
+    border-radius: 5px;
+}
+.type-box{
+    height: 500px;
+}
 /** navigation **/
 .navigation-box{
     background-color: #131313;
