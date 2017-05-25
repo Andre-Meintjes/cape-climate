@@ -18,9 +18,9 @@ html, body{
 }
 h4, h3{
     font-weight: 500;
-   /** background-color: #313131;
+    background-color: #eeeeee;
     border-top-right-radius: 50px;
-    border-bottom-left-radius: 50px; **/
+    border-bottom-left-radius: 50px;
     text-align: center;
     padding: 10px;
     margin: 5px;
