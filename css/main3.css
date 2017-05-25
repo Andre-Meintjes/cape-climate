@@ -13,6 +13,10 @@ html, body{
     background-color: #131313;
     text-align: center;
 }
+.logo-box{
+    padding: 0;
+    margin: 0;
+}
 .logo{
     padding-left: auto;
     padding-right: auto;
@@ -50,6 +54,7 @@ html, body{
     left: 0;
     margin: 0;
     padding: 0;
+    padding-top: 10px;
 }
 .content-box{
     margin-left: 200px; 
