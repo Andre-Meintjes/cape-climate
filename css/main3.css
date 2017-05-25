@@ -38,7 +38,9 @@ h4, h3{
 .btn-custom:hover{
     border-color: #0b70b6;
 }
-
+a {
+    text-decoration: none;
+}
 
 /** ---Index page **/
 .dark-blue{
