@@ -2,19 +2,16 @@
 /** Global styles **/
 html, body{
     font-family: 'Michroma', sans-serif;
+    height: 100%;
+    width: 100%;
 }
 /** ---Index page **/
 
-
 .full-page-container{
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: 0;
-    padding: 0;
+    height: 100%;
+    width: 100;
 }
+
 .navigation-box{
     
 }
@@ -34,4 +31,27 @@ html, body{
 .navigation-menu > li > a:hover{
     background-color: #0b70b6;
     color: white;
+}
+@media(max-width:767px){
+}
+@media(min-width:768px){
+    /** ---Index page **/
+.full-page-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+}
+.content-box{
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll; 
+}
+}
+@media(min-width:992px){
+}
+@media(min-width:1200px){
 }
