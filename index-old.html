@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Cape Climate</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0">
+	
+	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/main2.css">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="icon" 
+      type="image/png"
+      href="https://raw.githubusercontent.com/Andre-Meintjes/cape-climate/master/img/g4819.png" />
+</head>
+
+<body>
+	<header>
+    <nav id="navigation" class="navbar navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">Menu <i class="fa fa-bars"></i></button>
+				<a class="navbar-left navbar-brand" onclick="navigate('get-in-touch')" style="margin: 0;"><i class="fa fa-bullhorn"></i>  Get in touch</a>
+				<a class="navbar-left navbar-brand" href="tel:0834484000" style="margin: 0;"><i class="fa fa-phone"></i> 083 448 4000</a>
+            </div>
+            <div class="navbar-right navbar-collapse collapse" id="myNavbar">
+                <ul class="nav navbar-nav" style="padding-right: 10px; padding-left: 10px;">
+					<li class="hidden-sm hidden-md hidden-lg"><a style="text-align: right" data-toggle="collapse" data-target="#myNavbar">X</a></li>
+                    <li><a class="active" href="index.html">Home</a></li>
+					<li><a href="#">What we do</a></li>
+                    <li><a href="#">Our work</a></li> 
+					<li><a href="products.html">Products</a></li>
+                    <li><a href="#">About</a></li> 
+					<li><a href="#">Contact us</a></li> 
+                </ul>
+            </div>
+        </div>
+    </nav>
+	</header>
+	<img id="bg" src="img/cape-climate-logo-banner.png" alt="logo">
+	
+	<div class="container-fluid">
+		<div id="space" class="row" style="height: 100vh"></div>
+		
+		<div class="row">
+			<div class="col-xs-6 heading-box">
+				<h2>Approved Dealer of the following brands</h2>
+			</div>
+		</div>
+		<div class="row brand-banner">
+			<div class="col-xs-4 col-md-2">
+				<a class="center-block"  href="products.html?brand=samsung"><div class="brands samsung"></div></a>
+			</div>
+			<div class="col-xs-4 col-md-2">
+				<a class="center-block"  href="products.html?brand=lg"><div class="brands lg"></div></a>
+			</div>
+			<div class="col-xs-4 col-md-2">
+				<a class="center-block"  href="products.html?brand=daikin"><div class="brands daikin"></div></a>
+			</div>
+			<div class="col-xs-4 col-md-2">
+				<a class="center-block"  href="products.html?brand=midea"><div class="brands midea"></div></a>
+			</div>
+			<div class="col-xs-4 col-md-2">
+				<a class="center-block"  href="products.html?brand=york"><div class="brands york"></div></a>
+			</div>
+			<div class="col-xs-4 col-md-2">
+				<a class="center-block" href="products.html?brand=alliance"><div class="brands alliance"></div></a>
+			</div>
+		</div>
+		<div class="row about-banner text-center">
+			<div class="col-xs-12 shadow-heading">
+				<h2>Since 1971</h2>
+			</div>
+			<div class="col-xs-12 col-md-5 col-md-offset-1">
+				<img class="center-block img-responsive" src="img/owner.png" style="max-height: 150px;">
+			</div>
+			<div class="col-xs-12 col-md-5">
+				<p>The Polson Family has specialised in air conditioning since 1971. Cape Climate is firmly rooted in a family tradition that has been a leader in the service industry of air conditioning for over 40 years. Today we continue that tradition. Providing exceptional air conditioning solutions to clients in and around Cape Town. Our technicians are trained professionals who provide a complete solution at competitive prices- whether it's for a scheduled maintenance or the installation of a new air conditioning system. When you call Cape Climate, you are assured of an experience that exceeds your expectations. You will enjoy peace of mind knowing that you called dedicated professionals.</p>
+			</div>
+		</div>
+		<div class="row slides-banner text-center">
+			<div class="col-xs-12 shadow-heading">
+				<h2><span class="eco"><i class="fa fa-leaf" style="font-size: 200%"></i></span> Earth friendly Inverter technology</h2>
+			</div>
+			<div id="slides" class="col-xs-12">
+				<!-- slides -->
+			</div>
+			<div class="col-xs-12 grass">
+				<a href="products.html" class="btn btn-default btn-lg animated bounce infinite">View more</a>
+			</div>
+		</div>
+		<div class="row icon-banner text-center">
+			<div class="col-xs-12 shadow-heading">
+				<h2>Services</h2>
+			</div>
+			<div class="col-xs-4 col-md-3 col-md-offset-1">
+				<i class="fa fa-home"></i>
+				<h4>Residential</h4>
+				<h4>Light Comercial</h4>
+			</div>
+			<div class="col-xs-4">
+				<i class="fa fa-truck"></i>
+				<h4>Supply</h4>
+				<h4>Install</h4>
+			</div>
+			<div class="col-xs-4 col-md-3">
+				<i class="fa fa-wrench"></i>
+				<h4>Service</h4>
+				<h4>Maintenace</h4>
+			</div>
+		</div>
+
+		<div class="row get-ac">
+			<div class="col-xs-12 col-md-3 col-md-offset-1 step">
+					<div class="step-header">
+						<h2><i class="fa fa-calculator"></i> BTU size</h2>
+						<h4>According to room dimensions</h4>
+					</div>
+					<div class="step-content">
+						<form>
+							<div class="form-group">
+								<label for="width">Width:</label>
+								<input type="number" class="form-control" id="width" placeholder="width in meters">
+							</div>
+							<div class="form-group">
+								<label for="length">Length:</label>
+								<input type="number" class="form-control" id="length" placeholder="length in meters">
+							</div>
+							<a class="btn btn-default btn-stretch" onclick="calculateBTU()">Calculate</a>
+						</form>
+						<div class="btu-needed text-center">
+							<h2>BTU SIZE</h2>
+							<h3 id="btu">0</h3>
+							<h3 id="btu-recommendation"></h3>
+						</div>	
+					</div>
+			</div>
+			<div class="col-xs-12 col-md-4 step">
+					<div class="step-header">
+						<h2>Type</h2>
+						<h4>Have a look at our product range</h4>
+					</div>
+					<div class="step-content container-fluid text-center" style="padding: 5px;">
+						<a class="card col-xs-4" href="products.html?type=split">
+							<div class="split"></div>
+							<h4>Split</h4>
+						</a>
+						<a class="card col-xs-4" href="products.html?type=cassette">
+							<div class="cassette"></div>
+							<h4>Cassette</h4>
+						</a>
+						<a class="card col-xs-4" href="products.html?type=ducted">
+							<div class="ducted"></div>
+							<h4>Ducted</h4>
+						</a>
+						<a class="card col-xs-4" href="products.html?type=underceiling">
+							<div class="underceiling"></div>
+							<h4>Under-ceiling</h4>
+						</a>
+						<a class="card col-xs-4" href="products.html?type=portable">
+							<div class="portable"></div>
+							<h4>Portable</h4>
+						</a>
+						<a class="card col-xs-4" href="products.html?type=floorstanding">
+							<div class="floorstanding"></div>
+							<h4>Floor-standing</h4>
+						</a>
+					</div>
+			</div>
+			<div class="col-xs-12 col-md-3 step">
+					<div class="step-header">
+						<h2 id="get-in-touch"><i class="fa fa-bullhorn"></i> Get in touch</h2>
+						<h4>Got a special request?</h4>
+					</div>
+					<div class="step-content">
+						<form>
+							<div class="form-group">
+								<label for="name">Name & Surname:</label>
+								<input type="text" class="form-control" id="name" placeholder="Enter name & surname">
+							</div>
+							<div class="form-group">
+								<label for="email">E-mail:</label>
+								<input type="email" class="form-control" id="email" placeholder="Enter e-mail address">
+							</div>
+							<div class="form-group">
+								<label for="contact-num">Contact number:</label>
+								<input type="number" class="form-control" id="contact-num" placeholder="Enter contact number">
+							</div>
+							<div class="form-group">
+								<label for="area">Area:</label>
+								<input type="text" class="form-control" id="are" placeholder="Enter area">
+							</div>
+							<div class="form-group">
+								<label for="message">Message:</label>
+								<textarea rows="5" class="form-control" id="message"></textarea>
+							</div>
+							<button type="submit" class="btn btn-default btn-stretch"><i class="fa fa-send"></i> Send</button>
+						</form>
+					</div>
+			</div>
+			
+	</div>
+	<div class="row bottom-banner">
+		<div class="col-xs-12 col-md-6 contact-information">
+			<h3><i class="fa fa-address-card-o"></i>Contact information</h3>
+			<h4><i class="fa fa-phone"></i><a href="tel:0834484000">083 448 4000</a></h4>
+			<h4><i class="fa fa-send"></i><a href="mailto:mark@capeclimate.co.za">mark@capeclimate.co.za</a></h4><h4><i class="fa fa-facebook"></i><a href="https://www.facebook.com/capeclimate">Facebook</a></h4>
+			<h4><i class="fa fa-envelope"></i>PO BOX 20519, Big Bay, 7888</h4>
+		</div>
+		<div class="col-xs-12" style="color: white;text-align: center;">
+			<p>Copyright Cape Climate Air Conditioning 2017 | Developed by <span><a href="http://www.andremeintjes.com" style="color: white;">Andre Meintjes</a></p>
+		</div>
+	</div>
+</div>		
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script>
+
+var index = 0; //index for slides
+var slideAnimation;
+
+$(document).ready(function(){
+	currentSlide(index);
+    slideAnimation = setInterval(nextSlide, 5000);
+	var waitForImg = setInterval(setHeight, 1000);
+	window.addEventListener('resize', resize);
+	function setHeight(){
+		if (document.getElementById("bg").complete === true){
+			if (document.getElementById('navigation').getBoundingClientRect().height <= 60){
+				document.getElementById('space').style.height = (document.getElementById('bg').getBoundingClientRect().height + 50) + 'px';
+			} else {
+				document.getElementById('space').style.height = (document.getElementById('bg').getBoundingClientRect().height + 100) + 'px';
+				document.getElementById('bg').style.top = '100px';
+			}
+
+		clearInterval(waitForImg);
+		}
+	}
+
+	function resize(){
+		var timed = setTimeout(function() {
+			setHeight();
+			clearTimeout(timed);
+		}, 500);
+	}
+
+	function currentSlide(int){
+    var slides = ["/img/maldives.jpg", "/img/artcool.jpg", "/img/emura.jpg"];
+    var element = document.getElementById("slides");
+        
+        element.style.backgroundImage = "url('https://raw.githubusercontent.com/Andre-Meintjes/cape-climate/master/" + slides[int] + "')";
+        $('#slides').animateCss('fadeIn');
+}
+
+	function nextSlide(){
+    	if (index == 2){
+    	    index = 0;
+    	} else {
+        	index++;
+    	}		
+
+    currentSlide(index);
+}
+});	
+
+
+
+$.fn.extend({
+    animateCss: function (animationName) {
+        var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+        this.addClass('animated ' + animationName).one(animationEnd, function() {
+            $(this).removeClass('animated ' + animationName);
+        });
+    }
+});
+
+function calculateBTU(){
+    var width = document.getElementById('width').value;
+    var length = document.getElementById('length').value;
+    var btu = width * length * 500;
+    document.getElementById('btu').innerHTML = parseInt(btu);
+    $('#btu').animateCss('rollIn');
+	if (btu > 60000){
+		// show nothing	
+	} else if (btu > 48000){
+		document.getElementById('btu-recommendation').innerHTML = '<a href="products.html?size=60">View recommendations</a>';
+		$('#btu-recommendation').animateCss('tada');
+	} else if (btu > 36000){
+		document.getElementById('btu-recommendation').innerHTML = '<a href="products.html?size=48">View recommendations</a>';
+		$('#btu-recommendation').animateCss('tada');
+	} else if (btu > 24000){
+		document.getElementById('btu-recommendation').innerHTML = '<a href="products.html?size=36">View recommendations</a>';
+		$('#btu-recommendation').animateCss('tada');
+	} else if (btu > 18000){
+		document.getElementById('btu-recommendation').innerHTML = '<a href="products.html?size=24">View recommendations</a>';
+		$('#btu-recommendation').animateCss('tada');
+	} else if (btu > 12000){
+		document.getElementById('btu-recommendation').innerHTML = '<a href="products.html?size=18">View recommendations</a>';
+		$('#btu-recommendation').animateCss('tada');
+	} else if (btu > 9000){
+		document.getElementById('btu-recommendation').innerHTML = '<a href="products.html?size=12">View recommendations</a>';
+		$('#btu-recommendation').animateCss('tada');
+	} else {
+		document.getElementById('btu-recommendation').innerHTML = '<a href="products.html?size=9">View recommendations</a>';
+		$('#btu-recommendation').animateCss('tada');
+	}
+
+}
+function navigate(divId) {
+	if (window.innerWidth > 768){
+		$('html, body').animate({ scrollTop: $("#" + divId).offset().top - "60"}, 1000);
+	} else {
+		$('html, body').animate({ scrollTop: $("#" + divId).offset().top - "110"}, 1000);
+	}
+}
+</script>
+</html>
+
+
