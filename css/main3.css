@@ -42,8 +42,8 @@ html, body{
     color: grey;   
 }
 .navigation-menu > li > a:hover{
-    background-color: #0b70b6;
-    color: white;
+    background-color: transparent;
+    color: #0b70b6;
 }
 @media(max-width:767px){
 }
