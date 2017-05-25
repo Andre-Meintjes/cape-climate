@@ -6,7 +6,12 @@ html, body{
     width: 100%;
 }
 /** ---Index page **/
-
+.dark-blue{
+    color: #0b70b6;
+}
+.light-blue{
+    color: #32a9d6;
+}
 
 /** navigation **/
 .navigation-box{
@@ -33,7 +38,8 @@ html, body{
     text-align: center;
 }
 .navigation-menu > li > a{
-    text-decoration: none;   
+    text-decoration: none;
+    color: grey;   
 }
 .navigation-menu > li > a:hover{
     background-color: #0b70b6;
