@@ -20,13 +20,13 @@ html, body{
     color: #32a9d6;
 }
 .hello-box{
-    height: 50vh;
+    height: 80vh;
     background-image: url('../img/backgrounds/background.jpg');
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-    color: ;
+    color: white;
 }
 
 /** navigation **/
