@@ -47,6 +47,9 @@ a {
     border-bottom-left-radius: 10px;
     color: #0b70b6;
 }
+.active > a{
+    color: #0b70b6;
+}
 /** ---Index page **/
 .dark-blue{
     color: #0b70b6;
