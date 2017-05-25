@@ -43,11 +43,6 @@ html, body{
     margin: 0;
     padding: 0;
 }
-.content-box{
-    height: 100vh;
-    overflow-y: scroll; 
-}
-
 }
 @media(min-width:992px){
 }
