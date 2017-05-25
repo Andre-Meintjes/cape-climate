@@ -25,6 +25,7 @@ html, body{
     color: white;
 }
 .hello-image{
+    margin-top: 20vh;
     height: 80vh;
     background-image: url('../img/backgrounds/background.jpg');
     background-position: center; /** change on small **/
