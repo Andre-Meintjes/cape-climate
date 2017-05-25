@@ -7,15 +7,6 @@ html, body{
 }
 /** ---Index page **/
 
-.full-page-container{
-    height: 100%;
-    width: 100;
-}
-
-.navigation-box > div > div{
-    padding: 0;
-    
-}
 
 /** navigation **/
 .navigation-menu{
@@ -40,10 +31,14 @@ html, body{
     position: fixed;
     height: 100%;
     height: 100vh;
+    width: 200px;
     top: 0;
     left: 0;
     margin: 0;
     padding: 0;
+}
+.content-box{
+    margin-left: 200px; 
 }
 }
 @media(min-width:1200px){
