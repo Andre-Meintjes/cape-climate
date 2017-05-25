@@ -41,7 +41,12 @@ h4, h3{
 a {
     text-decoration: none;
 }
-
+.active{
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-color: #0b70b6;
+    color: #0b70b6;
+}
 /** ---Index page **/
 .dark-blue{
     color: #0b70b6;
