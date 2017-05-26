@@ -202,6 +202,33 @@ a {
     color: #0b70b6;
     cursor: pointer;
 }
+/** product page **/
+.product-image{
+    height: 100px;
+    margin: 0;
+    background-color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.product-card{
+    background-color: white;
+    height: 400px;
+    padding: 5px;
+    margin: 0;
+}
+.product-header{
+    background-color: #eeeeee;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    color: white;
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+}
+.product-card-content{
+    padding-top: 10px;
+}
 @media(max-width:767px){
 }
 @media(min-width:768px){
