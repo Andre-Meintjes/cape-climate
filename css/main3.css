@@ -232,6 +232,7 @@ a {
 .dropdown-menu > li > a:hover{
     cursor: pointer;
     background-color: #0b70b6 !important;
+    color: white !important;
 }
 
 @media(max-width:767px){
