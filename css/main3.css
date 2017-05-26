@@ -41,6 +41,7 @@ h4, h3{
 }
 a {
     text-decoration: none;
+    color: black;
 }
 .active{
     border: 1px solid #0b70b6;
@@ -57,10 +58,6 @@ a {
 }
 .light-blue{
     color: #32a9d6;
-}
-.hello-box{
-    background-color: #131313;
-    color: white;
 }
 .hello-image{
     height: 50vh;
