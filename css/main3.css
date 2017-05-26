@@ -2,6 +2,7 @@
 /** Global styles **/
 html, body{
     font-family: 'Quicksand' !important;
+    font-size: 18px;
     height: 100%;
     width: 100%;
 }
@@ -17,7 +18,7 @@ html, body{
     padding-bottom: 10px;
 }
 h4, h3{
-    font-weight: 500;
+    font-weight: bold;
     background-color: #eeeeee;
     border-top-right-radius: 50px;
     border-bottom-left-radius: 50px;
