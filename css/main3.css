@@ -129,6 +129,13 @@ a {
     background-color: #131313;
     color: white !important;
 }
+.footer-note > p > a{
+    color: white;
+    text-decoration: none;
+}
+.footer-note > p > i{
+    width: 20px;
+}
 .btu-output{
     margin-top: 20px;
     padding: 10px;
