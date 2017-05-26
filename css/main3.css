@@ -229,6 +229,12 @@ a {
 .product-card-content{
     padding-top: 10px;
 }
+.dropdown-menu > li > a:hover{
+    cursor: pointer;
+}
+.dropdown-menu > li:hover{
+    background-color: #0b70b6;
+}
 @media(max-width:767px){
 }
 @media(min-width:768px){
