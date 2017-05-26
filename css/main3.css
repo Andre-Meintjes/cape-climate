@@ -33,8 +33,9 @@ h4, h3{
     border-top-right-radius: 10px;
     border-bottom-left-radius: 10px;
     background-color: transparent;
-    border: 1px solid #313131;
-    color: #0b70b6;
+    border: 2px solid #313131;
+    color: black;
+    font-weight: bold;
 }
 .btn:hover{
     border-color: #0b70b6;
