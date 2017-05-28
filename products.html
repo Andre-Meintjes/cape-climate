@@ -2,574 +2,563 @@
 <html lang="en">
 
 <head>
-	<title>Cape Climate</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0">
-	
+    <title>Cape Climate</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0">
+
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/main3.css">
-	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-	<link rel="icon" 
-      type="image/png"
-      href="https://raw.githubusercontent.com/Andre-Meintjes/cape-climate/master/img/g4819.png" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main3.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/Andre-Meintjes/cape-climate/master/img/g4819.png" />
 </head>
 
 <body>
-	<div class="navigation-box">
-                <!-- menu -->
-                <nav>
+    <div class="navigation-box">
+        <!-- menu -->
+        <nav>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12 logo-box">
+                        <div class="logo"></div>
+                        <h4 class="no-style"><span class="light-blue">Cape</span><span class="dark-blue">Climate</span></h4>
+                        <p><span class="dark-blue">Air Conditioning</span></p>
+                    </div>
+                    <div class="col-xs-12 divider-line"></div>
+                    <div class="col-xs-12">
+                        <ul class="navigation-menu">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="#">What we do</a></li>
+                            <li><a href="#">Our work</a></li>
+                            <li class="active"><a href="products.html">Products</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Contact us</a></li>
+                            <li><a href="#get-in-touch">Get in touch</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 divider-line"></div>
+                    <div class="col-xs-12 contact-box">
+                        <ul class="navigation-menu">
+                            <li><a class="btn btn-wide" href="tel:0834484000"><i class="fa fa-phone dark-blue"></i>083 448 4000</a></li>
+                            <li class="hidden-xs hidden-sm"><a class="btn btn-wide" href="mailto:mark@capeclimate.co.za"><i class="fa fa-send"></i> e-mail</a></li>
+                            <li class="hidden-xs hidden-sm"><a class="btn btn-wide" href="https://www.facebook.com/capeclimate"><i class="fa fa-facebook"></i> Facebook</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="content-box">
+        <div class="container-fluid">
+
+            <div class="row product-content" style="height: 100%">
+                <div class="col-xs-12" style="padding-bottom: 20px;">
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="col-xs-12 logo-box">
-                                <div class="logo"></div>
-                                <h4 class="no-style"><span class="light-blue">Cape</span><span class="dark-blue">Climate</span></h4>
-                                <p><span class="dark-blue">Air Conditioning</span></p>
+                            <div class="col-xs-12 col-md-4">
+                                <h4>Filter by brand</h4>
+                                <div class="dropdown">
+                                    <button class="btn btn-wide dropdown-toggle" type="button" data-toggle="dropdown"><span id="brand">All</span> <span class="caret"></span></button>
+                                    <ul class="dropdown-menu">
+                                        <li><a onclick="selectBrand('all')">All</a></li>
+                                        <li><a onclick="selectBrand('samsung')">Samsung</a></li>
+                                        <li><a onclick="selectBrand('lg')">LG</a></li>
+                                        <li><a onclick="selectBrand('daikin')">Daikin</a></li>
+                                        <li><a onclick="selectBrand('midea')">Midea</a></li>
+                                        <li><a onclick="selectBrand('alliance')">Alliance</a></li>
+                                        <li><a onclick="selectBrand('york')">York</a></li>
+                                    </ul>
+                                </div>
                             </div>
-                            <div class="col-xs-12 divider-line"></div>
-                            <div class="col-xs-12">
-                                <ul class="navigation-menu">
-                                    <li><a href="index.html">Home</a></li>
-					                <li><a href="#">What we do</a></li>
-                                    <li><a href="#">Our work</a></li> 
-					                <li class="active"><a href="products.html">Products</a></li>
-                                    <li><a href="#">About</a></li> 
-					                <li><a href="#">Contact us</a></li>
-                                    <li><a href="#get-in-touch">Get in touch</a></li> 
-                                </ul>
+                            <div class="col-xs-12 col-md-4">
+                                <h4>Filter by type</h4>
+                                <div class="dropdown">
+                                    <button class="btn btn-wide dropdown-toggle" type="button" data-toggle="dropdown"><span id="type">All</span> <span class="caret"></span></button>
+                                    <ul class="dropdown-menu">
+                                        <li><a onclick="selectType('all')">All</a></li>
+                                        <li><a onclick="selectType('split')">Split</a></li>
+                                        <li><a onclick="selectType('cassette')">Cassette</a></li>
+                                        <li><a onclick="selectType('underceiling')">Under-ceiling</a></li>
+                                        <li><a onclick="selectType('ducted')">Ducted</a></li>
+                                        <li><a onclick="selectType('console')">Console</a></li>
+                                        <li><a onclick="selectType('portable')">Portable</a></li>
+                                        <li><a onclick="selectType('floorstanding')">Floor-standing</a></li>
+                                    </ul>
+                                </div>
                             </div>
-                            <div class="col-xs-12 divider-line"></div>
-                            <div class="col-xs-12 contact-box">
-                                <ul class="navigation-menu">
-                                    <li><a class="btn btn-wide" href="tel:0834484000"><i class="fa fa-phone dark-blue"></i>083 448 4000</a></li>
-			                        <li class="hidden-xs hidden-sm"><a class="btn btn-wide" href="mailto:mark@capeclimate.co.za"><i class="fa fa-send"></i> e-mail</a></li>
-                                    <li class="hidden-xs hidden-sm"><a class="btn btn-wide" href="https://www.facebook.com/capeclimate"><i class="fa fa-facebook"></i> Facebook</a></li>
-                                </ul>
+                            <div class="col-xs-12 col-md-4">
+                                <h4>Filter by size</h4>
+                                <div class="dropdown">
+                                    <button class="btn btn-wide dropdown-toggle" type="button" data-toggle="dropdown"><span id="size">All</span> <span class="caret"></span></button>
+                                    <ul class="dropdown-menu">
+                                        <li><a onclick="selectSize('all')">All</a></li>
+                                        <li><a onclick="selectSize('9')">9 000</a></li>
+                                        <li><a onclick="selectSize('12')">12 000</a></li>
+                                        <li><a onclick="selectSize('13')">13 000</a></li>
+                                        <li><a onclick="selectSize('15')">15 000</a></li>
+                                        <li><a onclick="selectSize('18')">18 000</a></li>
+                                        <li><a onclick="selectSize('24')">24 000</a></li>
+                                        <li><a onclick="selectSize('28')">28 000</a></li>
+                                        <li><a onclick="selectSize('29')">29 000</a></li>
+                                        <li><a onclick="selectSize('30')">30 000</a></li>
+                                        <li><a onclick="selectSize('32')">32 000</a></li>
+                                        <li><a onclick="selectSize('36')">36 000</a></li>
+                                        <li><a onclick="selectSize('42')">42 000</a></li>
+                                        <li><a onclick="selectSize('48')">48 000</a></li>
+                                        <li><a onclick="selectSize('55')">55 000</a></li>
+                                        <li><a onclick="selectSize('60')">60 000</a></li>
+                                        <li><a onclick="selectSize('72')">72 000</a></li>
+                                        <li><a onclick="selectSize('76')">76 000</a></li>
+                                        <li><a onclick="selectSize('96')">96 000</a></li>
+                                        <li><a onclick="selectSize('150')">150 000</a></li>
+                                        <li><a onclick="selectSize('205')">205 000</a></li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </nav>
-            </div>
-        <div class="content-box">
-        <div class="container-fluid">
-
-        <div class="row product-content" style="height: 100%">
-            <div class="col-xs-12" style="padding-bottom: 20px;">
-                <h4>Filter by brand</h4>
-                <div class="dropdown">
-                    <button class="btn btn-wide dropdown-toggle" type="button" data-toggle="dropdown"><span id="brand">All</span> <span class="caret"></span></button>
-                    <ul class="dropdown-menu">
-                        <li><a onclick="selectBrand('all')">All</a></li>
-                        <li><a onclick="selectBrand('samsung')">Samsung</a></li>
-                        <li><a onclick="selectBrand('lg')">LG</a></li>
-                        <li><a onclick="selectBrand('daikin')">Daikin</a></li>
-                        <li><a onclick="selectBrand('midea')">Midea</a></li>
-                        <li><a onclick="selectBrand('alliance')">Alliance</a></li>
-                        <li><a onclick="selectBrand('york')">York</a></li>
-                    </ul>
                 </div>
-                <h4>Filter by type</h4>
-                <div class="dropdown">
-                    <button class="btn btn-wide dropdown-toggle" type="button" data-toggle="dropdown"><span id="type">All</span> <span class="caret"></span></button>
-                    <ul class="dropdown-menu">
-                        <li><a onclick="selectType('all')">All</a></li>
-                        <li><a onclick="selectType('split')">Split</a></li>
-                        <li><a onclick="selectType('cassette')">Cassette</a></li>
-                        <li><a onclick="selectType('underceiling')">Under-ceiling</a></li>
-                        <li><a onclick="selectType('ducted')">Ducted</a></li>
-                        <li><a onclick="selectType('console')">Console</a></li>
-                        <li><a onclick="selectType('portable')">Portable</a></li>
-                        <li><a onclick="selectType('floorstanding')">Floor-standing</a></li>
-                    </ul>
-                </div>
-                <h4>Filter by size</h4>
-                <div class="dropdown">
-                    <button class="btn btn-wide dropdown-toggle" type="button" data-toggle="dropdown"><span id="size">All</span> <span class="caret"></span></button>
-                    <ul class="dropdown-menu">
-                        <li><a onclick="selectSize('all')">All</a></li>
-                        <li><a onclick="selectSize('9')">9 000</a></li>
-                        <li><a onclick="selectSize('12')">12 000</a></li>
-                        <li><a onclick="selectSize('13')">13 000</a></li>
-                        <li><a onclick="selectSize('15')">15 000</a></li>
-                        <li><a onclick="selectSize('18')">18 000</a></li>
-                        <li><a onclick="selectSize('24')">24 000</a></li>
-                        <li><a onclick="selectSize('28')">28 000</a></li>
-                        <li><a onclick="selectSize('29')">29 000</a></li>
-                        <li><a onclick="selectSize('30')">30 000</a></li>
-                        <li><a onclick="selectSize('32')">32 000</a></li>
-                        <li><a onclick="selectSize('36')">36 000</a></li>
-                        <li><a onclick="selectSize('42')">42 000</a></li>
-                        <li><a onclick="selectSize('48')">48 000</a></li>
-                        <li><a onclick="selectSize('55')">55 000</a></li>
-                        <li><a onclick="selectSize('60')">60 000</a></li>
-                        <li><a onclick="selectSize('72')">72 000</a></li>
-                        <li><a onclick="selectSize('76')">76 000</a></li>
-                        <li><a onclick="selectSize('96')">96 000</a></li>
-                        <li><a onclick="selectSize('150')">150 000</a></li>
-                        <li><a onclick="selectSize('205')">205 000</a></li>
-                    </ul>
+                <div class="col-xs-12">
+                    <div class="container-fluid product-panel">
+                        <div id="products" class="row">
+                            <!-- content by js -->
+                            <div class="row center-text">
+                                <div class="col-xs-12 col-md-4 product-card">
+                                    <div class="product-header">
+                                        <h4>brand</h4>
+                                        <h3>model</h3>
+                                    </div>
+                                    <div class="product-image" style="background-image:url('')">image</div>
+                                    <div class="product-card-content">
+                                        <p>description</p>
+                                        <p>compressor</p>
+                                        <p>size</p>
+                                    </div>
+                                </div>
+                                <!-- content by js -->
+                            </div>
+                        </div>
+                        ` </div>
                 </div>
             </div>
-            <div class="col-xs-12">
-                <div class="container-fluid product-panel">
-                    <div id="products" class="row">
-                    <!-- content by js -->
-                    <div class="row center-text">
-                        <div class="col-xs-12 col-md-4 product-card">
-                            <div class="product-header">
-                                <h4>brand</h4>
-                                <h3>model</h3>
-                            </div>
-                            <div class="product-image" style="background-image:url('')">image</div>
-                            <div class="product-card-content">
-                                <p>description</p>
-                                <p>compressor</p>
-                                <p>size</p>
-                            </div>
-                    </div>
-                    <!-- content by js -->        
-                    </div>
-                    </div>
-            `   </div>
-	        </div>
         </div>
-        </div>
-        </div>
+    </div>
     </div>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script>
-/** Products **/
-var products = [
-  {
-    "brand": "samsung",
-    "model": "Cassette",
-    "type": "cassette",
-    "url": "/img/samsung-cassette.jpg",
-    "compressor": "Inverter/non-Inverter",
-    "size": ["9","12","18","20","24","36","48"],
-    "description": "Compact and out of the way. Four way wind direction for efficient air distribution."
-  },
-  {
-    "brand": "samsung",
-    "model": "360 Cassette",
-    "type": "cassette",
-    "url": "/img/samsung-cassette-round.jpg",
-    "compressor": "Inverter",
-    "size": ["24","30","36","42","48"],
-    "description": "World’s first truly round design. Booster fans for extra airflow distribution"
-  },
-  {
-    "brand": "samsung",
-    "model": "Ducted",
-    "type": "ducted",
-    "url": "/img/samsung-duct.jpg",
-    "compressor": "Inverter",
-    "size": ["24","36","48","60","72","76","96"],
-    "description": "Powerful and efficient. Perfect for big spaces, homes and offices. "
-  },
-  {
-    "brand": "samsung",
-    "model": "Maldives",
-    "type": "split",
-    "url": "/img/samsung-maldives.jpg",
-    "compressor": "Inverter",
-    "size": ["9","12","18","24"],
-    "description": "Quiet and eco-friendly. Save on your energy bill with inverter technology. Full HD filter."
-  },
-  {
-    "brand": "samsung",
-    "model": "Boracay",
-    "type": "split",
-    "url": "/img/samsung-boracay.jpg",
-    "compressor": "non-Inverter",
-    "size": ["9","12","18","24"],
-    "description": "Powerfull cooling and heating. Full HD Filter and anti corrosion fin."
-  },
-  {
-    "brand": "samsung",
-    "model": "Q9000",
-    "type": "floorstanding",
-    "url": "/img/samsung-floor-standing.jpg",
-    "compressor": "Inverter",
-    "size": ["28"],
-    "description": "Sleek & Stylish. Energy efficient inverter compressor, Magnetic air filtration and Virus Doctor."
-  },
-  {
-    "brand": "lg",
-    "model": "M-range",
-    "type": "split",
-    "url": "/img/lg-m-range.jpg",
-    "compressor": "Inverter",
-    "size": ["9","12","18","24"],
-    "description": "Sleek & quiet. Eco-friendly Digital Inverter technology. Turbo fan mode for fast cooling."
-  },
-  {
-    "brand": "lg",
-    "model": "Cassette",
-    "type": "cassette",
-    "url": "/img/lg-cassette.jpg",
-    "compressor": "Inverter/non-Inverter",
-    "size": ["18","24","36","48"],
-    "description": "Quiet with Smart Inverter technology. Clean air filtration system. Four way airflow with independent vane operation."
-  },
-  {
-    "brand": "lg ",
-    "model": "Artcool",
-    "type": "split",
-    "url": "/img/lg-artcool-black",
-    "compressor": "Inverter",
-    "size": ["9","12","18","24"],
-    "description": "Cover your whole home/office with one unit. Weekly timer program."
-  },
-  {
-    "brand": "york",
-    "model": "High wall split",
-    "type": "split",
-    "url": "/img/york-split.jpg",
-    "compressor": "Inverter",
-    "size": ["9","12","18","24"],
-    "description": "Quiet and safe. Energy efficient digital Inverter compressor for maximum savings."
-  },
-  {
-    "brand": "york",
-    "model": "Cassette",
-    "type": "cassette",
-    "url": "/img/york-cassette.jpg",
-    "compressor": "Inverter",
-    "size": ["12","18","24","36","48","55"],
-    "description": "Clean air filtration system. Four way airflow with autot vane operation."
-  },
-  {
-    "brand": "york",
-    "model": "Ducted",
-    "type": "ducted",
-    "url": "/img/york-duct.jpg",
-    "compressor": "Inverter/non-Inverter",
-    "size": ["12","18","24","36","48","60"],
-    "description": "Hidden and quiet. Ideal for buildings with big floors or homes."
-  },
-  {
-    "brand": "york",
-    "model": "Underceiling",
-    "type": "underceiling",
-    "url": "/img/york-underceiling.jpg",
-    "compressor": "Inverter/non-Inverter",
-    "size": ["12","18","24","36","48","55"],
-    "description": "Powerful fan makes it perfect for long spaces. Can be wall-mounted too. "
-  },
-  {
-    "brand": "york",
-    "model": "Console",
-    "type": "console",
-    "url": "/img/york-console.jpg",
-    "compressor": "Inverter/non-Inverter",
-    "size": ["9","13","15","18"],
-    "description": "Complete unit. Fits into wall. Great for offices with exsternal walls."
-  },
-  {
-    "brand": "york",
-    "model": "Floor standing",
-    "type": "floorstanding",
-    "url": "/img/york-floorstanding.jpg",
-    "compressor": "non-Inverter",
-    "size": ["55"],
-    "description": "Ideal for glass buildings/offices with limited wall space. Best suited for big spaces."
-  },
-  {
-    "brand": "midea",
-    "model": "Neola",
-    "type": "split",
-    "url": "/img/midea-neola.jpg",
-    "compressor": "Inverter/non-Inverter",
-    "size": ["9","12","18","24","32"],
-    "description": "Affordable quality. Energy effiecent Inverter compressor. Auto swing mode."
-  },
-  {
-    "brand": "midea",
-    "model": "Portable",
-    "type": "portable",
-    "url": "/img/midea-portable",
-    "compressor": "non-Inverter",
-    "size": ["12"],
-    "description": "Perfect for temporary placement or server room backup."
-  },
-  {
-    "brand": "midea",
-    "model": "Cassette",
-    "type": "cassette",
-    "url": "/img/midea-cassette.jpg",
-    "compressor": "Inverter/non-Inverter",
-    "size": ["12","18","24","36","48","60"],
-    "description": "Well suited for offices, boardroom or open floors. Big capacity models available."
-  },
-  {
-    "brand": "midea",
-    "model": "Underceiling",
-    "type": "underceiling",
-    "url": "/img/midea-underceiling.jpg",
-    "compressor": "Inverter/non-Inverter",
-    "size": ["24","36","48","60"],
-    "description": "Powerful and efficient, ideal for big spaces. Can be wall-mounted too. "
-  },
-  {
-    "brand": "alliance",
-    "model": "INAA32",
-    "type": "split",
-    "url": "/img/alliance-inaa.jpg",
-    "compressor": "Inverter",
-    "size": ["29"],
-    "description": "Sleek and eco-friendly. Hidden LED display for temperature. Energy saving Eco mode with sleep and auto restart."
-  },
-  {
-    "brand": "alliance",
-    "model": "Atlantic",
-    "type": "split",
-    "url": "/img/alliance-atlantic.jpg",
-    "compressor": "non-Inverter",
-    "size": ["9","12","18","24","32"],
-    "description": "Cost-effective. Perfect for home and office use.Swing mode and 3 fan speeds."
-  },
-  {
-    "brand": "alliance",
-    "model": "Caspien",
-    "type": "split",
-    "url": "/img/alliance-caspien.jpg",
-    "compressor": "Inverter",
-    "size": ["9","12","18","24"],
-    "description": "Energy efficient Inverter technology. LED temperature display. Swing mode for better air distribution."
-  },
-  {
-    "brand": "alliance",
-    "model": "Underceiling",
-    "type": "underceiling",
-    "url": "/img/alliance-underceiling.jpg",
-    "compressor": "Inverter/non-Inverter",
-    "size": ["36","48","60"],
-    "description": "Powerful cooling/heating, ideal for big spaces or server rooms. Can be wall-mounted too. "
-  },
-  {
-    "brand": "alliance",
-    "model": "Ducted",
-    "type": "ducted",
-    "url": "/img/alliance-duct.jpg",
-    "compressor": "Inverter/non-Inverter",
-    "size": ["36","48","60","96","150","205"],
-    "description": "Hidden and powerfull. Covers multiple rooms. Fresh cappable."
-  },
-  {
-    "brand": "alliance",
-    "model": "Portable",
-    "type": "portable",
-    "url": "/img/alliance-portable.jpg",
-    "compressor": "non-Inverter",
-    "size": ["12"],
-    "description": "Portable with wheels. 12 000 BTU cooling/heating capacity. Auto swing. Runs off a 220v mains plug."
-  },
-  {
-    "brand": "alliance",
-    "model": "Cassette",
-    "type": "cassette",
-    "url": "/img/alliance-cassette.jpg",
-    "compressor": "Inverter/non-Inverter",
-    "size": ["12","18","24","36","48","60"],
-    "description": "Covers a big space, Four way airflow for maximum cooling/heating."
-  },
-  {
-    "brand": "daikin",
-    "model": "Emura",
-    "type": "split",
-    "url": "/img/daikin-split.jpg",
-    "compressor": "Inverter",
-    "size": ["9","12","18","24"],
-    "description": "Daikin Emura has been awarded many times, thanks to its excellent design. Whisper quiet, available in white and silver."
-  }
-];
-/** Directory **/
-var dir = "https://raw.githubusercontent.com/Andre-Meintjes/cape-climate/master";
-/** Active filter selection**/
-var filterBrand = "all";
-var filterType = "all";
-var filterSize = "all";
-/** ------- **/
-var sizeBTU = ["9","12","13","15","18","24","28","29","30","32","36","42","48","55","60","72","76","96","150","205"];
+    /** Products **/
+    var products = [{
+        "brand": "samsung",
+        "model": "Cassette",
+        "type": "cassette",
+        "url": "/img/samsung-cassette.jpg",
+        "compressor": "Inverter/non-Inverter",
+        "size": ["9", "12", "18", "20", "24", "36", "48"],
+        "description": "Compact and out of the way. Four way wind direction for efficient air distribution."
+    }, {
+        "brand": "samsung",
+        "model": "360 Cassette",
+        "type": "cassette",
+        "url": "/img/samsung-cassette-round.jpg",
+        "compressor": "Inverter",
+        "size": ["24", "30", "36", "42", "48"],
+        "description": "World’s first truly round design. Booster fans for extra airflow distribution"
+    }, {
+        "brand": "samsung",
+        "model": "Ducted",
+        "type": "ducted",
+        "url": "/img/samsung-duct.jpg",
+        "compressor": "Inverter",
+        "size": ["24", "36", "48", "60", "72", "76", "96"],
+        "description": "Powerful and efficient. Perfect for big spaces, homes and offices. "
+    }, {
+        "brand": "samsung",
+        "model": "Maldives",
+        "type": "split",
+        "url": "/img/samsung-maldives.jpg",
+        "compressor": "Inverter",
+        "size": ["9", "12", "18", "24"],
+        "description": "Quiet and eco-friendly. Save on your energy bill with inverter technology. Full HD filter."
+    }, {
+        "brand": "samsung",
+        "model": "Boracay",
+        "type": "split",
+        "url": "/img/samsung-boracay.jpg",
+        "compressor": "non-Inverter",
+        "size": ["9", "12", "18", "24"],
+        "description": "Powerfull cooling and heating. Full HD Filter and anti corrosion fin."
+    }, {
+        "brand": "samsung",
+        "model": "Q9000",
+        "type": "floorstanding",
+        "url": "/img/samsung-floor-standing.jpg",
+        "compressor": "Inverter",
+        "size": ["28"],
+        "description": "Sleek & Stylish. Energy efficient inverter compressor, Magnetic air filtration and Virus Doctor."
+    }, {
+        "brand": "lg",
+        "model": "M-range",
+        "type": "split",
+        "url": "/img/lg-m-range.jpg",
+        "compressor": "Inverter",
+        "size": ["9", "12", "18", "24"],
+        "description": "Sleek & quiet. Eco-friendly Digital Inverter technology. Turbo fan mode for fast cooling."
+    }, {
+        "brand": "lg",
+        "model": "Cassette",
+        "type": "cassette",
+        "url": "/img/lg-cassette.jpg",
+        "compressor": "Inverter/non-Inverter",
+        "size": ["18", "24", "36", "48"],
+        "description": "Quiet with Smart Inverter technology. Clean air filtration system. Four way airflow with independent vane operation."
+    }, {
+        "brand": "lg ",
+        "model": "Artcool",
+        "type": "split",
+        "url": "/img/lg-artcool-black",
+        "compressor": "Inverter",
+        "size": ["9", "12", "18", "24"],
+        "description": "Cover your whole home/office with one unit. Weekly timer program."
+    }, {
+        "brand": "york",
+        "model": "High wall split",
+        "type": "split",
+        "url": "/img/york-split.jpg",
+        "compressor": "Inverter",
+        "size": ["9", "12", "18", "24"],
+        "description": "Quiet and safe. Energy efficient digital Inverter compressor for maximum savings."
+    }, {
+        "brand": "york",
+        "model": "Cassette",
+        "type": "cassette",
+        "url": "/img/york-cassette.jpg",
+        "compressor": "Inverter",
+        "size": ["12", "18", "24", "36", "48", "55"],
+        "description": "Clean air filtration system. Four way airflow with autot vane operation."
+    }, {
+        "brand": "york",
+        "model": "Ducted",
+        "type": "ducted",
+        "url": "/img/york-duct.jpg",
+        "compressor": "Inverter/non-Inverter",
+        "size": ["12", "18", "24", "36", "48", "60"],
+        "description": "Hidden and quiet. Ideal for buildings with big floors or homes."
+    }, {
+        "brand": "york",
+        "model": "Underceiling",
+        "type": "underceiling",
+        "url": "/img/york-underceiling.jpg",
+        "compressor": "Inverter/non-Inverter",
+        "size": ["12", "18", "24", "36", "48", "55"],
+        "description": "Powerful fan makes it perfect for long spaces. Can be wall-mounted too. "
+    }, {
+        "brand": "york",
+        "model": "Console",
+        "type": "console",
+        "url": "/img/york-console.jpg",
+        "compressor": "Inverter/non-Inverter",
+        "size": ["9", "13", "15", "18"],
+        "description": "Complete unit. Fits into wall. Great for offices with exsternal walls."
+    }, {
+        "brand": "york",
+        "model": "Floor standing",
+        "type": "floorstanding",
+        "url": "/img/york-floorstanding.jpg",
+        "compressor": "non-Inverter",
+        "size": ["55"],
+        "description": "Ideal for glass buildings/offices with limited wall space. Best suited for big spaces."
+    }, {
+        "brand": "midea",
+        "model": "Neola",
+        "type": "split",
+        "url": "/img/midea-neola.jpg",
+        "compressor": "Inverter/non-Inverter",
+        "size": ["9", "12", "18", "24", "32"],
+        "description": "Affordable quality. Energy effiecent Inverter compressor. Auto swing mode."
+    }, {
+        "brand": "midea",
+        "model": "Portable",
+        "type": "portable",
+        "url": "/img/midea-portable",
+        "compressor": "non-Inverter",
+        "size": ["12"],
+        "description": "Perfect for temporary placement or server room backup."
+    }, {
+        "brand": "midea",
+        "model": "Cassette",
+        "type": "cassette",
+        "url": "/img/midea-cassette.jpg",
+        "compressor": "Inverter/non-Inverter",
+        "size": ["12", "18", "24", "36", "48", "60"],
+        "description": "Well suited for offices, boardroom or open floors. Big capacity models available."
+    }, {
+        "brand": "midea",
+        "model": "Underceiling",
+        "type": "underceiling",
+        "url": "/img/midea-underceiling.jpg",
+        "compressor": "Inverter/non-Inverter",
+        "size": ["24", "36", "48", "60"],
+        "description": "Powerful and efficient, ideal for big spaces. Can be wall-mounted too. "
+    }, {
+        "brand": "alliance",
+        "model": "INAA32",
+        "type": "split",
+        "url": "/img/alliance-inaa.jpg",
+        "compressor": "Inverter",
+        "size": ["29"],
+        "description": "Sleek and eco-friendly. Hidden LED display for temperature. Energy saving Eco mode with sleep and auto restart."
+    }, {
+        "brand": "alliance",
+        "model": "Atlantic",
+        "type": "split",
+        "url": "/img/alliance-atlantic.jpg",
+        "compressor": "non-Inverter",
+        "size": ["9", "12", "18", "24", "32"],
+        "description": "Cost-effective. Perfect for home and office use.Swing mode and 3 fan speeds."
+    }, {
+        "brand": "alliance",
+        "model": "Caspien",
+        "type": "split",
+        "url": "/img/alliance-caspien.jpg",
+        "compressor": "Inverter",
+        "size": ["9", "12", "18", "24"],
+        "description": "Energy efficient Inverter technology. LED temperature display. Swing mode for better air distribution."
+    }, {
+        "brand": "alliance",
+        "model": "Underceiling",
+        "type": "underceiling",
+        "url": "/img/alliance-underceiling.jpg",
+        "compressor": "Inverter/non-Inverter",
+        "size": ["36", "48", "60"],
+        "description": "Powerful cooling/heating, ideal for big spaces or server rooms. Can be wall-mounted too. "
+    }, {
+        "brand": "alliance",
+        "model": "Ducted",
+        "type": "ducted",
+        "url": "/img/alliance-duct.jpg",
+        "compressor": "Inverter/non-Inverter",
+        "size": ["36", "48", "60", "96", "150", "205"],
+        "description": "Hidden and powerfull. Covers multiple rooms. Fresh cappable."
+    }, {
+        "brand": "alliance",
+        "model": "Portable",
+        "type": "portable",
+        "url": "/img/alliance-portable.jpg",
+        "compressor": "non-Inverter",
+        "size": ["12"],
+        "description": "Portable with wheels. 12 000 BTU cooling/heating capacity. Auto swing. Runs off a 220v mains plug."
+    }, {
+        "brand": "alliance",
+        "model": "Cassette",
+        "type": "cassette",
+        "url": "/img/alliance-cassette.jpg",
+        "compressor": "Inverter/non-Inverter",
+        "size": ["12", "18", "24", "36", "48", "60"],
+        "description": "Covers a big space, Four way airflow for maximum cooling/heating."
+    }, {
+        "brand": "daikin",
+        "model": "Emura",
+        "type": "split",
+        "url": "/img/daikin-split.jpg",
+        "compressor": "Inverter",
+        "size": ["9", "12", "18", "24"],
+        "description": "Daikin Emura has been awarded many times, thanks to its excellent design. Whisper quiet, available in white and silver."
+    }];
+    /** Directory **/
+    var dir = "https://raw.githubusercontent.com/Andre-Meintjes/cape-climate/master";
+    /** Active filter selection**/
+    var filterBrand = "all";
+    var filterType = "all";
+    var filterSize = "all";
+    /** ------- **/
+    var sizeBTU = ["9", "12", "13", "15", "18", "24", "28", "29", "30", "32", "36", "42", "48", "55", "60", "72", "76", "96", "150", "205"];
 
-function createHTML(brand, model, url, description, compressor, size){
-    return '<div class="col-xs-12 col-md-4 product-card center-text"><div class="product-header"><h4>' + brand
-    + '</h4><h3>' + model
-    + '</h3></div><div class="product-image" style="background-image:url(\'' + dir + url 
-    + '\')"></div><div class="product-card-content"><p>' + description
-    + '</p><p>' + compressor
-    + '</p><p>' + size
-    + '</p></div></div>';
-}
-function renderHTML(createdHtml){
-    document.getElementById('products').innerHTML = createdHtml;
-}
-function selectProducts(brand, type, size){
-    clearPanel();
-    var createdHTML = '';
-    var selectedProducts = [];
-    var sizeInfo = '';
-    // filter products by brand > type > size
-    if (brand == "all"){
-        selectedProducts = products;
-    }   else {
-        selectedProducts = selectByOneParamater(["brand", brand], products);
-    }
-    if (type == "all"){
-        //skip
-    }   else {
-        selectedProducts = selectByOneParamater(["type", type], selectedProducts);
-    }
-    if (size == "all"){
-        //skip
-    }   else {
-        selectedProducts = selectBySize(size);
+    function createHTML(brand, model, url, description, compressor, size) {
+        return '<div class="col-xs-12 col-md-4 product-card center-text"><div class="product-header"><h4>' + brand +
+            '</h4><h3>' + model +
+            '</h3></div><div class="product-image" style="background-image:url(\'' + dir + url +
+            '\')"></div><div class="product-card-content"><p>' + description +
+            '</p><p>' + compressor +
+            '</p><p>' + size +
+            '</p></div></div>';
     }
 
-    // --------------------------------
-    function selectByOneParamater(x, arr){
-        var temp = [];
-        var propName = x[0];
-        var propValue = x[1];
-        for (var i = 0; i < arr.length; i++){
-            if (arr[i][propName] == propValue){
-                temp.push(arr[i]);
-            }
-        } 
-        return temp;   
+    function renderHTML(createdHtml) {
+        document.getElementById('products').innerHTML = createdHtml;
     }
 
-    function selectBySize(x){
-        var temp = [];
-        for (var i = 0; i < selectedProducts.length; i++){
-            if (selectedProducts[i].size.indexOf(x) >= 0){
-                temp.push(selectedProducts[i]);
-            }
-        } 
-        return temp;       
-    }
-    
-    for (var i = 0; i < selectedProducts.length; i++){
-        var sizeInfo = 'Available in ';
-        if (selectedProducts[i].size.length == 1){
-            sizeInfo += selectedProducts[i].size[0] + ' 000 BTU'
+    function selectProducts(brand, type, size) {
+        clearPanel();
+        var createdHTML = '';
+        var selectedProducts = [];
+        var sizeInfo = '';
+        // filter products by brand > type > size
+        if (brand == "all") {
+            selectedProducts = products;
         } else {
-            for (var k = 0; k < selectedProducts[i].size.length - 1; k++){
-                if (k == (selectedProducts[i].size.length - 2)){
-                sizeInfo += selectedProducts[i].size[k] + ' and ' + selectedProducts[i].size[k + 1] + ' 000 BTU'; 
-                } else {
-                    sizeInfo += selectedProducts[i].size[k] + ', '
-                }
-            }
+            selectedProducts = selectByOneParamater(["brand", brand], products);
+        }
+        if (type == "all") {
+            //skip
+        } else {
+            selectedProducts = selectByOneParamater(["type", type], selectedProducts);
+        }
+        if (size == "all") {
+            //skip
+        } else {
+            selectedProducts = selectBySize(size);
         }
 
-        createdHTML += createHTML(selectedProducts[i].brand.toUpperCase(), selectedProducts[i].model, selectedProducts[i].url, selectedProducts[i].description, selectedProducts[i].compressor, sizeInfo)
-    }
-    if (createdHTML == ''){
-        createdHTML = '<h2>No products found</h2><a onclick="clearFilters()" class="btn btn-primary">Clear filters</a>';
-    }
-    renderHTML(createdHTML);
-}
-function selectBrand(brand){
-    filterBrand = brand;
-    document.getElementById('brand').innerHTML = getName(brand);
-    selectProducts(filterBrand, filterType, filterSize);
-}
-function selectType(type){
-    filterType = type;
-    document.getElementById('type').innerHTML = getName(type);
-    selectProducts(filterBrand, filterType, filterSize);
-}
-function selectSize(size){
-    filterSize = size;
-    document.getElementById('size').innerHTML = size;
-    selectProducts(filterBrand, filterType, filterSize);
-}
-function clearFilters(){
-    filterBrand = "all";
-    filterType = "all";
-    filterSize = "all";
-    document.getElementById('brand').innerHTML = "All";
-    document.getElementById('type').innerHTML = "All";
-    document.getElementById('size').innerHTML = "All"; 
-    selectProducts(filterBrand, filterType, filterSize); 
-}
+        // --------------------------------
+        function selectByOneParamater(x, arr) {
+            var temp = [];
+            var propName = x[0];
+            var propValue = x[1];
+            for (var i = 0; i < arr.length; i++) {
+                if (arr[i][propName] == propValue) {
+                    temp.push(arr[i]);
+                }
+            }
+            return temp;
+        }
 
-function clearPanel(){
-    document.getElementById('products').innerHTML = '';
-}
-function getName(x){
-    switch (x){
-        case "samsung" : 
-            return "Samsung";
-            break;
-        case "lg" : 
-            return "LG";
-            break;
-        case "daikin" : 
-            return "Daikin";
-            break;
-        case "midea" : 
-            return "Midea";
-            break;
-        case "alliance" : 
-            return "Alliance";
-            break;
-        case "york" : 
-            return "York";
-            break;
-        case "split" : 
-            return "Split";
-            break;
-        case "cassette" : 
-            return "Cassette";
-            break;
-        case "underceiling" : 
-            return "Under-celing";
-            break;
-        case "ducted" : 
-            return "Ducted";
-            break;
-        case "console" : 
-            return "Console";
-            break;
-        case "portable" : 
-            return "Portable";
-            break;
-        case "floorstanding" : 
-            return "Floor-standing";
-            break;
-        default: return "All";
+        function selectBySize(x) {
+            var temp = [];
+            for (var i = 0; i < selectedProducts.length; i++) {
+                if (selectedProducts[i].size.indexOf(x) >= 0) {
+                    temp.push(selectedProducts[i]);
+                }
+            }
+            return temp;
+        }
+
+        for (var i = 0; i < selectedProducts.length; i++) {
+            var sizeInfo = 'Available in ';
+            if (selectedProducts[i].size.length == 1) {
+                sizeInfo += selectedProducts[i].size[0] + ' 000 BTU'
+            } else {
+                for (var k = 0; k < selectedProducts[i].size.length - 1; k++) {
+                    if (k == (selectedProducts[i].size.length - 2)) {
+                        sizeInfo += selectedProducts[i].size[k] + ' and ' + selectedProducts[i].size[k + 1] + ' 000 BTU';
+                    } else {
+                        sizeInfo += selectedProducts[i].size[k] + ', '
+                    }
+                }
+            }
+
+            createdHTML += createHTML(selectedProducts[i].brand.toUpperCase(), selectedProducts[i].model, selectedProducts[i].url, selectedProducts[i].description, selectedProducts[i].compressor, sizeInfo)
+        }
+        if (createdHTML == '') {
+            createdHTML = '<h2>No products found</h2><a onclick="clearFilters()" class="btn btn-primary">Clear filters</a>';
+        }
+        renderHTML(createdHTML);
     }
-}
+
+    function selectBrand(brand) {
+        filterBrand = brand;
+        document.getElementById('brand').innerHTML = getName(brand);
+        selectProducts(filterBrand, filterType, filterSize);
+    }
+
+    function selectType(type) {
+        filterType = type;
+        document.getElementById('type').innerHTML = getName(type);
+        selectProducts(filterBrand, filterType, filterSize);
+    }
+
+    function selectSize(size) {
+        filterSize = size;
+        document.getElementById('size').innerHTML = size;
+        selectProducts(filterBrand, filterType, filterSize);
+    }
+
+    function clearFilters() {
+        filterBrand = "all";
+        filterType = "all";
+        filterSize = "all";
+        document.getElementById('brand').innerHTML = "All";
+        document.getElementById('type').innerHTML = "All";
+        document.getElementById('size').innerHTML = "All";
+        selectProducts(filterBrand, filterType, filterSize);
+    }
+
+    function clearPanel() {
+        document.getElementById('products').innerHTML = '';
+    }
+
+    function getName(x) {
+        switch (x) {
+            case "samsung":
+                return "Samsung";
+                break;
+            case "lg":
+                return "LG";
+                break;
+            case "daikin":
+                return "Daikin";
+                break;
+            case "midea":
+                return "Midea";
+                break;
+            case "alliance":
+                return "Alliance";
+                break;
+            case "york":
+                return "York";
+                break;
+            case "split":
+                return "Split";
+                break;
+            case "cassette":
+                return "Cassette";
+                break;
+            case "underceiling":
+                return "Under-celing";
+                break;
+            case "ducted":
+                return "Ducted";
+                break;
+            case "console":
+                return "Console";
+                break;
+            case "portable":
+                return "Portable";
+                break;
+            case "floorstanding":
+                return "Floor-standing";
+                break;
+            default:
+                return "All";
+        }
+    }
 </script>
 <script>
-/** url listner **/
-$(document).ready(function(){
-    var url = location.href;
-    var urlParam = url.substring(url.indexOf('?') + 1).split('=');
-    var name = urlParam[0];
-    var value = urlParam[1]; 
-    console.log(urlParam);
-    switch (name){
-        case 'brand': 
-            selectBrand(value);
-            break;
-        case 'type' :
-            selectType(value);
-            break;
-        case 'size' :
-            selectSize(value);
-            break;
-       
-        default : clearFilters();
-    }
+    /** url listner **/
+    $(document).ready(function() {
+        var url = location.href;
+        var urlParam = url.substring(url.indexOf('?') + 1).split('=');
+        var name = urlParam[0];
+        var value = urlParam[1];
+        console.log(urlParam);
+        switch (name) {
+            case 'brand':
+                selectBrand(value);
+                break;
+            case 'type':
+                selectType(value);
+                break;
+            case 'size':
+                selectSize(value);
+                break;
 
-});
+            default:
+                clearFilters();
+        }
+
+    });
 </script>
 
 </html>
