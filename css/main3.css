@@ -212,6 +212,7 @@ a {
     padding: 0;
     padding-top: 100px;
     background: linear-gradient(#00aaff, #e6f7ff);
+    border-radius: 50px;
 }
 
 .cloud {
