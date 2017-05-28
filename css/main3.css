@@ -212,7 +212,7 @@ a {
     padding: 0;
     padding-top: 100px;
     background: linear-gradient(#00aaff, #e6f7ff);
-    border-image: url('../img/bricks.png')
+    border: 3px dashed #131313;
 }
 
 .cloud {
