@@ -232,10 +232,10 @@ a {
 
 @keyframes clouds {
     from {
-        left: 200px
+        left: 0px
     }
     to {
-        left: 100vw;
+        left: calc(100vw - 200px);
     }
 }
 
