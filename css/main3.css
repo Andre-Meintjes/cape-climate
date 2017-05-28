@@ -212,13 +212,12 @@ a {
 .nature {
     height: 500px;
     padding: 0;
-    padding-top: 100px;
     background: linear-gradient(#00aaff, #e6f7ff);
 }
 
 .cloud {
     position: relative;
-    height: 80px;
+    height: 100px;
     padding: 0;
     margin: 0;
     background-image: url('../img/clouds.png');
