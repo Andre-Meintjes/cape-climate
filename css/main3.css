@@ -1,23 +1,31 @@
 /** Copyright Andre Meintjes http://andremeintjes.com 2017**/
+
+
 /** Global styles **/
-html, body{
+
+html,
+body {
     font-family: 'Quicksand' !important;
     font-size: 18px;
     height: 100%;
     width: 100%;
 }
-.divider-line{
+
+.divider-line {
     border-bottom-style: solid;
     border-width: 1px;
     border-bottom-color: #313131;
     padding-top: 10px;
     margin-bottom: 10px;
 }
+
 .row {
     padding-top: 10px;
     padding-bottom: 10px;
 }
-h4, h3{
+
+h4,
+h3 {
     font-weight: bold;
     background-color: #eeeeee;
     border-top-right-radius: 50px;
@@ -27,7 +35,8 @@ h4, h3{
     margin: 5px;
     color: black;
 }
-.btn{
+
+.btn {
     text-decoration: none;
     padding: 5px;
     border-top-right-radius: 10px;
@@ -37,65 +46,89 @@ h4, h3{
     color: black;
     font-weight: bold;
 }
-.btn-wide{
+
+.btn-wide {
     width: 100%;
 }
-.btn:hover{
+
+.btn:hover {
     border-color: #0b70b6;
 }
+
 a {
     text-decoration: none;
     color: black;
 }
-.active{
+
+.active {
     border: 1px solid #0b70b6;
     border-top-right-radius: 10px;
     border-bottom-left-radius: 10px;
     color: #0b70b6;
 }
-.active > a{
+
+.active>a {
     color: #0b70b6 !important;
 }
+
+
 /** ---Index page **/
-.dark-blue{
+
+.dark-blue {
     color: #0b70b6;
 }
-.light-blue{
+
+.light-blue {
     color: #32a9d6;
 }
-.hello-image{
+
+.hello-image {
     height: 80vh;
     background-image: url('../img/backgrounds/background.jpg');
-    background-position: center; /** change on small **/
+    background-position: center;
+    /** change on small **/
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
 }
-.underceiling, .ducted, .cassette, .split, .portable, .floorstanding{
+
+.underceiling,
+.ducted,
+.cassette,
+.split,
+.portable,
+.floorstanding {
     height: 100px;
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
 }
-.underceiling{
+
+.underceiling {
     background-image: url('../img/underceiling.jpg');
 }
-.ducted{
+
+.ducted {
     background-image: url('../img/ducted.jpg');
 }
-.cassette{
+
+.cassette {
     background-image: url('../img/cassette.jpg');
 }
-.split{
+
+.split {
     background-image: url('../img/maldives.jpg');
 }
-.portable{
+
+.portable {
     background-image: url('../img/portable.jpg');
 }
-.floorstanding{
+
+.floorstanding {
     background-image: url('../img/af9000.jpg');
 }
-.brands{
+
+.brands {
     height: 80px;
     padding: 0;
     margin: 0;
@@ -103,25 +136,32 @@ a {
     background-repeat: no-repeat;
     background-size: contain;
 }
-.samsung{
+
+.samsung {
     background-image: url('../img/brands/samsung.png');
 }
-.lg{
+
+.lg {
     background-image: url('../img/brands/lg.png');
 }
-.daikin{
+
+.daikin {
     background-image: url('../img/brands/daikin.png');
 }
-.midea{
+
+.midea {
     background-image: url('../img/brands/midea.png');
 }
-.york{
+
+.york {
     background-image: url('../img/brands/york.png');
 }
-.alliance{
+
+.alliance {
     background-image: url('../img/brands/alliance.png');
 }
-.footer-note{
+
+.footer-note {
     width: 100%;
     margin: 0;
     padding-top: 10px;
@@ -129,14 +169,17 @@ a {
     background-color: #131313;
     color: white !important;
 }
-.footer-note > div > p > a{
+
+.footer-note>div>p>a {
     color: white;
     text-decoration: none;
 }
-.footer-note > div > p > i{
+
+.footer-note>div>p>i {
     width: 30px;
 }
-.btu-output{
+
+.btu-output {
     margin-top: 20px;
     padding: 10px;
     height: 200px;
@@ -145,26 +188,72 @@ a {
     border-top-right-radius: 50px;
     border-bottom-left-radius: 50px;
 }
-.type-box{
+
+.type-box {
     height: 300px;
 }
-.inverter-slides{
+
+.inverter-slides {
     height: 300px;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
+
+.grass {
+    height: 100px;
+    background-image: url('../img/grass.png');
+    background-repeat: repeat-x;
+    background-size: contain;
+}
+
+.sky {
+    height: 100px;
+    padding: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: linear-gradient(#00aaff, #e6f7ff);
+}
+
+.cloud {
+    position: relative;
+    height: 80px;
+    padding: 0;
+    margin: 0;
+    background-image: url('../img/cloud.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation-name: clouds;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes clouds {
+    from {
+        left: 200px
+    }
+    to {
+        right: 0;
+    }
+}
+
+
 /** navigation **/
-.navigation-box{
+
+.navigation-box {
     background-color: #131313;
     text-align: center;
 }
-.logo-box{
+
+.logo-box {
     font-family: 'Michroma', sans-serif;
     padding: 0;
     margin: 0;
 }
-.no-style{
+
+.no-style {
     font-weight: 500;
     background-color: transparent;
     border-radius: 0;
@@ -174,7 +263,7 @@ a {
     color: black;
 }
 
-.logo{
+.logo {
     margin-left: auto;
     margin-right: auto;
     height: 100px;
@@ -184,26 +273,33 @@ a {
     background-repeat: no-repeat;
     background-size: contain;
 }
-.navigation-menu{
+
+.navigation-menu {
     list-style: none;
     padding: 0;
     text-align: center;
 }
-.navigation-menu > li{
+
+.navigation-menu>li {
     padding-top: 5px;
     padding-bottom: 5px;
 }
-.navigation-menu > li > a{
+
+.navigation-menu>li>a {
     text-decoration: none;
-    color: white;   
+    color: white;
 }
-.navigation-menu > li > a:hover{
+
+.navigation-menu>li>a:hover {
     background-color: transparent;
     color: #0b70b6;
     cursor: pointer;
 }
+
+
 /** product page **/
-.product-image{
+
+.product-image {
     height: 100px;
     margin: 0;
     background-color: white;
@@ -211,13 +307,15 @@ a {
     background-repeat: no-repeat;
     background-size: contain;
 }
-.product-card{
+
+.product-card {
     background-color: white;
     height: 400px;
     padding: 5px;
     margin: 0;
 }
-.product-header{
+
+.product-header {
     background-color: #eeeeee;
     border-top-right-radius: 50px;
     border-bottom-left-radius: 50px;
@@ -226,39 +324,41 @@ a {
     padding: 5px;
     text-align: center;
 }
-.product-card-content{
+
+.product-card-content {
     padding-top: 10px;
 }
-.dropdown-menu > li > a:hover{
+
+.dropdown-menu>li>a:hover {
     cursor: pointer;
     background-color: #0b70b6 !important;
     color: white !important;
 }
 
-@media(max-width:767px){
+@media(max-width:767px) {}
+
+@media(min-width:768px) {}
+
+@media(min-width:992px) {
+    /** ---Navigation **/
+    .navigation-box {
+        position: fixed;
+        height: 100%;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        left: 0;
+        margin: 0;
+        padding: 0;
+        padding-top: 10px;
+    }
+    .contact-box {
+        position: absolute;
+        bottom: 0;
+    }
+    .content-box {
+        margin-left: 200px;
+    }
 }
-@media(min-width:768px){
-}
-@media(min-width:992px){
-      /** ---Navigation **/
-.navigation-box{
-    position: fixed;
-    height: 100%;
-    height: 100vh;
-    width: 200px;
-    top: 0;
-    left: 0;
-    margin: 0;
-    padding: 0;
-    padding-top: 10px;
-}
-.contact-box{
-    position: absolute;
-    bottom: 0;
-}
-.content-box{
-    margin-left: 200px; 
-}
-}
-@media(min-width:1200px){
-}
+
+@media(min-width:1200px) {}
