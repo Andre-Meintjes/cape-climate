@@ -195,6 +195,7 @@ a {
 
 .inverter-slides {
     height: 300px;
+    background: linear-gradient(#00aaff, #e6f7ff);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -212,7 +213,6 @@ a {
     padding: 0;
     padding-top: 10px;
     padding-bottom: 10px;
-    background: linear-gradient(#00aaff, #e6f7ff);
 }
 
 .cloud {
@@ -235,7 +235,7 @@ a {
         left: 0px
     }
     to {
-        left: calc(100vw - 200px);
+        left: calc(100vw - 220px);
     }
 }
 
