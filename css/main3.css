@@ -234,10 +234,10 @@ a {
 
 @keyframes clouds {
     from {
-        left: 0px
+        background-position-x: 0;
     }
     to {
-        left: calc(100vw - 220px);
+        background-position-x: 50;
     }
 }
 
