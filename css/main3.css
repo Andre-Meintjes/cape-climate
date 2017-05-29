@@ -181,6 +181,10 @@ a {
     color: white;
 }
 
+.in-text-link {
+    color: #0b70b6;
+}
+
 .btu-output {
     margin-top: 20px;
     padding: 10px;
