@@ -224,7 +224,7 @@ a {
 
 .clouds {
     position: relative;
-    height: 150px;
+    height: 200px;
     width: 100%;
     padding: 0;
     margin: 0;
@@ -245,7 +245,7 @@ a {
         background-position-x: 0px;
     }
     to {
-        background-position-x: 600px;
+        background-position-x: 1200px;
     }
 }
 
