@@ -213,6 +213,10 @@ a {
     background-image: url('../img/grass.png');
     background-repeat: repeat-x;
     background-size: contain;
+    animation-name: grass;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
 }
 
 .nature {
@@ -233,7 +237,6 @@ a {
     animation-name: clouds;
     animation-duration: 20s;
     animation-timing-function: linear;
-    animation-delay: 1s;
     animation-iteration-count: infinite;
 }
 
@@ -243,6 +246,15 @@ a {
     }
     to {
         background-position-x: 900px;
+    }
+}
+
+@keyframes grass {
+    from {
+        background-position-x: 0px;
+    }
+    to {
+        background-position-x: 5px;
     }
 }
 
