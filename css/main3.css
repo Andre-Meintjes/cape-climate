@@ -224,11 +224,10 @@ a {
 
 .clouds {
     position: relative;
-    height: 200px;
+    height: 150px;
     width: 100%;
     padding: 0;
     margin: 0;
-    margin-bottom: -50px;
     background-image: url('../img/clouds.png');
     background-size: cover;
     background-repeat: repeat-x;
@@ -244,7 +243,7 @@ a {
         background-position-x: 0px;
     }
     to {
-        background-position-x: 1200px;
+        background-position-x: 900px;
     }
 }
 
