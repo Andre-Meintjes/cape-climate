@@ -84,7 +84,6 @@ a {
 
 .hello-image {
     height: 80vh;
-    background-image: url('../img/backgrounds/background.jpg');
     background-position: center;
     /** change on small **/
     background-attachment: fixed;
@@ -343,12 +342,19 @@ a {
     color: white !important;
 }
 
-@media(max-width:767px) {}
+@media(max-width:767px) {
+    .hello-image {
+        background-image: url('../img/background-small-portrait.jpg');
+    }
+}
 
 @media(min-width:768px) {}
 
 @media(min-width:992px) {
     /** ---Navigation **/
+    .hello-image {
+        background-image: url('../img/background-small-landscape.jpg');
+    }
     .navigation-box {
         position: fixed;
         height: 100%;
