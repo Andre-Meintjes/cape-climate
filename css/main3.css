@@ -354,6 +354,7 @@ a {
     /** ---Navigation **/
     .hello-image {
         background-image: url('../img/background-small-landscape.jpg');
+        background-position-x: 200px;
     }
     .navigation-box {
         position: fixed;
