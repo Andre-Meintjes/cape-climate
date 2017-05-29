@@ -229,7 +229,7 @@ a {
     padding: 0;
     margin: 0;
     background-image: url('../img/clouds.png');
-    background-size: cover;
+    background-size: 900px 150px;
     background-repeat: repeat-x;
     animation-name: clouds;
     animation-duration: 20s;
