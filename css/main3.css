@@ -175,8 +175,10 @@ a {
     text-decoration: none;
 }
 
-i {
+.footer-note>div>p>i,
+.navigation-menu>li>a>i {
     width: 30px;
+    color: white;
 }
 
 .btu-output {
