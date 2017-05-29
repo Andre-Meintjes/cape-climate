@@ -214,7 +214,7 @@ a {
     background-repeat: repeat-x;
     background-size: contain;
     animation-name: grass;
-    animation-duration: 2s;
+    animation-duration: 1s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
