@@ -348,17 +348,14 @@ a {
     overflow-x: hidden;
 }
 
-.gallery-main-image-container {
+.gallery-main-image {
     height: 500px;
     width: 100%;
     background-color: #222222;
-}
-
-#gallery-main-image {
-    height: 498px;
-    max-width: 100%;
-    margin-left: auto;
-    margin-right: auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('../img/maldives.jpg');
 }
 
 .gallery-reel-outer {
@@ -377,10 +374,15 @@ a {
     background-color: #222222;
 }
 
-.gallery-reel-image {
+.reel-image {
     display: inline-block;
     height: 100px;
+    width: 100px;
     cursor: pointer;
+    background-color: #222222;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .scrollbar-cover {
