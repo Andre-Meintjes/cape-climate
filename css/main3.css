@@ -344,6 +344,10 @@ a {
 
 /** Our Work page **/
 
+.cut-off {
+    overflow-x: hidden;
+}
+
 .gallery-main-image-container {
     height: 500px;
     width: 100%;
