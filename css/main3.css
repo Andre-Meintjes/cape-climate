@@ -371,6 +371,7 @@ a {
     padding-top: 10px;
     margin: 0;
     height: 110px;
+    width: 100%;
     overflow: hidden;
     background-color: #222222;
     z-index: 99;
@@ -403,10 +404,10 @@ a {
 .right-arrow {
     margin: 0;
     padding: 0;
-    height: 100px;
+    height: 110px;
     width: 50px;
     text-align: center;
-    padding-top: 20px;
+    padding-top: 30px;
     padding-bottom: 20px;
     line-height: 80px;
 }
