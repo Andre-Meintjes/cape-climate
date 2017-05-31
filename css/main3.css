@@ -414,6 +414,14 @@ a {
     cursor: pointer;
 }
 
+.left-arrow>a:hover {
+    background-color: #0b70b6;
+}
+
+.right-arrow>a:hover {
+    background-color: #0b70b6;
+}
+
 .scrollbar-cover {
     padding: 0;
     margin: 0;
