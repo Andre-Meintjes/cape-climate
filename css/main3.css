@@ -370,6 +370,7 @@ a {
     height: 100px;
     overflow: hidden;
     z-index: 99;
+    border: 1px solid black;
 }
 
 .gallery-reel-inner {
@@ -379,7 +380,6 @@ a {
     z-index: 55;
     width: 2000px;
     overflow-x: scroll;
-    background-color: #000000;
 }
 
 .reel-image {
@@ -389,7 +389,6 @@ a {
     height: 100px;
     width: 178px;
     cursor: pointer;
-    background-color: #222222;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
