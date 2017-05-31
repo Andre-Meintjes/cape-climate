@@ -360,7 +360,7 @@ a {
 
 .gallery-reel-outer {
     height: 100px;
-    overflow-x: hidden;
+    overflow: hidden;
     background-color: #222222;
     z-index: 99;
 }
