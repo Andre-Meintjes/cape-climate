@@ -405,20 +405,20 @@ a {
     padding-top: 36px;
     padding-bottom: 10px;
     line-height: 80px;
+    cursor: pointer;
 }
 
 .left-arrow>a,
 .right-arrow>a {
     text-decoration: none;
     color: white;
-    cursor: pointer;
 }
 
-.left-arrow>a:hover {
+.left-arrow:hover {
     background-color: #0b70b6;
 }
 
-.right-arrow>a:hover {
+.right-arrow:hover {
     background-color: #0b70b6;
 }
 
