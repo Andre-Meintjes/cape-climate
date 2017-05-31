@@ -426,6 +426,40 @@ a {
     /** first selection on reload **/
 }
 
+
+/** our clients **/
+
+.client-image {
+    height: 100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.mindpearl {
+    background-image: url('../img/clients/mindpearl.png');
+}
+
+.primi-piati {
+    background-image: url('../img/clients/primi-piati.png');
+}
+
+.ctfm {
+    background-image: url('../img/clients/ctfm.png');
+}
+
+.school {
+    background-image: url('../img/clients/school.jpg');
+}
+
+.sea-castle {
+    background-image: url('../img/clients/seacastlelogo.jpg');
+}
+
+.elandsfontein {
+    background-image: url('../img/clients/elandsfontein.jpg');
+}
+
 @media(max-width:767px) {
     .hello-image {
         background-image: url('../img/background-small-portrait.jpg');
