@@ -348,6 +348,10 @@ a {
     overflow-x: hidden;
 }
 
+.gallery {
+    background-color: #222222;
+}
+
 .gallery-main-image {
     height: 500px;
     width: 100%;
@@ -359,6 +363,8 @@ a {
 }
 
 .gallery-reel-outer {
+    padding: 0;
+    margin: 0;
     height: 100px;
     overflow: hidden;
     background-color: #222222;
