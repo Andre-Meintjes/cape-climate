@@ -370,7 +370,7 @@ a {
     height: 100px;
     overflow: hidden;
     z-index: 99;
-    border: 1px solid black;
+    border: 1px solid white;
 }
 
 .gallery-reel-inner {
