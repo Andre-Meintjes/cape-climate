@@ -347,8 +347,6 @@ a {
 .gallery-main-image-container {
     height: 500px;
     width: 100%;
-    padding-left: auto;
-    padding-right: auto;
     background-color: #222222;
 }
 
@@ -367,6 +365,7 @@ a {
     padding: 0;
     height: 126px;
     z-index: 55;
+    width: 100%;
     overflow-x: scroll;
     background-color: #222222;
 }
