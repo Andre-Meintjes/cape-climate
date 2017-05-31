@@ -368,6 +368,7 @@ a {
 }
 
 .gallery-reel-image {
+    display: inline-block;
     height: 100px;
     cursor: pointer;
 }
