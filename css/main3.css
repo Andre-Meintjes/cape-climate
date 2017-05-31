@@ -369,7 +369,6 @@ a {
     margin-top: 26px;
     height: 100px;
     overflow: hidden;
-    background-color: #000000;
     z-index: 99;
 }
 
@@ -380,7 +379,7 @@ a {
     z-index: 55;
     width: 2000px;
     overflow-x: scroll;
-    background-color: #222222;
+    background-color: #000000;
 }
 
 .reel-image {
