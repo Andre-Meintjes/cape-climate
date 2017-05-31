@@ -421,6 +421,11 @@ a {
     background-color: #0b70b6;
 }
 
+#img1 {
+    opacity: 0.3;
+    /** first selection on reload **/
+}
+
 @media(max-width:767px) {
     .hello-image {
         background-image: url('../img/background-small-portrait.jpg');
