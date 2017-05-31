@@ -353,7 +353,7 @@ a {
 }
 
 .gallery-reel-outer {
-    height: 50px;
+    height: 100px;
     background-color: #222222;
     z-index: 99;
 }
@@ -361,7 +361,7 @@ a {
 .gallery-reel-inner {
     margin: 0;
     padding: 0;
-    height: 76px;
+    height: 126px;
     z-index: 55;
     overflow-x: scroll;
     background-color: #222222;
@@ -369,7 +369,7 @@ a {
 
 .gallery-reel-image {
     display: inline-block;
-    height: 50px;
+    height: 100px;
     cursor: pointer;
 }
 
