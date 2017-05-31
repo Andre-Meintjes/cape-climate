@@ -368,8 +368,9 @@ a {
 
 .gallery-reel-outer {
     padding: 0;
+    padding-top: 10px;
     margin: 0;
-    height: 100px;
+    height: 110px;
     overflow: hidden;
     background-color: #222222;
     z-index: 99;
