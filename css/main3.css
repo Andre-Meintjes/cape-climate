@@ -353,6 +353,8 @@ a {
 }
 
 .gallery-main-image {
+    padding: 0;
+    margin: 0;
     height: 500px;
     width: 100%;
     background-color: #222222;
@@ -382,6 +384,8 @@ a {
 }
 
 .reel-image {
+    padding: 0;
+    margin: 0;
     display: inline-block;
     height: 100px;
     width: 100px;
@@ -393,6 +397,8 @@ a {
 }
 
 .scrollbar-cover {
+    padding: 0;
+    margin: 0;
     height: 26px;
     width: 100%;
     background-color: white;
