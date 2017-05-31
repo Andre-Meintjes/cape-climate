@@ -82,12 +82,13 @@
     </div>
 </body>
 <script>
+    var dir = "https://raw.githubusercontent.com/Andre-Meintjes/cape-climate/master";
     var currentImgSelection = 1;
     var numberOfImges = 2;
 
     function selectImg(imgId) {
         document.getElementById('img' + currentImgSelection).style.opacity = "1";
-        document.getElementById('gallery-main-image').style.backgroundImage = "url(\'img/gallery/img" + imgId + ".jpg\')";
+        document.getElementById('gallery-main-image').style.backgroundImage = "url(\'" + dir + "/img/gallery/img" + imgId + ".jpg\')";
         document.getElementById('img' + imgId).style.opacity = "0.3";
         currentImgSelection = imgId;
         document.getElementById('img' + imgId).scrollIntoView;
