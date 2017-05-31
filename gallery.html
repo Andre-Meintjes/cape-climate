@@ -86,7 +86,7 @@
     var numberOfImges = 2;
 
     function selectImg(imgId) {
-        document.getElementById(currentImgSelection).style.opacity = "1";
+        document.getElementById('img' + currentImgSelection).style.opacity = "1";
         document.getElementById('gallery-main-image').style.backgroundImage = "url(\'img/gallery/img" + imgId + ".jpg\')";
         document.getElementById('img' + imgId).style.opacity = "0.3";
         currentImgSelection = imgId;
