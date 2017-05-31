@@ -365,9 +365,9 @@ a {
 
 .gallery-reel-outer {
     padding: 0;
-    padding-top: 10px;
+    padding-top: 26px;
     margin: 0;
-    height: 110px;
+    height: 126px;
     overflow: hidden;
     background-color: #222222;
     z-index: 99;
@@ -400,9 +400,9 @@ a {
 .right-arrow {
     margin: 0;
     padding: 0;
-    height: 110px;
+    height: 126px;
     text-align: center;
-    padding-top: 30px;
+    padding-top: 46px;
     padding-bottom: 20px;
     line-height: 80px;
 }
