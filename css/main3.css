@@ -407,6 +407,13 @@ a {
     line-height: 80px;
 }
 
+.left-arrow>a,
+.right-arrow>a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
 .scrollbar-cover {
     padding: 0;
     margin: 0;
