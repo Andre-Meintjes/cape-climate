@@ -73,8 +73,6 @@
                                 </div>
                             </div>
                             <div class="col-xs-1 right-arrow"><a><i class="fa fa-arrow-right"></i></a></div>
-                            <div class="col-xs-12 scrollbar-cover">
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -84,8 +82,31 @@
     </div>
 </body>
 <script>
+    var currentImgSelection = "img1";
+    var numberOfImges
+
     function selectImg(imgId) {
+        document.getElementById(currentImgSelection).style.opacity = "1";
         document.getElementById('gallery-main-image').style.backgroundImage = "url(\'img/gallery/" + imgId + ".jpg\')";
+        document.getElementById(imgId).style.opacity = "0.5";
+        currentImgSelection = imgId;
+        document.getElementById(imgId).scrollIntoView;
+    }
+
+    function selectRight() {
+        var newId = currentImgSelection + 1;
+        if (newId > numberOfImges) {
+            newId = 1;
+        }
+        selectImg(newId);
+    }
+
+    function selectLeft() {
+        var newId = currentImgSelection - 1;
+        if (newId < 1) {
+            newId = numberOfImges;
+        }
+        selectImg(newId);
     }
 </script>
 
