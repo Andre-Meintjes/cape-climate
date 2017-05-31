@@ -377,7 +377,7 @@ a {
     height: 26px;
     width: 100%;
     background-color: white;
-    z-index: 88;
+    z-index: 999;
 }
 
 @media(max-width:767px) {
