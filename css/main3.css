@@ -460,6 +460,10 @@ a {
     background-image: url('../img/clients/elandsfontein.png');
 }
 
+.mfs {
+    background-image: url('../img/clients/mdf.jpg');
+}
+
 @media(max-width:767px) {
     .hello-image {
         background-image: url('../img/background-small-portrait.jpg');
