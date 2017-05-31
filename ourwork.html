@@ -55,12 +55,12 @@
                     <h2>Gallery</h2>
                     <div class="container-fluid">
                         <div class="row gallery">
-                            <div class="col-xs-12 gallery-main-image">
+                            <div id="gallery-main-image" class="col-xs-12">
                                 <!-- main image background -->
                             </div>
                             <div class="col-xs-12 gallery-reel-outer">
                                 <div class="gallery-reel-inner">
-                                    <div class="reel-image" style="background-image: url('img/gallery/thumbnails/img1_thumb.jpg')"></div>
+                                    <div id="img1" onclick="selectImg('img1')" class="reel-image" style="background-image: url('img/gallery/thumbnails/img1_thumb.jpg')"></div>
                                     <div class="reel-image" style="background-image: url('img/gallery/thumbnails/img2_thumb.jpg')"></div>
                                     <div class="reel-image" style="background-image: url('img/maldives.jpg')"></div>
                                     <div class="reel-image" style="background-image: url('img/maldives.jpg')"></div>
@@ -106,5 +106,11 @@
         </div>
     </div>
 </body>
+<script>
+    function selectImg(imgId) {
+        document.getElementById('gallery-main-image').style.backgroundImage = document.getElementById(imgId).style.backgroundImage;
+    }
 
-</html>
+
+    <
+    /html>
