@@ -365,7 +365,7 @@ a {
     padding: 0;
     height: 126px;
     z-index: 55;
-    width: 1000;
+    width: 1000px;
     overflow-x: scroll;
     background-color: #222222;
 }
