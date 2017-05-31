@@ -350,6 +350,8 @@ a {
 
 .gallery {
     background-color: #222222;
+    padding: 0;
+    margin: 0;
 }
 
 .gallery-main-image {
