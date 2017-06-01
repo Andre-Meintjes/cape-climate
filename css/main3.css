@@ -357,7 +357,7 @@ a {
 #gallery-main-image {
     padding: 0;
     margin: 0;
-    height: 500px;
+    height: 80vh;
     background-color: black;
     background-size: contain;
     background-repeat: no-repeat;
