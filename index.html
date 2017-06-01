@@ -238,47 +238,28 @@
     var dir = "https://raw.githubusercontent.com/Andre-Meintjes/cape-climate/master";
     var index = 0; //index for slides
     var slideAnimation;
-    var imgReady = [false, false, false, false];
-    var images = [];
-
 
     $(document).ready(function() {
         currentSlide(index);
-        imgReady[0] = preloadImage("/img/maldives.png", images);
-        imgReady[1] = preloadImage("/img/artcool.png", images);
-        imgReady[2] = preloadImage("/img/emura.png", images);
-        imgReady[3] = preloadImage("/img/cassette.png", images);
         slideAnimation = setInterval(nextSlide, 5000);
 
         function currentSlide(int) {
-            if (imgReady[int] === true) {
-                var element = document.getElementById("slides");
+            var slides = ["/img/maldives.png", "/img/artcool.png", "/img/emura.png", "/img/cassette.png"];
+            var element = document.getElementById("slides");
 
-                element.style.backgroundImage = "url(\'" + images[int] + "\')";
-                console.log(images[int]);
+            element.style.backgroundImage = "url('" + dir + slides[int] + "')";
 
-
-                $('#slides').animateCss('fadeIn');
-            }
+            $('#slides').animateCss('fadeIn');
         }
 
         function nextSlide() {
-            if (index == 3) {
+            if (index == 2) {
                 index = 0;
             } else {
                 index++;
             }
 
             currentSlide(index);
-        }
-
-        function preloadImage(url, arr) {
-            var downloadingImage = new Image();
-            downloadingImage.src = dir + url;
-            downloadingImage.onload = function() {
-                arr.push(downloadingImage.src);
-                return true;
-            }
         }
     });
 
