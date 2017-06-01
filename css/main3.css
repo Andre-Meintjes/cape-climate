@@ -494,7 +494,9 @@ a {
         bottom: 0;
     }
     .content-box {
+        margin: 0;
         margin-left: 200px;
+        padding: 0;
         min-height: 100%;
     }
 }
