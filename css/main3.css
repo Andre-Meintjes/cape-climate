@@ -402,10 +402,10 @@
             cursor: pointer;
         }
         
-        .left-arrow>a,
-        .right-arrow>a {
-            text-decoration: none;
+        .left-arrow,
+        .right-arrow {
             color: white;
+            border: 1px solid white;
         }
         
         .left-arrow:hover {
