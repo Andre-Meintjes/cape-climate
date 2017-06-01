@@ -81,8 +81,6 @@
         </div>
     </div>
 </body>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
 <script>
     var dir = "https://raw.githubusercontent.com/Andre-Meintjes/cape-climate/master";
     dir = "file:///home/andre/Github-reposository/cape-climate/cape-climate/";
@@ -94,7 +92,7 @@
         document.getElementById('gallery-main-image').style.backgroundImage = "url(\'" + dir + "/img/gallery/img" + imgId + ".jpg\')";
         document.getElementById('img' + imgId).style.opacity = "0.3";
         currentImgSelection = imgId;
-        $('#gallery-reel-inner').scrollTo('#img' + imgId);
+        document.getElementById('gallery-reel-inner').scrollLeft = document.getElementById('img' + imgId).offsetLeft();
 
     }
 
