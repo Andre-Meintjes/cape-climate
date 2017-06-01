@@ -366,7 +366,7 @@ a {
 }
 
 .gallery-control {
-    position: relative;
+    position: absolute;
     bottom: 0;
 }
 
