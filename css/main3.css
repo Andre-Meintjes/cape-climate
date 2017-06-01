@@ -342,7 +342,11 @@ a {
 }
 
 
-/** Our Work page **/
+/** Gallery page **/
+
+.gallery-background {
+    background-color: #222222;
+}
 
 .gallery {
     background-color: #222222;
