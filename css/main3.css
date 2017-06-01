@@ -363,14 +363,14 @@
             border: 1px solid white;
         }
         
-        #gallery-reel {
+        .gallery-reel {
             margin: 0;
             padding: 0;
             height: 100px;
             width: 1700px;
         }
         
-        .gallery-reel-inner {
+        #gallery-reel-inner {
             margin: 0;
             padding: 0;
             height: 126px;
