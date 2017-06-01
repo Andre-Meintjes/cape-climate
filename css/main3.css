@@ -347,6 +347,7 @@
         #gallery-main-image {
             padding: 0;
             margin: 0;
+            max-height: 100% !important;
             background-color: black;
             background-size: contain;
             background-repeat: no-repeat;
@@ -461,21 +462,11 @@
             .hello-image {
                 background-image: url('../img/background-small-portrait.jpg');
             }
-            #gallery-main-image {
-                height: 40vh;
-            }
         }
         
-        @media(min-width:768px) {
-            #gallery-main-image {
-                height: 50vh;
-            }
-        }
+        @media(min-width:768px) {}
         
         @media(min-width:992px) {
-            #gallery-main-image {
-                height: 60vh;
-            }
             /** ---Navigation **/
             .hello-image {
                 background-image: url('../img/background-small-landscape.jpg');
@@ -503,8 +494,4 @@
             }
         }
         
-        @media(min-width:1200px) {
-            #gallery-main-image {
-                height: 70vh;
-            }
-        }
+        @media(min-width:1200px) {}
