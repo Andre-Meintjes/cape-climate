@@ -272,7 +272,7 @@
 
         function preloadImage(url, arr) {
             var downloadingImage = new Image();
-            downloadingImage.src = url;
+            downloadingImage.src = dir + url;
             downloadingImage.onload = function() {
                 arr.push(downloadingImage);
                 return true;
