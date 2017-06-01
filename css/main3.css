@@ -344,10 +344,6 @@ a {
 
 /** Our Work page **/
 
-.cut-off {
-    overflow-x: hidden;
-}
-
 .gallery {
     background-color: #222222;
 }
@@ -369,7 +365,6 @@ a {
     margin-top: 26px;
     height: 100px;
     overflow: hidden;
-    z-index: 99;
     border: 1px solid white;
 }
 
@@ -377,8 +372,6 @@ a {
     margin: 0;
     padding: 0;
     height: 126px;
-    z-index: 55;
-    width: 2000px;
     overflow-x: scroll;
 }
 
