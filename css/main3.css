@@ -365,7 +365,6 @@ a {
     margin-top: 26px;
     height: 100px;
     overflow: hidden;
-    pointer-events: none;
     border: 1px solid white;
 }
 
