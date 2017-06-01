@@ -369,7 +369,7 @@ a {
     margin-top: 26px;
     height: 100px;
     overflow: hidden;
-    z-index: 99;
+    pointer-interaction: none;
     border: 1px solid white;
 }
 
