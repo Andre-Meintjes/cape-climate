@@ -365,10 +365,7 @@ a {
     margin-top: 26px;
     height: 100px;
     overflow: hidden;
-<<<<<<< HEAD
-=======
-    pointer-interaction: none;
->>>>>>> 38c09b908a3ff9ee957026c5535cd00099a1555c
+    pointer-events: none;
     border: 1px solid white;
 }
 
