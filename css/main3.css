@@ -424,6 +424,7 @@
         
         .client-image {
             height: 100px;
+            padding: 10px;
             background-size: contain;
             background-repeat: no-repeat;
             background-position: center;
