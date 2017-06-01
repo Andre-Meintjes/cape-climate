@@ -1,519 +1,510 @@
-    /** Copyright Andre Meintjes http://andremeintjes.com 2017**/
-
-
-/** Global styles **/
-
-html,
-body {
-    font-family: 'Quicksand' !important;
-    font-size: 18px;
-    height: 100%;
-    width: 100%;
-}
-
-.divider-line {
-    border-bottom-style: solid;
-    border-width: 1px;
-    border-bottom-color: #313131;
-    padding-top: 10px;
-    margin-bottom: 10px;
-}
-
-.row {
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-h4,
-h3 {
-    font-weight: bold;
-    background-color: #eeeeee;
-    border-top-right-radius: 50px;
-    border-bottom-left-radius: 50px;
-    text-align: center;
-    padding: 10px;
-    margin: 5px;
-    color: black;
-}
-
-.btn {
-    text-decoration: none;
-    padding: 5px;
-    border-top-right-radius: 10px;
-    border-bottom-left-radius: 10px;
-    background-color: transparent;
-    border: 2px solid #313131;
-    color: black;
-    font-weight: bold;
-}
-
-.btn-wide {
-    width: 100%;
-}
-
-.btn:hover {
-    border-color: #0b70b6;
-}
-
-a {
-    text-decoration: none;
-    color: black;
-}
-
-.active {
-    border: 1px solid #0b70b6;
-    border-top-right-radius: 10px;
-    border-bottom-left-radius: 10px;
-    color: #0b70b6;
-}
-
-.active>a {
-    color: #0b70b6 !important;
-}
-
-
-/** ---Index page **/
-
-.dark-blue {
-    color: #0b70b6;
-}
-
-.light-blue {
-    color: #32a9d6;
-}
-
-.hello-image {
-    height: 80vh;
-    background-position: center;
-    /** change on small **/
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.underceiling,
-.ducted,
-.cassette,
-.split,
-.portable,
-.floorstanding {
-    height: 100px;
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.underceiling {
-    background-image: url('../img/underceiling.jpg');
-}
-
-.ducted {
-    background-image: url('../img/ducted.jpg');
-}
-
-.cassette {
-    background-image: url('../img/cassette.jpg');
-}
-
-.split {
-    background-image: url('../img/maldives.jpg');
-}
-
-.portable {
-    background-image: url('../img/portable.jpg');
-}
-
-.floorstanding {
-    background-image: url('../img/af9000.jpg');
-}
-
-.brands {
-    height: 80px;
-    padding: 0;
-    margin: 0;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
-.samsung {
-    background-image: url('../img/samsung_result.jpg');
-}
-
-.lg {
-    background-image: url('../img/lg_result.jpg');
-}
-
-.daikin {
-    background-image: url('../img/daikin_result.jpg');
-}
-
-.midea {
-    background-image: url('../img/midea_result.jpg');
-}
-
-.york {
-    background-image: url('../img/york_result.jpg');
-}
-
-.alliance {
-    background-image: url('../img/alliance_result.jpg');
-}
-
-.footer-note {
-    width: 100%;
-    margin: 0;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    background-color: #131313;
-    color: white !important;
-}
-
-.footer-note>div>p>a {
-    color: white;
-    text-decoration: none;
-}
-
-.footer-note>div>p>i,
-.navigation-menu>li>a>i {
-    width: 30px;
-    color: white;
-}
-
-.in-text-link {
-    color: #0b70b6;
-}
-
-.btu-output {
-    margin-top: 20px;
-    padding: 10px;
-    height: 200px;
-    width: 100%;
-    background-color: #eeeeee;
-    border-top-right-radius: 50px;
-    border-bottom-left-radius: 50px;
-}
-
-.type-box {
-    height: 300px;
-}
-
-.inverter-slides {
-    height: 250px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.grass {
-    height: 100px;
-    padding: 0;
-    margin: 0;
-    padding-top: 100px;
-    background-image: url('../img/grass.png');
-    background-repeat: repeat-x;
-    background-size: contain;
-}
-
-.nature {
-    height: 500px;
-    padding: 0;
-    background: linear-gradient(#00aaff, #e6f7ff);
-}
-
-.clouds {
-    position: relative;
-    height: 150px;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    background-image: url('../img/clouds.png');
-    background-size: 900px 150px;
-    background-repeat: repeat-x;
-    animation-name: clouds;
-    animation-duration: 20s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-}
-
-@keyframes clouds {
-    from {
-        background-position-x: 0px;
-    }
-    to {
-        background-position-x: 900px;
-    }
-}
-
-
-/** navigation **/
-
-.navigation-box {
-    background-color: #131313;
-    text-align: center;
-}
-
-.logo-box {
-    font-family: 'Michroma', sans-serif;
-    padding: 0;
-    margin: 0;
-}
-
-.no-style {
-    font-weight: 500;
-    background-color: transparent;
-    border-radius: 0;
-    text-align: center;
-    padding-top: 0;
-    padding-bottom: 0;
-    color: black;
-}
-
-.logo {
-    margin-left: auto;
-    margin-right: auto;
-    height: 100px;
-    width: 200px;
-    background-image: url('../img/logo-hd.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
-.navigation-menu {
-    list-style: none;
-    padding: 0;
-    text-align: center;
-}
-
-.navigation-menu>li {
-    padding-top: 5px;
-    padding-bottom: 5px;
-}
-
-.navigation-menu>li>a {
-    text-decoration: none;
-    color: white;
-}
-
-.navigation-menu>li>a:hover {
-    background-color: transparent;
-    color: #0b70b6;
-    cursor: pointer;
-}
-
-
-/** product page **/
-
-.product-image {
-    height: 100px;
-    margin: 0;
-    background-color: white;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
-.product-card {
-    background-color: white;
-    height: 400px;
-    padding: 5px;
-    margin: 0;
-}
-
-.product-header {
-    background-color: #eeeeee;
-    border-top-right-radius: 50px;
-    border-bottom-left-radius: 50px;
-    color: white;
-    width: 100%;
-    padding: 5px;
-    text-align: center;
-}
-
-.product-card-content {
-    padding-top: 10px;
-}
-
-.dropdown-menu>li>a:hover {
-    cursor: pointer;
-    background-color: #0b70b6 !important;
-    color: white !important;
-}
-
-
-/** Gallery page **/
-
-.gallery-background {
-    background-color: #222222;
-}
-
-.gallery {
-    background-color: #222222;
-    height: 100%;
-    padding: auto;
-}
-
-#gallery-main-image {
-    padding: 0;
-    margin: 0;
-    background-color: black;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-image: url('../img/gallery/img1.jpg');
-}
-
-.gallery-reel-outer {
-    padding: 0;
-    margin: 0;
-    margin-top: 26px;
-    height: 100px;
-    overflow: hidden;
-    border: 1px solid white;
-}
-
-.gallery-reel {
-    margin: 0;
-    padding: 0;
-    height: 100px;
-    width: 600px;
-}
-
-.gallery-reel-inner {
-    margin: 0;
-    padding: 0;
-    height: 126px;
-    overflow-x: scroll;
-}
-
-.reel-image {
-    padding: 0;
-    margin: 0;
-    display: inline-block;
-    height: 100px;
-    width: 178px;
-    cursor: pointer;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.left-arrow,
-.right-arrow {
-    margin: 0;
-    padding: 0;
-    height: 100px;
-    margin-top: 26px;
-    text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    line-height: 80px;
-    cursor: pointer;
-}
-
-.left-arrow>a,
-.right-arrow>a {
-    text-decoration: none;
-    color: white;
-}
-
-.left-arrow:hover {
-    background-color: #0b70b6;
-}
-
-.right-arrow:hover {
-    background-color: #0b70b6;
-}
-
-#img1 {
-    opacity: 0.3;
-    /** first selection on reload **/
-}
-
-
-/** our clients **/
-
-.client-image {
-    height: 100px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.mindpearl {
-    background-image: url('../img/clients/mindpearl.png');
-}
-
-.primi-piati {
-    background-image: url('../img/clients/primi-piati.png');
-}
-
-.ctfm {
-    background-image: url('../img/clients/ctfm.jpg');
-}
-
-.school {
-    background-image: url('../img/clients/school.jpg');
-}
-
-.sea-castle {
-    background-image: url('../img/clients/seacastlelogo.jpg');
-}
-
-.elandsfontein {
-    background-image: url('../img/clients/elandsfontein.png');
-}
-
-.mfs {
-    background-image: url('../img/clients/mfs.jpg');
-}
-
-@media(max-width:767px) {
-    .hello-image {
-        background-image: url('../img/background-small-portrait.jpg');
-    }
-    #gallery-main-image {
-        height: 40vh;
-    }
-}
-
-@media(min-width:768px) {
-    #gallery-main-image {
-        height: 50vh;
-    }
-    @media(min-width:992px) {
-        #gallery-main-image {
-            height: 60vh;
-        }
-        /** ---Navigation **/
-        .hello-image {
-            background-image: url('../img/background-small-landscape.jpg');
-        }
-        .navigation-box {
-            position: fixed;
+        /** Copyright Andre Meintjes http://andremeintjes.com 2017**/
+        /** Global styles **/
+        
+        html,
+        body {
+            font-family: 'Quicksand' !important;
+            font-size: 18px;
             height: 100%;
-            height: 100vh;
-            width: 200px;
-            top: 0;
-            left: 0;
-            margin: 0;
+            width: 100%;
+        }
+        
+        .divider-line {
+            border-bottom-style: solid;
+            border-width: 1px;
+            border-bottom-color: #313131;
+            padding-top: 10px;
+            margin-bottom: 10px;
+        }
+        
+        .row {
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        
+        h4,
+        h3 {
+            font-weight: bold;
+            background-color: #eeeeee;
+            border-top-right-radius: 50px;
+            border-bottom-left-radius: 50px;
+            text-align: center;
+            padding: 10px;
+            margin: 5px;
+            color: black;
+        }
+        
+        .btn {
+            text-decoration: none;
+            padding: 5px;
+            border-top-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+            background-color: transparent;
+            border: 2px solid #313131;
+            color: black;
+            font-weight: bold;
+        }
+        
+        .btn-wide {
+            width: 100%;
+        }
+        
+        .btn:hover {
+            border-color: #0b70b6;
+        }
+        
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        
+        .active {
+            border: 1px solid #0b70b6;
+            border-top-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+            color: #0b70b6;
+        }
+        
+        .active>a {
+            color: #0b70b6 !important;
+        }
+        /** ---Index page **/
+        
+        .dark-blue {
+            color: #0b70b6;
+        }
+        
+        .light-blue {
+            color: #32a9d6;
+        }
+        
+        .hello-image {
+            height: 80vh;
+            background-position: center;
+            /** change on small **/
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        .underceiling,
+        .ducted,
+        .cassette,
+        .split,
+        .portable,
+        .floorstanding {
+            height: 100px;
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        
+        .underceiling {
+            background-image: url('../img/underceiling.jpg');
+        }
+        
+        .ducted {
+            background-image: url('../img/ducted.jpg');
+        }
+        
+        .cassette {
+            background-image: url('../img/cassette.jpg');
+        }
+        
+        .split {
+            background-image: url('../img/maldives.jpg');
+        }
+        
+        .portable {
+            background-image: url('../img/portable.jpg');
+        }
+        
+        .floorstanding {
+            background-image: url('../img/af9000.jpg');
+        }
+        
+        .brands {
+            height: 80px;
             padding: 0;
+            margin: 0;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+        
+        .samsung {
+            background-image: url('../img/samsung_result.jpg');
+        }
+        
+        .lg {
+            background-image: url('../img/lg_result.jpg');
+        }
+        
+        .daikin {
+            background-image: url('../img/daikin_result.jpg');
+        }
+        
+        .midea {
+            background-image: url('../img/midea_result.jpg');
+        }
+        
+        .york {
+            background-image: url('../img/york_result.jpg');
+        }
+        
+        .alliance {
+            background-image: url('../img/alliance_result.jpg');
+        }
+        
+        .footer-note {
+            width: 100%;
+            margin: 0;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            background-color: #131313;
+            color: white !important;
+        }
+        
+        .footer-note>div>p>a {
+            color: white;
+            text-decoration: none;
+        }
+        
+        .footer-note>div>p>i,
+        .navigation-menu>li>a>i {
+            width: 30px;
+            color: white;
+        }
+        
+        .in-text-link {
+            color: #0b70b6;
+        }
+        
+        .btu-output {
+            margin-top: 20px;
+            padding: 10px;
+            height: 200px;
+            width: 100%;
+            background-color: #eeeeee;
+            border-top-right-radius: 50px;
+            border-bottom-left-radius: 50px;
+        }
+        
+        .type-box {
+            height: 300px;
+        }
+        
+        .inverter-slides {
+            height: 250px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        
+        .grass {
+            height: 100px;
+            padding: 0;
+            margin: 0;
+            padding-top: 100px;
+            background-image: url('../img/grass.png');
+            background-repeat: repeat-x;
+            background-size: contain;
+        }
+        
+        .nature {
+            height: 500px;
+            padding: 0;
+            background: linear-gradient(#00aaff, #e6f7ff);
+        }
+        
+        .clouds {
+            position: relative;
+            height: 150px;
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            background-image: url('../img/clouds.png');
+            background-size: 900px 150px;
+            background-repeat: repeat-x;
+            animation-name: clouds;
+            animation-duration: 20s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+        
+        @keyframes clouds {
+            from {
+                background-position-x: 0px;
+            }
+            to {
+                background-position-x: 900px;
+            }
+        }
+        /** navigation **/
+        
+        .navigation-box {
+            background-color: #131313;
+            text-align: center;
+        }
+        
+        .logo-box {
+            font-family: 'Michroma', sans-serif;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .no-style {
+            font-weight: 500;
+            background-color: transparent;
+            border-radius: 0;
+            text-align: center;
+            padding-top: 0;
+            padding-bottom: 0;
+            color: black;
+        }
+        
+        .logo {
+            margin-left: auto;
+            margin-right: auto;
+            height: 100px;
+            width: 200px;
+            background-image: url('../img/logo-hd.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+        
+        .navigation-menu {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+        
+        .navigation-menu>li {
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+        
+        .navigation-menu>li>a {
+            text-decoration: none;
+            color: white;
+        }
+        
+        .navigation-menu>li>a:hover {
+            background-color: transparent;
+            color: #0b70b6;
+            cursor: pointer;
+        }
+        /** product page **/
+        
+        .product-image {
+            height: 100px;
+            margin: 0;
+            background-color: white;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+        
+        .product-card {
+            background-color: white;
+            height: 400px;
+            padding: 5px;
+            margin: 0;
+        }
+        
+        .product-header {
+            background-color: #eeeeee;
+            border-top-right-radius: 50px;
+            border-bottom-left-radius: 50px;
+            color: white;
+            width: 100%;
+            padding: 5px;
+            text-align: center;
+        }
+        
+        .product-card-content {
             padding-top: 10px;
         }
-        .contact-box {
-            position: absolute;
-            bottom: 0;
+        
+        .dropdown-menu>li>a:hover {
+            cursor: pointer;
+            background-color: #0b70b6 !important;
+            color: white !important;
         }
-        .content-box {
-            margin: 0;
-            margin-left: 200px;
-            padding: 0;
-            min-height: 100vh;
+        /** Gallery page **/
+        
+        .gallery-background {
+            background-color: #222222;
         }
-    }
-    @media(min-width:1200px) {
+        
+        .gallery {
+            background-color: #222222;
+            height: 100%;
+            padding: auto;
+        }
+        
         #gallery-main-image {
-            height: 80vh;
+            padding: 0;
+            margin: 0;
+            background-color: black;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-image: url('../img/gallery/img1.jpg');
         }
-    }
+        
+        .gallery-reel-outer {
+            padding: 0;
+            margin: 0;
+            margin-top: 26px;
+            height: 100px;
+            overflow: hidden;
+            border: 1px solid white;
+        }
+        
+        .gallery-reel {
+            margin: 0;
+            padding: 0;
+            height: 100px;
+            width: 600px;
+        }
+        
+        .gallery-reel-inner {
+            margin: 0;
+            padding: 0;
+            height: 126px;
+            overflow-x: scroll;
+        }
+        
+        .reel-image {
+            padding: 0;
+            margin: 0;
+            display: inline-block;
+            height: 100px;
+            width: 178px;
+            cursor: pointer;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        
+        .left-arrow,
+        .right-arrow {
+            margin: 0;
+            padding: 0;
+            height: 100px;
+            margin-top: 26px;
+            text-align: center;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            line-height: 80px;
+            cursor: pointer;
+        }
+        
+        .left-arrow>a,
+        .right-arrow>a {
+            text-decoration: none;
+            color: white;
+        }
+        
+        .left-arrow:hover {
+            background-color: #0b70b6;
+        }
+        
+        .right-arrow:hover {
+            background-color: #0b70b6;
+        }
+        
+        #img1 {
+            opacity: 0.3;
+            /** first selection on reload **/
+        }
+        /** our clients **/
+        
+        .client-image {
+            height: 100px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        
+        .mindpearl {
+            background-image: url('../img/clients/mindpearl.png');
+        }
+        
+        .primi-piati {
+            background-image: url('../img/clients/primi-piati.png');
+        }
+        
+        .ctfm {
+            background-image: url('../img/clients/ctfm.jpg');
+        }
+        
+        .school {
+            background-image: url('../img/clients/school.jpg');
+        }
+        
+        .sea-castle {
+            background-image: url('../img/clients/seacastlelogo.jpg');
+        }
+        
+        .elandsfontein {
+            background-image: url('../img/clients/elandsfontein.png');
+        }
+        
+        .mfs {
+            background-image: url('../img/clients/mfs.jpg');
+        }
+        
+        @media(max-width:767px) {
+            .hello-image {
+                background-image: url('../img/background-small-portrait.jpg');
+            }
+            #gallery-main-image {
+                height: 40vh;
+            }
+        }
+        
+        @media(min-width:768px) {
+            #gallery-main-image {
+                height: 50vh;
+            }
+        }
+        
+        @media(min-width:992px) {
+            #gallery-main-image {
+                height: 60vh;
+            }
+            /** ---Navigation **/
+            .hello-image {
+                background-image: url('../img/background-small-landscape.jpg');
+            }
+            .navigation-box {
+                position: fixed;
+                height: 100%;
+                height: 100vh;
+                width: 200px;
+                top: 0;
+                left: 0;
+                margin: 0;
+                padding: 0;
+                padding-top: 10px;
+            }
+            .contact-box {
+                position: absolute;
+                bottom: 0;
+            }
+            .content-box {
+                margin: 0;
+                margin-left: 200px;
+                padding: 0;
+                min-height: 100vh;
+            }
+        }
+        
+        @media(min-width:1200px) {
+            #gallery-main-image {
+                height: 70vh;
+            }
+        }
