@@ -254,7 +254,7 @@
             if (images[int] === true) {
                 var element = document.getElementById("slides");
 
-                element.style.backgroundImage = images[int].src;
+                element.style.backgroundImage = "url(\'" + images[int].src + "\')";
 
                 $('#slides').animateCss('fadeIn');
             }
