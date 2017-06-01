@@ -92,7 +92,6 @@
         document.getElementById('gallery-main-image').style.backgroundImage = "url(\'" + dir + "/img/gallery/img" + imgId + ".jpg\')";
         document.getElementById('img' + imgId).style.opacity = "0.3";
         currentImgSelection = imgId;
-        document.getElementById('gallery-reel-inner').scrollLeft += "178";
 
     }
 
@@ -100,7 +99,9 @@
         var newId = currentImgSelection + 1;
         if (newId > numberOfImges) {
             newId = 1;
+            document.getElementById('gallery-reel-inner').scrollLeft = "0";
         }
+        document.getElementById('gallery-reel-inner').scrollLeft += "178";
         selectImg(newId);
     }
 
@@ -108,7 +109,9 @@
         var newId = currentImgSelection - 1;
         if (newId < 1) {
             newId = numberOfImges;
+            document.getElementById('gallery-reel-inner').scrollRight += "99999";
         }
+        document.getElementById('gallery-reel-inner').scrollRight += "178";
         selectImg(newId);
     }
 </script>
