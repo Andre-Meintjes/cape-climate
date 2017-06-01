@@ -254,7 +254,9 @@
             if (images[int] === true) {
                 var element = document.getElementById("slides");
 
-                element.style.backgroundImage = "url(\'" + images[int].src + "\')";
+                element.style.backgroundImage = "url(\'" + images[int] + "\')";
+                console.log(images[int]);
+
 
                 $('#slides').animateCss('fadeIn');
             }
@@ -274,7 +276,7 @@
             var downloadingImage = new Image();
             downloadingImage.src = dir + url;
             downloadingImage.onload = function() {
-                arr.push(downloadingImage);
+                arr.push(downloadingImage.src);
                 return true;
             }
         }
