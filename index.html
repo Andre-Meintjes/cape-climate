@@ -251,7 +251,7 @@
         slideAnimation = setInterval(nextSlide, 5000);
 
         function currentSlide(int) {
-            if (images[int] === true) {
+            if (imgReady[int] === true) {
                 var element = document.getElementById("slides");
 
                 element.style.backgroundImage = "url(\'" + images[int] + "\')";
