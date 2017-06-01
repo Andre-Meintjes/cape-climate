@@ -99,7 +99,7 @@
         var newId = currentImgSelection + 1;
         if (newId > numberOfImges) {
             newId = 1;
-            document.getElementById('gallery-reel-inner').scrollLeft = "0";
+            document.getElementById('gallery-reel-inner').scrollLeft = "-50";
         }
         document.getElementById('gallery-reel-inner').scrollLeft += "178";
         selectImg(newId);
@@ -109,7 +109,7 @@
         var newId = currentImgSelection - 1;
         if (newId < 1) {
             newId = numberOfImges;
-            document.getElementById('gallery-reel-inner').scrollLeft = "1700";
+            document.getElementById('gallery-reel-inner').scrollLeft = "1750";
         }
         document.getElementById('gallery-reel-inner').scrollLeft -= "178";
         selectImg(newId);
