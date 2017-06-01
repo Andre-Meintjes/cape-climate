@@ -92,7 +92,7 @@
         document.getElementById('gallery-main-image').style.backgroundImage = "url(\'" + dir + "/img/gallery/img" + imgId + ".jpg\')";
         document.getElementById('img' + imgId).style.opacity = "0.3";
         currentImgSelection = imgId;
-        document.getElementById('gallery-reel-inner').scrollLeft = document.getElementById('img' + imgId).offsetLeft();
+        document.getElementById('gallery-reel-inner').scrollLeft = document.getElementById('img' + imgId).offsetLeft;
 
     }
 
