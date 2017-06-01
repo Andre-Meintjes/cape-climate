@@ -365,11 +365,6 @@ a {
     background-image: url('../img/gallery/img1.jpg');
 }
 
-.gallery-control {
-    position: absolute;
-    bottom: 0;
-}
-
 .gallery-reel-outer {
     padding: 0;
     margin: 0;
