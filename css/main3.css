@@ -457,6 +457,14 @@
             background-image: url('../img/clients/mfs.jpg');
         }
         
+        .seattle {
+            background-image: url('../img/clients/seattle.png');
+        }
+        
+        .bright {
+            background-image: url('../img/clients/bright.jpg');
+        }
+        
         @media(max-width:767px) {
             .hello-image {
                 background-image: url('../img/background-small-portrait.jpg');
