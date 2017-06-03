@@ -163,7 +163,7 @@
             margin: 0;
             padding-top: 10px;
             padding-bottom: 10px;
-            background-color: #131313;
+            background-color: #222222;
             color: white !important;
         }
         
@@ -245,7 +245,7 @@
         /** navigation **/
         
         .navigation-box {
-            background-color: #131313;
+            background-color: #222222;
             text-align: center;
         }
         
