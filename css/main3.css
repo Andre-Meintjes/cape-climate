@@ -521,10 +521,10 @@
                 height: 100px;
                 max-width: calc(100vw - 200px);
                 z-index: 999;
+                box-shadow: 0px 9px 10px -4px rgba(0,0,0,0.74);
             }
             #products {
                 padding-top: 120px;
-                box-shadow: 0px 9px 10px -4px rgba(0,0,0,0.74);
             }
         }
         
