@@ -514,7 +514,6 @@
                 position: fixed;
                 top: 0;
                 left: 200px;
-                right: 0;
                 height: 150px;
                 z-index: 999;
             }
