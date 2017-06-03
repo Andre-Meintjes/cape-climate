@@ -218,15 +218,18 @@
             </div>
             <div class="row" style="padding-bottom: 0;">
                 <div class="container-fluid footer-note">
-                    <div class="col-xs-12 col-md-6">
+                    <div class="col-xs-12 col-md-6" style="height: 300px;">
                         <p><i class="fa fa-phone"></i><a href="tel:0834484000">083 448 4000</a></p>
                         <p><i class="fa fa-send"></i><a href="mailto:mark@capeclimate.co.za">mark@capeclimate.co.za</a></p>
                         <p><i class="fa fa-facebook"></i><a href="https://www.facebook.com/capeclimate">Facebook</a></p>
                         <p><i class="fa fa-envelope"></i>PO BOX 20519, Big Bay, 7888</p>
                     </div>
-                    <div id="testimonials" class="col-xs-12 col-md-6">
+                    <div id="testimonials" class="col-xs-12 col-md-6" style="height: 300px;">
                         <!-- testimonials -->
                     </div>
+                    <div class="col-xs-12" style="color: white;text-align: center;">
+                        <p>Copyright Cape Climate Air Conditioning 2017 | Developed by <span><a href="http://www.andremeintjes.com" style="color: white;">Andre Meintjes</a></p>
+		            </div>
                 </div>
             </div>
         </div>
@@ -269,17 +272,15 @@
         }
 
         function renderTestimonial() {
-            var testimonials = ["I</span> am extremely pleased with the installation and must commend your team on their excellent time keeping and exemplary conduct and efficiency with the installation", "Neil",
-                "...</span>to compliment you on your team, the guys were very organized and had some good input about the install and so far I am very happy with the unit as well. I was also impressed with the way they cleaned up when they were done working.", "John",
-                "T</span>hanks a million again for your awesome service. I must say once again your guys are the best, professional right down to the last detail.", "Michael",
-                "T</span>hank you for the great work! You have a great team...All is working in order here and if there is anything that concerns me I will let you know.", "Morne",
-                "F</span>antastic, thanks, they work well so far and was installed quickly and neatly.", "Robert",
-                "Y</span>our team was on time, professional and courteous. They were done within an hour and were careful to clean up. Very considerate.", "Gerard"
-            ];
-            if (indexTestimonial >= testimonials.length) {
-                indexTestimonial = 0;
-            }
-            document.getElementById('testimonials').innerHTML = '<p><span style="font-size: 200%"><i class="fa fa-quote-left"></i> ' + testimonials[indexTestimonial] + ' <i class="fa fa-quote-right"></i> - ' + testimonials[indexTestimonial + 1] + '</p>';
+            var testimonials = ["I</span> am extremely pleased with the installation and must commend your team on their excellent time keeping and exemplary conduct and efficiency with the installation", "Neil", "...
+                            </span>to compliment you on your team, the guys were very organized and had some good input about the install and so far I am very happy with the unit as well. I was also impressed with the way they cleaned up when they were
+                            done working.", "John", "T
+                            </span>hanks a million again for your awesome service. I must say once again your guys are the best, professional right down to the last detail.", "Michael", "T
+                            </span>hank you for the great work! You have a great team...All is working in order here and if there is anything that concerns me I will let you know.", "Morne", "F
+                            </span>antastic, thanks, they work well so far and was installed quickly and neatly.", "Robert", "Y
+                            </span>our team was on time, professional and courteous. They were done within an hour and were careful to clean up. Very considerate.", "Gerard" ]; if (indexTestimonial >= testimonials.length) { indexTestimonial = 0; } document.getElementById('testimonials').innerHTML
+                            = '
+                            <p><span style="font-size: 200%"><i class="fa fa-quote-left"></i> ' + testimonials[indexTestimonial] + ' <i class="fa fa-quote-right"></i> - ' + testimonials[indexTestimonial + 1] + '</p>';
             indexTestimonial += 2;
         }
     });
