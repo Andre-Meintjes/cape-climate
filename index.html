@@ -272,16 +272,19 @@
         }
 
         function renderTestimonial() {
-            var testimonials = ["I</span> am extremely pleased with the installation and must commend your team on their excellent time keeping and exemplary conduct and efficiency with the installation", "Neil", "...
-                            </span>to compliment you on your team, the guys were very organized and had some good input about the install and so far I am very happy with the unit as well. I was also impressed with the way they cleaned up when they were
-                            done working.", "John", "T
-                            </span>hanks a million again for your awesome service. I must say once again your guys are the best, professional right down to the last detail.", "Michael", "T
-                            </span>hank you for the great work! You have a great team...All is working in order here and if there is anything that concerns me I will let you know.", "Morne", "F
-                            </span>antastic, thanks, they work well so far and was installed quickly and neatly.", "Robert", "Y
-                            </span>our team was on time, professional and courteous. They were done within an hour and were careful to clean up. Very considerate.", "Gerard" ]; if (indexTestimonial >= testimonials.length) { indexTestimonial = 0; } document.getElementById('testimonials').innerHTML
-                            = '
-                            <p><span style="font-size: 200%"><i class="fa fa-quote-left"></i> ' + testimonials[indexTestimonial] + ' <i class="fa fa-quote-right"></i> - ' + testimonials[indexTestimonial + 1] + '</p>';
-            indexTestimonial += 2;
+            var testimonials = ["I</span> am extremely pleased with the installation and must commend your team on their excellent time keeping and exemplary conduct and efficiency with the installation", "Neil", 
+                            "... \</span>to compliment you on your team, the guys were very organized and had some good input about the install and so far I am very happy with the unit as well. I was also impressed with the way they cleaned up when they were done working.", "John", 
+                            "\</span>hanks a million again for your awesome service. I must say once again your guys are the best, professional right down to the last detail.", "Michael", 
+                            "T\</span>hank you for the great work! You have a great team...All is working in order here and if there is anything that concerns me I will let you know.", "Morne", 
+                            "F</span>antastic, thanks, they work well so far and was installed quickly and neatly.", "Robert", 
+                            "Y \</span>our team was on time, professional and courteous. They were done within an hour and were careful to clean up. Very considerate.", "Gerard" 
+                            ]; 
+                            
+                            if (indexTestimonial >= testimonials.length) { 
+                                indexTestimonial = 0; 
+                                } 
+                            document.getElementById('testimonials').innerHTML = '<p><span style="font-size: 200%"><i class="fa fa-quote-left"></i> ' + testimonials[indexTestimonial] + ' <i class="fa fa-quote-right"></i> - ' + testimonials[indexTestimonial + 1] + '</p>';
+                            indexTestimonial += 2;
         }
     });
 
