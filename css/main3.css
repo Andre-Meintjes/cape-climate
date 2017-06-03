@@ -33,7 +33,7 @@
             text-align: center;
             padding: 10px;
             margin: 5px;
-            color: black;
+            color: #222222;
         }
         
         .btn {
@@ -43,7 +43,7 @@
             border-bottom-left-radius: 10px;
             background-color: transparent;
             border: 2px solid #313131;
-            color: black;
+            color: #222222;
             font-weight: bold;
         }
         
@@ -57,7 +57,7 @@
         
         a {
             text-decoration: none;
-            color: black;
+            color: #222222;
         }
         
         .active {
@@ -262,7 +262,7 @@
             text-align: center;
             padding-top: 0;
             padding-bottom: 0;
-            color: black;
+            color: #222222;
         }
         
         .logo {
@@ -337,11 +337,11 @@
         /** Gallery page **/
         
         .gallery-background {
-            background-color: #222222;
+            background-color: #eeeeee;
         }
         
         .gallery {
-            background-color: #222222;
+            background-color: #eeeeee;
             height: 100%;
             padding: auto;
         }
