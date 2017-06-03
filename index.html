@@ -285,6 +285,7 @@
                                 } 
                             document.getElementById('testimonials').innerHTML = '<p><span style="font-size: 200%"><i class="fa fa-quote-left"></i> ' + testimonials[indexTestimonial] + ' <i class="fa fa-quote-right"></i></p><p> - ' + testimonials[indexTestimonial + 1] + '</p>';
                             indexTestimonial += 2;
+                            $('#testimonials').animateCss('slideInRight');
         }
     });
 
