@@ -337,11 +337,11 @@
         /** Gallery page **/
         
         .gallery-background {
-            background-color: #eeeeee;
+            background-color: #131313;
         }
         
         .gallery {
-            background-color: #eeeeee;
+            background-color: #131313;
             height: 100%;
             padding: auto;
         }
@@ -349,7 +349,7 @@
         #gallery-main-image {
             padding: 0;
             margin: 0;
-            background-color: #222222;
+            background-color: #131313;
             background-size: contain;
             background-repeat: no-repeat;
             background-position: center;
