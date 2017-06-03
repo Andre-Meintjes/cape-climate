@@ -423,7 +423,7 @@
         /** our clients **/
         
         .client-image {
-            height: 100px;
+            height: 200px;
             background-size: contain;
             background-repeat: no-repeat;
             background-position: center;
