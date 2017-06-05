@@ -286,6 +286,8 @@
             list-style: none;
             padding: 0;
             text-align: center;
+
+            box-shadow: inset 1px 1px 5px 0px rgba(0,0,0,0.75);
         }
         
         .navigation-menu>li {
