@@ -54,7 +54,7 @@
         
         .btn:hover {
             border-color: #0b70b6;
-            color: #0b70b6;
+            color: #0b70b6 !important;
         }
         
         a {
