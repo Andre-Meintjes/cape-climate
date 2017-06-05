@@ -13,7 +13,7 @@
         .divider-line {
             border-bottom-style: solid;
             border-width: 1px;
-            border-bottom-color: #313131;
+            border-bottom-color: #222222;
             padding-top: 10px;
             margin-bottom: 10px;
         }
@@ -27,7 +27,7 @@
         h3,
         h1 {
             font-weight: bold;
-            background-color: #eeeeee;
+            background-color:#e1eeee;
             ;
             border-top-right-radius: 50px;
             border-bottom-left-radius: 50px;
@@ -54,6 +54,7 @@
         
         .btn:hover {
             border-color: #0b70b6;
+            color: #0b70b6;
         }
         
         a {
@@ -164,19 +165,19 @@
             margin: 0;
             padding-top: 10px;
             padding-bottom: 10px;
-            background-color: #222222;
-            color: white !important;
+            background-color: #e1eeee;
+            color: #222222 !important;
         }
         
         .footer-note>div>p>a {
-            color: white;
+            color: #222222;
             text-decoration: none;
         }
         
         .footer-note>div>p>i,
         .navigation-menu>li>a>i {
             width: 30px;
-            color: white;
+            color: #222222;
         }
         
         .in-text-link {
@@ -188,7 +189,7 @@
             padding: 10px;
             height: 200px;
             width: 100%;
-            background-color: #eeeeee;
+            background-color:#e1eeee;
             border-top-right-radius: 50px;
             border-bottom-left-radius: 50px;
         }
@@ -246,7 +247,7 @@
         /** navigation **/
         
         .navigation-box {
-            background-color: #222222;
+            background-color: #e1eeee;
             text-align: center;
         }
         
@@ -290,7 +291,7 @@
         
         .navigation-menu>li>a {
             text-decoration: none;
-            color: white;
+            color: #222222;
         }
         
         .navigation-menu>li>a:hover {
@@ -317,10 +318,10 @@
         }
         
         .product-header {
-            background-color: #eeeeee;
+            background-color:#e1eeee;
             border-top-right-radius: 50px;
             border-bottom-left-radius: 50px;
-            color: white;
+            color: #222222;
             width: 100%;
             padding: 5px;
             text-align: center;
