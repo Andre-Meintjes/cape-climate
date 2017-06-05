@@ -494,7 +494,7 @@
             }
             /** ---Navigation **/
             .hello-image {
-                background-image: url('../img/background-small-landscape.jpg');
+                background-image: url('../img/backgrounds/background.jpg');
             }
             .navigation-box {
                 position: fixed;
