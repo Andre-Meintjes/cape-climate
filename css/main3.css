@@ -483,6 +483,9 @@
         }
         
         @media(min-width:768px) {
+            .hello-image {
+                background-image: url('../img/background-small-portrait.jpg');
+            }
             #gallery-main-image {
                 height: 50vh;
             }
