@@ -222,7 +222,7 @@
         .nature {
             height: 500px;
             padding: 0;
-            background: linear-gradient(#035578, #e6f7ff);
+            background: linear-gradient(skyblue, #e6f7ff);
         }
         
         .clouds {
