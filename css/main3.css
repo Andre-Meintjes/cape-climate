@@ -225,7 +225,7 @@
             /**background: linear-gradient(#0099cc, #e6f7ff);**/
             background-image: url('../img/sky.jpg');
             background-repeat: no-repeat;
-            background-size: contain;
+            background-size: cover;
         }
         
         .clouds {
