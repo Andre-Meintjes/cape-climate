@@ -27,7 +27,7 @@
         h3,
         h1 {
             font-weight: bold;
-            background-color:#64645A;
+            background-color:#163B4A;
             border-top-right-radius: 50px;
             border-bottom-left-radius: 50px;
             text-align: center;
@@ -167,7 +167,7 @@
             margin: 0;
             padding-top: 10px;
             padding-bottom: 10px;
-            background-color: #64645A;
+            background-color: #163B4A;
             color: #222222 !important;
         }
         
@@ -192,7 +192,7 @@
             padding: 10px;
             height: 200px;
             width: 100%;
-            background-color:#64645A;
+            background-color:#163B4A;
             box-shadow: inset 1px 1px 5px 0px rgba(0,0,0,0.75);
             border-top-right-radius: 50px;
             border-bottom-left-radius: 50px;
@@ -251,7 +251,7 @@
         /** navigation **/
         
         .navigation-box {
-            background-color: #64645A;
+            background-color: #163B4A;
             /**background-image: url('../img/wood-texture.jpg');**/
             background-repeat: repeat;
             background-size: contain;
