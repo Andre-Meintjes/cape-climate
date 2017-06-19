@@ -9,7 +9,9 @@
             width: 100%;
             overflow-x: hidden;
         }
-        
+        .navigation-box-side {
+                display: none;
+        }
         .divider-line {
             border-bottom-style: solid;
             border-width: 1px;
@@ -566,6 +568,7 @@
                 z-index: 9999;
             }
             .navigation-box-side {
+                display: block;
                 position: fixed;
                 height: 100%;
                 height: 100vh;
@@ -578,7 +581,7 @@
                 background-image: url('../img/screws.jpg');
                 background-repeat: repeat-y;
                 background-size: contain;
-                box-shadow: 7px 0px 5px -6px rgba(0,0,0,0.75);
+                box-shadow: 0px 0px 16px 4px rgba(0,0,0,0.75);
                 z-index: 9999;
             }
             .contact-box {
