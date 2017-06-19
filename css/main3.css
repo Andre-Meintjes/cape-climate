@@ -475,7 +475,45 @@
         .bright {
             background-image: url('../img/clients/bright.jpg');
         }
-        
+        .actom {
+            background-image: url('../img/clients/actom.jpg');
+        }
+        .atlanticbeach {
+            background-image: url('../img/clients/atlanticbeach.png');
+        }
+        .cash {
+            background-image: url('../img/clients/cash.png');
+        }
+        .famousbrands {
+            background-image: url('../img/clients/famousbrands.png');
+        }
+        .gerd {
+            background-image: url('../img/clients/gerd.png');
+        }
+        .gud {
+            background-image: url('../img/clients/gud.png');
+        }
+        .laser {
+            background-image: url('../img/clients/laser.gif');
+        }
+        .lekkerslaap {
+            background-image: url('../img/clients/lekkerslaap.png');
+        }
+        .travalground {
+            background-image: url('../img/clients/travalground.png');
+        }
+        .qestmed {
+            background-image: url('../img/clients/Qestmed.png');
+        }
+        .rainbow {
+            background-image: url('../img/clients/rainbow.jpg');
+        }
+        .silplat {
+            background-image: url('../img/clients/silplat.jpg');
+        }
+        .stonehurst {
+            background-image: url('../img/clients/stonehurst.png');
+        }
         @media(max-width:767px) {
             .hello-image {
                 background-image: url('../img/background-small-portrait.jpg');
