@@ -285,7 +285,8 @@
             background-repeat: no-repeat;
             background-size: contain;
         }
-        .menu-boc{
+        .menu-box{
+            margin-top: 10px;
             background-color: #e8e8e8;
         }
         
