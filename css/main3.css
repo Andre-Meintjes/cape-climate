@@ -290,6 +290,7 @@
             list-style: none;
             padding: 0;
             text-align: center;
+            background-color: #e8e8e8;
         }
         
         .navigation-menu>li {
@@ -299,7 +300,7 @@
         
         .navigation-menu>li>a {
             text-decoration: none;
-            color: white;
+            color: #222222;
         }
         
         .navigation-menu>li>a:hover {
