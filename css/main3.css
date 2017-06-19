@@ -287,6 +287,13 @@
         }
         .menu-box{
             margin-top: 10px;
+            padding-top:5px;
+            padding-bottom:5px;
+            background-color: #e8e8e8;
+        }
+        .contact-box{
+            padding-top:5px;
+            padding-bottom:5px;
             background-color: #e8e8e8;
         }
         
