@@ -27,13 +27,13 @@
         h3,
         h1 {
             font-weight: bold;
-            background-color:#A1CC14;
+            background-color:#323229;
             border-top-right-radius: 50px;
             border-bottom-left-radius: 50px;
             text-align: center;
             padding: 10px;
             margin: 5px;
-            color: #222222;
+            color: #fff;
         }
         
         .btn {
