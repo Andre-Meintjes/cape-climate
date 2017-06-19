@@ -253,7 +253,7 @@
         .navigation-box {
             background-color: lightgray;
             background-image: url('../img/coil.jpg');
-            background-repeat: repeat-y;
+            background-repeat: repeat;
             background-size: contain;
             text-align: center;
         }
@@ -278,7 +278,7 @@
             margin-left: auto;
             margin-right: auto;
             height: 100px;
-            width: 200px;
+            width: 180px;
             background-image: url('../img/logo-hd.png');
             background-position: center;
             background-repeat: no-repeat;
@@ -544,12 +544,27 @@
                 position: fixed;
                 height: 100%;
                 height: 100vh;
-                width: 200px;
+                width: 180px;
                 top: 0;
                 left: 0;
                 margin: 0;
                 padding: 0;
                 padding-top: 10px;
+                z-index: 9999;
+            }
+            .navigation-box-side {
+                position: fixed;
+                height: 100%;
+                height: 100vh;
+                width: 20px;
+                top: 0;
+                left: 180;
+                margin: 0;
+                padding: 0;
+                padding-top: 10px;
+                background-image: url('../img/screws.jpg');
+                background-repeat: repeat-y;
+                background-size: contain;
                 box-shadow: 7px 0px 5px -6px rgba(0,0,0,0.75);
                 z-index: 9999;
             }
