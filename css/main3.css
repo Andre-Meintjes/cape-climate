@@ -338,6 +338,7 @@
             background-image: url('../img/question.png');
             background-position: center;
             background-size: contain;
+            background-repeat: no-repeat;
         }
 
         /** product page **/
