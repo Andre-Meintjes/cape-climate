@@ -48,29 +48,21 @@
     <div class="navigation-box-side">
     </div>
     <div class="content-box">
-        <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
-
-Name: <input type="text" name="name">
-<span class="error">* <?php echo $nameErr;?></span>
-<br><br>
-E-mail:
-<input type="text" name="email">
-<span class="error">* <?php echo $emailErr;?></span>
-<br><br>
-Website:
-<input type="text" name="website">
-<span class="error"><?php echo $websiteErr;?></span>
-<br><br>
-Comment: <textarea name="comment" rows="5" cols="40"></textarea>
-<br><br>
-Gender:
-<input type="radio" name="gender" value="female">Female
-<input type="radio" name="gender" value="male">Male
-<span class="error">* <?php echo $genderErr;?></span>
-<br><br>
-<input type="submit" name="submit" value="Submit"> 
-
-</form>
+      <div class="row">
+          <div class="col-xs-12 col-md-8 col-md-offset-2">
+            <h2>FAQ</h2>
+          </div>
+          <div class="col-xs-12 col-md-8 col-md-offset-2">
+            <h4>What does it cost to run?</h4>
+            <p>Not as much as you might think. A 12 000 BTU inverter Aircon will cost approximately one Rand per hour. The best tips for saving on running costs are:</p>
+            <ul>
+                <li>Set a comfortable temperature, 24 degrees C.</li>
+                <li>Keep the doors and windows closed.</li>
+                <li>Schedule an anual service by quilified technicians.</li>
+                <li>Make sure the BTU size of the unit is the correct size for the room.</li>
+            </ul>
+          </div>
+      </div>  
     </div>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
