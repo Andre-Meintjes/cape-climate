@@ -327,6 +327,12 @@
             color: #0b70b6;
             cursor: pointer;
         }
+        /** FAQ **/
+        .spacerd-top-bottom{
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
         /** product page **/
         
         .product-image {
