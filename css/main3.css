@@ -332,6 +332,13 @@
             margin-top: 20px;
             margin-bottom: 20px;
         }
+        .faq-image{
+            height: 200px;
+            width: 100%;
+            background-image: url('../img/question.png');
+            background-position: center;
+            background-size: contain;
+        }
 
         /** product page **/
         
