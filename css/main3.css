@@ -254,9 +254,6 @@
         
         .navigation-box {
             background-color: lightgray;
-            background-image: url('../img/coil.jpg');
-            background-repeat: repeat;
-            background-size: contain;
             text-align: center;
         }
         
