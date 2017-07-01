@@ -80,11 +80,12 @@
         
         .navigation-box {
             background-color: #333;
+            border-right:2px solid black; 
             text-align: center;
         }
         
         .logo-box {
-            background-color: #e8e8e8;
+            background-color: White;
             padding: 0;
             margin: 0;
         }
