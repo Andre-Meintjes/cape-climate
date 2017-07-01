@@ -325,6 +325,9 @@
                 background-position-x: 900px;
             }
         }
+        .inverter-info{
+            max-width: 80%;
+        }
         
         /** FAQ **/
         .spaced-top-bottom{
