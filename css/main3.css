@@ -88,8 +88,8 @@
             background-color: White;
             padding: 0;
             margin: 0;
-            border-top-right-radius: 5px;
-            border-bottom-right-radius: 5px;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
         }
         
         .no-style {
@@ -118,11 +118,15 @@
             padding-top:5px;
             padding-bottom:5px;
             background-color: #e8e8e8;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
         }
         .contact-box{
             padding-top:5px;
             padding-bottom:5px;
             background-color: #e8e8e8;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
         }
         
         .navigation-menu {
