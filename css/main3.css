@@ -88,6 +88,8 @@
             background-color: White;
             padding: 0;
             margin: 0;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
         }
         
         .no-style {
