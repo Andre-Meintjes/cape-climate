@@ -140,7 +140,7 @@
             color: #444;
         }
         
-        .navigation-menu>li:hover>a {
+        .navigation-menu>li:hover {
             background-color: transparent;
             background-color: #e8e8e8;
             color: white;
@@ -148,6 +148,9 @@
             border-top-right-radius: 10px;
             border-bottom-left-radius: 10px;
             cursor: pointer;
+        }
+        .navigation-menu>li:hover>a {
+            color: white;
         }
         /** ---Index page **/
         
