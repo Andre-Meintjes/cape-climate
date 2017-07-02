@@ -343,8 +343,7 @@
         }
         .spaced-top-bottom>ul{
             list-style: square;
-            list-style-position: 20px;
-            padding: 10px;
+            padding: 50px;
         }
         .faq-image{
             height: 200px;
