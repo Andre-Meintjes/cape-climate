@@ -72,6 +72,8 @@
             background-color: white;
             background: linear-gradient(to right, white 0%,#eee 100%);
             text-align: center;
+            background-image: url('../img/backgrounds/leaf-test.png');
+            background-repeat: repeat-y;
         }
         
         .logo-box {
@@ -119,8 +121,6 @@
         .navigation-menu {
             list-style: none;
             padding: 0;
-            background-image: url('../img/backgrounds/leaf-test.png');
-            background-repeat: repeat-y;
             text-align: center;
         }
         
