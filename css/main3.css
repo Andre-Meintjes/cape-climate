@@ -349,7 +349,14 @@
         }
 
         /** product page **/
-        
+        .product-image-header{
+            height: 200px;
+            width: 100%;
+            background-image: url('../img/backgrounds/product-header.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
         .product-image {
             height: 100px;
             margin: 0;
@@ -622,8 +629,7 @@
                 margin-left: 200px;
                 padding: 0;
                 min-height: 100vh;
-            }
-            
+            }          
             #products {
                 padding-top: 120px;
             }
