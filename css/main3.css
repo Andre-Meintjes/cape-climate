@@ -85,7 +85,8 @@
         }
         
         .logo-box {
-            background-color: White;
+            background-color: white;
+            background: linear-gradient(to right, white 0%,#eee 100%);
             padding: 0;
             margin: 0;
         }
@@ -116,11 +117,13 @@
             padding-top:5px;
             padding-bottom:5px;
             background-color: white;
+            background: linear-gradient(to right, white 0%,#eee 100%);
         }
         .contact-box{
             padding-top:5px;
             padding-bottom:5px;
             background-color: white;
+            background: linear-gradient(to right, white 0%,#eee 100%);
         }
         
         .navigation-menu {
@@ -583,7 +586,7 @@
                 padding: 0;
                 padding-top: 10px;
                 background-color: black;
-                background: linear-gradient(to right, #444 0%,black 100%);
+                background: linear-gradient(to right, #555 0%,black 100%);
                 z-index: 99999;
             }
             .navigation-box {
