@@ -12,13 +12,7 @@
         .navigation-box-side {
                 display: none;
         }
-        .divider-line {
-            border-bottom-style: solid;
-            border-width: 1px;
-            border-bottom-color: #222222;
-            padding-top: 10px;
-            margin-bottom: 10px;
-        }
+       
         
         .row {
             padding-top: 10px;
@@ -68,9 +62,10 @@
         
         .active {
             border: 1px solid #0b70b6;
+            background-color: #444;
             border-top-right-radius: 10px;
             border-bottom-left-radius: 10px;
-            color: #0b70b6;
+            color: white;
         }
         
         .active>a {
@@ -135,17 +130,23 @@
         .navigation-menu>li {
             padding-top: 5px;
             padding-bottom: 5px;
+            background-color: lightgrey;
+            border-top-right-radius: 10px;
+            border-bottom-left-radius: 10px;
         }
         
         .navigation-menu>li>a {
             text-decoration: none;
-            color: #222222;
+            color: #444;
         }
         
         .navigation-menu>li>a:hover {
             background-color: transparent;
             background-color: #e8e8e8;
-            color: #0b70b6;
+            color: white;
+            background-color: #444;
+            border-top-right-radius: 10px;
+            border-bottom-left-radius: 10px;
             cursor: pointer;
         }
         /** ---Index page **/
