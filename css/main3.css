@@ -119,6 +119,8 @@
         .navigation-menu {
             list-style: none;
             padding: 0;
+            background-image: url('../img/backgrounds/leaf-test.png');
+            background-repeat: repeat-y;
             text-align: center;
         }
         
