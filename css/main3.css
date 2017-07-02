@@ -132,10 +132,10 @@
         }
         
         .navigation-menu>li>a {
+            display: block;
             text-decoration: none;
             color: #444;
             text-align: center;
-            width: 150px;
         }
         
         .navigation-menu>li:hover {
