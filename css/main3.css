@@ -80,7 +80,6 @@
         
         .navigation-box {
             background-color: #333;
-            border-right:4px solid #333; 
             text-align: center;
         }
         
@@ -88,8 +87,6 @@
             background-color: White;
             padding: 0;
             margin: 0;
-            border-top-right-radius: 10px;
-            border-bottom-left-radius: 10px;
         }
         
         .no-style {
@@ -118,15 +115,11 @@
             padding-top:5px;
             padding-bottom:5px;
             background-color: white;
-            border-top-right-radius: 10px;
-            border-bottom-left-radius: 10px;
         }
         .contact-box{
             padding-top:5px;
             padding-bottom:5px;
             background-color: white;
-            border-top-right-radius: 10px;
-            border-bottom-left-radius: 10px;
         }
         
         .navigation-menu {
@@ -577,11 +570,27 @@
             .hello-image {
                 background-image: url('../img/backgrounds/background.jpg');
             }
+            .navigation-box-side {
+                display: block;
+                position: fixed;
+                height: 100%;
+                height: 100vh;
+                width: 18px;
+                top: 0;
+                left: 180px;
+                margin: 0;
+                padding: 0;
+                padding-top: 10px;
+                background-color: black;
+                border-left: 2px solid black;
+                background: linear-gradient(to right, #444 0%,black 100%);
+                z-index: 99999;
+            }
             .navigation-box {
                 position: fixed;
                 height: 100%;
                 height: 100vh;
-                width: 200px;
+                width: 180px;
                 top: 0;
                 left: 0;
                 margin: 0;
