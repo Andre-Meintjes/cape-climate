@@ -48,11 +48,11 @@
         }
         
         .btn:hover {
-            border-color: #0b70b6;
-            color: #0b70b6;
+            border-color: rgb(0, 136, 170);
+            color: rgb(0, 136, 170);
         }
         .btn:hover>i{
-            color: #0b70b6;
+            color: rgb(0, 136, 170);
         }
         
         a {
@@ -159,9 +159,6 @@
             color: rgb(0, 136, 170);
         }
         
-        .light-blue {
-            color: #32a9d6;
-        }
         
         .hello-image {
             height: 80vh;
@@ -262,7 +259,7 @@
         }
         
         .in-text-link {
-            color: #0b70b6;
+            color: rgb(0, 136, 170);
         }
         
         .btu-output {
@@ -379,7 +376,7 @@
         
         .dropdown-menu>li>a:hover {
             cursor: pointer;
-            background-color: #0b70b6 !important;
+            background-color: rgb(0, 136, 170) !important;
             color: white !important;
         }
         /** Gallery page **/
@@ -459,11 +456,11 @@
         }
         
         .left-arrow:hover {
-            background-color: #0b70b6;
+            background-color: rgb(0, 136, 170);
         }
         
         .right-arrow:hover {
-            background-color: #0b70b6;
+            background-color: rgb(0, 136, 170);
         }
         
         #img1 {
