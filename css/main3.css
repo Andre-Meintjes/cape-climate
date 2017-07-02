@@ -58,8 +58,6 @@
         a {
             text-decoration: none;
             color: #222222;
-            width: 100%;
-            height: 100%;
         }
         
         .active {
@@ -136,6 +134,8 @@
         .navigation-menu>li>a {
             text-decoration: none;
             color: #444;
+            text-align: center;
+            width: 150px;
         }
         
         .navigation-menu>li:hover {
