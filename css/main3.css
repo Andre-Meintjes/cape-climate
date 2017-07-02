@@ -127,8 +127,8 @@
         }
         
         .navigation-menu>li {
-            margin-top: 5px;
-            margin-bottom: 5px;
+            margin-top: 10px;
+            margin-bottom: 10px;
             background-color: lightgrey;
             border-top-right-radius: 10px;
             border-bottom-left-radius: 10px;
