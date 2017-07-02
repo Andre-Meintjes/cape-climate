@@ -23,7 +23,7 @@
         h3,
         h1 {
             font-weight: bold;
-            background-color:lightgray;
+            background-color:#DCDCDC;
             border-top-right-radius: 50px;
             border-bottom-left-radius: 50px;
             text-align: center;
@@ -246,7 +246,7 @@
             margin: 0;
             padding-top: 10px;
             padding-bottom: 10px;
-            background-color: lightgray;
+            background-color: #DCDCDC;
             color: #222222 !important;
         }
         
@@ -271,7 +271,7 @@
             padding: 10px;
             height: 200px;
             width: 100%;
-            background-color:lightgray;
+            background-color:#DCDCDC;
             box-shadow: inset 1px 1px 5px 0px rgba(0,0,0,0.75);
             border-top-right-radius: 50px;
             border-bottom-left-radius: 50px;
