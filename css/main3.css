@@ -127,7 +127,7 @@
         .navigation-menu>li {
             margin-top: 10px;
             margin-bottom: 10px;
-            background-color: lightgrey;
+            background-color: #DCDCDC;
             box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
             border-top-right-radius: 10px;
             border-bottom-left-radius: 10px;
@@ -374,7 +374,7 @@
         }
         
         .product-header {
-            background-color:lightgrey;
+            background-color:#DCDCDC;
             border-top-right-radius: 50px;
             border-bottom-left-radius: 50px;
             color: #222222;
