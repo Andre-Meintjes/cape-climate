@@ -150,6 +150,9 @@
         .navigation-menu>li:hover>a {
             color: white;
         }
+        .navigation-menu>li:hover>a>i {
+            color: white;
+        }
         /** ---Index page **/
         
         .dark-blue {
