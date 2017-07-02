@@ -300,6 +300,7 @@
         
         .nature {
             height: 500px;
+            max-width: 80%;
             padding: 0;
             background: linear-gradient(skyblue, #e6f7ff);
         }
