@@ -80,8 +80,6 @@
         
         .navigation-box {
             background-color: #333;
-            background-image: url('../img/backgrounds/grid-tile.jpg');
-            background-repeat: repeat;
             border-right:4px solid #333; 
             text-align: center;
         }
