@@ -61,7 +61,7 @@
         }
         
         .active {
-            background-color: #444 !important;
+            box-shadow: inset 1px 1px 5px 0px rgba(0,0,0,0.75) !important;
             border-top-right-radius: 10px;
             border-bottom-left-radius: 10px;
             color: white;
@@ -130,7 +130,7 @@
             margin-top: 10px;
             margin-bottom: 10px;
             background-color: lightgrey;
-            box-shadow: outset 1px 1px 5px 0px rgba(0,0,0,0.75);
+            box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
             border-top-right-radius: 10px;
             border-bottom-left-radius: 10px;
         }
@@ -144,14 +144,12 @@
             background-color: transparent;
             background-color: #e8e8e8;
             color: white;
-            background-color: #444;
+            box-shadow: inset 1px 1px 5px 0px rgba(0,0,0,0.75);
             border-top-right-radius: 10px;
             border-bottom-left-radius: 10px;
             cursor: pointer;
         }
-        .navigation-menu>li:hover>a {
-            color: white;
-        }
+        
         /** ---Index page **/
         
         .dark-blue {
