@@ -346,9 +346,9 @@
             padding: 50px;
         }
         .faq-image{
-            height: 200px;
+            height: 300px;
             width: 100%;
-            background-image: url('../img/question.png');
+            background-image: url('../img/backgrounds/faq.png');
             background-position: center;
             background-size: contain;
             background-repeat: no-repeat;
