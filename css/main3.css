@@ -341,6 +341,9 @@
             text-align: center;
             padding: 10px;
         }
+        .spaced-top-bottom>ul{
+            padding: 10px;
+        }
         .faq-image{
             height: 200px;
             width: 100%;
