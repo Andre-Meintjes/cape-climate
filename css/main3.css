@@ -350,7 +350,7 @@
 
         /** product page **/
         .product-image-header{
-            height: 230px;
+            height: 300px;
             width: 100%;
             background-image: url('../img/backgrounds/product-header.jpg');
             background-size: cover;
