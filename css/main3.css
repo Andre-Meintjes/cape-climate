@@ -597,6 +597,9 @@
             #gallery-main-image {
                 height: 60vh;
             }
+            .inverter-info{
+                max-width: 70%;
+            }
             /** ---Navigation **/
             .hello-image {
                 background-image: url('../img/backgrounds/background.jpg');
