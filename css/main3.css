@@ -576,6 +576,9 @@
             #gallery-main-image {
                 height: 40vh;
             }
+            .inverter-info{
+                max-width: 100%;
+            }
         }
         
         @media(min-width:768px) {
@@ -584,6 +587,9 @@
             }
             #gallery-main-image {
                 height: 50vh;
+            }
+            .inverter-info{
+                max-width: 100%;
             }
         }
         
