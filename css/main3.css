@@ -159,6 +159,10 @@
         .dark-blue {
             color: rgb(0, 136, 170);
         }
+
+        .darker-blue{
+            color: #0b70b6;
+        }
         
         
         .hello-image {
