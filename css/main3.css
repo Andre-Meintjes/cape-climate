@@ -404,7 +404,10 @@
             background-color: rgb(0, 136, 170) !important;
             color: white !important;
         }
-        
+        /** gallery **/
+        .gallery{
+            width: 100%;
+        }
         /** our clients **/
         
         .client-image {
