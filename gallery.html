@@ -74,12 +74,12 @@
     });
 
     function viewImage(imgIndexInArray){
-        document.getElementById(imgHQContainer).style.backgroundImage = "url(\'image/gallery/thumbnails" + arrImages[imgIndexInArray] + "_tumb.jpg\')";
+        document.getElementById(imgHQContainer).style.backgroundImage = "url(\'img/gallery/thumbnails" + arrImages[imgIndexInArray] + "_tumb.jpg\')";
     }
 
     function loadThumbnails(arr){
         for (var i = 0; i < arr.length; i++){
-            src = "image/gallery/thumbnails" + arr[i] + "_tumb.jpg";
+            src = "image/gallery/thumbnails/" + arr[i] + "_tumb.jpg";
             renderImageToImgContainer(createImage(100, 100, src, i));
         }
     }
