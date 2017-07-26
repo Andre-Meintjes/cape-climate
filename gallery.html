@@ -67,6 +67,10 @@
     var imgContainerId = "image-container";
     var imgHQContainer = "image-viewHQ-container";
     
+    $(document).ready(function() {
+        loadThumbnails(arrimages)
+    }
+
     function viewImage(imgIndexInArray){
         document.getElementById(imgHQContainer).style.backgroundImage = "url(\'image/gallery/thumbnails" + arrImages[imgIndexInArray] + "_tumb.jpg\')";
     }
