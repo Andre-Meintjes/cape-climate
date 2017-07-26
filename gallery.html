@@ -79,7 +79,7 @@
 
     function loadThumbnails(arr){
         for (var i = 0; i < arr.length; i++){
-            src = arr[i];
+            src = "image/gallery/thumbnails" + arr[i] + "_tumb.jpg";
             renderImageToImgContainer(createImage(100, 100, src, i));
         }
     }
