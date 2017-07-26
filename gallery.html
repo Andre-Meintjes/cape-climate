@@ -49,11 +49,13 @@
     
     <div class="content-box gallery-background">
         <!-- content -->
-        <div id="image-viewHQ-container" style="height: 500px; width: 100%; background-size: contain; background-repeat: no-repeat;">
-            <!-- js --> 
-        </div>
-        <div id="image-container" style="padding: 5px;margin: 0;">
-            <!-- js --> 
+        <div class="container-fluid">
+            <div id="image-viewHQ-container" class="row" style="height: 500px; width: 100%; background-size: contain; background-repeat: no-repeat;">
+                <!-- js --> 
+            </div>
+            <div id="image-container" class="row" style="padding: 5px;margin: 0;">
+                <!-- js --> 
+            </div>
         </div>
     </div>
     </div>
@@ -85,7 +87,7 @@
     }
 
     function createImage(height, width, src, index){
-        imageHTML = "<image id=\"img" + index + "\" onclick=\"viewImage(" + index + ");\" src=\"" + src + "\" height=\"" + height + "\"width=\"" + width + "\" style=\"" + style + "\">"
+        imageHTML = "<div class=\"col-xs-2\"><image id=\"img" + index + "\" onclick=\"viewImage(" + index + ");\" src=\"" + src + "\" height=\"" + height + "\"width=\"" + width + "\" style=\"" + style + "\"></div>"
         return imageHTML;
     }
 
