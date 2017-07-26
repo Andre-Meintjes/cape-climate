@@ -46,68 +46,45 @@
         </nav>
     </div>
     <div class="navigation-box-side">
-    </div>
+    
     <div class="content-box gallery-background">
         <!-- content -->
-        <div class="container-fluid gallery">
-            <div class="row" style="margin: 0; padding: 0;">
-                <div class="col-xs-12 text-center">
-                    <h2 style="color: white; font-weight: bold;">Gallery</h2>
-                </div>
-                <div id="gallery-main-image" class="col-xs-12">
-                    <!-- main image background-->
-                </div>
-            </div>
-            <div class="row" style="margin: 0; padding: 0;">
-                <div class="col-xs-1 left-arrow" onclick="selectLeft()"><i class="fa fa-arrow-left"></i></div>
-                <div class="col-xs-10 gallery-reel-outer">
-                    <div id="gallery-reel-inner">
-                        <div class="gallery-reel">
-                            <div id="img1" onclick="selectImg(1)" class="reel-image" style="background-image: url('img/gallery/thumbnails/img1_thumb.jpg')"></div>
-                            <div id="img2" onclick="selectImg(2)" class="reel-image" style="background-image: url('img/gallery/thumbnails/img2_thumb.jpg')"></div>
-                            <div id="img3" onclick="selectImg(3)" class="reel-image" style="background-image: url('img/gallery/thumbnails/img3_thumb.jpg')"></div>
-                            <div id="img4" onclick="selectImg(4)" class="reel-image" style="background-image: url('img/gallery/thumbnails/img4_thumb.jpg')"></div>
-                            <div id="img5" onclick="selectImg(5)" class="reel-image" style="background-image: url('img/gallery/thumbnails/img5_thumb.jpg')"></div>
-                            <div id="img6" onclick="selectImg(6)" class="reel-image" style="background-image: url('img/gallery/thumbnails/img6_thumb.jpg')"></div>
-                            <div id="img7" onclick="selectImg(7)" class="reel-image" style="background-image: url('img/gallery/thumbnails/img7_thumb.jpg')"></div>
-                            <div id="img8" onclick="selectImg(8)" class="reel-image" style="background-image: url('img/gallery/thumbnails/img8_thumb.jpg')"></div>
-                            <div id="img9" onclick="selectImg(9)" class="reel-image" style="background-image: url('img/gallery/thumbnails/img9_thumb.jpg')"></div>
-                        </div>
-                    </div>
-                </div>
-                <div onclick="selectRight()" class="col-xs-1 right-arrow"><i class="fa fa-arrow-right"></i></div>
-            </div>
+        <div id="image-viewHQ-container" style="height: 500px; width: 100%; background-size: contain; background-repeat: no-repeat;">
+            <!-- js --> 
         </div>
+        <div id="image-container" style="padding: 5px;margin: 0;">
+            <!-- js --> 
+        </div>
+    </div>
     </div>
 </body>
 <script>
-    var dir = "https://raw.githubusercontent.com/Andre-Meintjes/cape-climate/master";
-    var currentImgSelection = 1;
-    var numberOfImges = 9;
-
-    function selectImg(imgId) {
-        document.getElementById('img' + currentImgSelection).style.opacity = "1";
-        document.getElementById('gallery-main-image').style.backgroundImage = "url(\'" + dir + "/img/gallery/img" + imgId + ".jpg\')";
-        document.getElementById('img' + imgId).style.opacity = "0.3";
-        currentImgSelection = imgId;
-        document.getElementById('gallery-reel-inner').scrollLeft = document.getElementById('img' + imgId).offsetLeft;
-
+    //Aray of src attributes
+    var arrImages = ["img1", "img2", "img3"];
+    //Style for images
+    var style = "display: inline-block; padding: 0; margin: 0;";
+    //image container id
+    var imgContainerId = "image-container";
+    var imgHQContainer = "image-viewHQ-container";
+    
+    function viewImage(imgIndexInArray){
+        document.getElementById(imgHQContainer).style.backgroundImage = "url(\'image/gallery/thumbnails" + arrImages[imgIndexInArray] + "_tumb.jpg\')";
     }
 
-    function selectRight() {
-        var newId = currentImgSelection + 1;
-        if (newId > numberOfImges) {
-            newId = 1;
+    function loadThumbnails(arr){
+        for (var i = 0; i < arr.length; i++){
+            src = arr[i];
+            renderImageToImgContainer(createImage(100, 100, src, i));
         }
-        selectImg(newId);
     }
 
-    function selectLeft() {
-        var newId = currentImgSelection - 1;
-        if (newId < 1) {
-            newId = numberOfImges;
-        }
-        selectImg(newId);
+    function createImage(height, width, src, index){
+        imageHTML = "<image id=\"img" + index + "\" onclick=\"viewImage(" + index + ");\" src=\"" + src + "\" height=\"" + height + "\"width=\"" + width + "\" style=\"" + style + "\">"
+        return imageHTML;
+    }
+
+    function renderImageToImgContainer(imgElement){
+        document.getElementById(imgContainerId).innerHTML = document.getElementById(imgContainerId).innerHTML + imgElement; 
     }
 </script>
 
