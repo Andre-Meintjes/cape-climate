@@ -408,6 +408,19 @@
         .gallery{
             width: 100%;
         }
+        #image-viewHQ-container{
+            height: 500px; 
+            width: 100%; 
+            background-size: contain; 
+            background-repeat: no-repeat; 
+            background-position: center; 
+            margin: 0;
+        }
+        #image-container{
+            padding: 5px; 
+            margin-top: 10px; 
+            background-color: #444;
+        }
         /** our clients **/
         
         .client-image {
