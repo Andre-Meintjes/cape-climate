@@ -66,7 +66,7 @@
     //Aray of src attributes
     var arrImages = ["img1", "img2", "img3"];
     //Style for images
-    var style = "padding: 0; margin: 0;";
+    var style = "padding: 0; margin: 0; background-size: cover; background-repeat: no-repeat;";
     //image container id
     var imgContainerId = "image-container";
     var imgHQContainer = "image-viewHQ-container";
@@ -81,13 +81,13 @@
 
     function loadThumbnails(arr){
         for (var i = 0; i < arr.length; i++){
-            src = "img/gallery/thumbnails/" + arr[i] + "_thumb.jpg";
+            src = "url(\'img/gallery/thumbnails/" + arr[i] + "_thumb.jpg\')";
             renderImageToImgContainer(createImage(100, 100, src, i));
         }
     }
 
     function createImage(height, width, src, index){
-        imageHTML = "<div class=\"col-xs-2\"><image id=\"img" + index + "\" onclick=\"viewImage(" + index + ");\" src=\"" + src + "\" height=\"" + height + "\"width=\"" + width + "\" style=\"" + style + "\"></div>"
+        imageHTML = "<div class=\"col-xs-2\" id=\"img" + index + "\" onclick=\"viewImage(" + index + ");\"   style=\"height:" + height + "px; width:" + width + "px" + style + ";background-image:" + src + "\"></div>"
         return imageHTML;
     }
 
