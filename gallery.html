@@ -63,6 +63,8 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script>
+    //current bordered element
+    var borderedElement;
     //Aray of src attributes
     var arrImages = [];
     //Style for images
@@ -72,17 +74,21 @@
     var imgHQContainer = "image-viewHQ-container";
     
     $(document).ready(function() {
-        loadThumbnails(arrImages);
         var array = [];
         // 29 images
         for (var i = 1; i < 29; i++) {
             arrImages.push("img" + i);   
         }
         loadThumbnails(arrImages);
+        borderedElement = document.getElementById("img" + 0);
+        viewImage(0);
     });
 
     function viewImage(imgIndexInArray){
         document.getElementById(imgHQContainer).style.backgroundImage = "url(\'img/gallery/" + arrImages[imgIndexInArray] + ".jpg\')";
+        borderedElement.style.borderRadius = "0%";
+        borderedElement = document.getElementById("img" + imgIndexInArray);
+        borderedElement.style.borderRadius = "100%";
     }
 
     function loadThumbnails(arr){
