@@ -88,7 +88,7 @@
         document.getElementById(imgHQContainer).style.backgroundImage = "url(\'img/gallery/" + arrImages[imgIndexInArray] + ".jpg\')";
         borderedElement.style.border = "none";
         borderedElement = document.getElementById("img" + imgIndexInArray);
-        borderedElement.style.border = "2px solid #0b70b6";
+        borderedElement.style.border = "2px solid white";
     }
 
     function loadThumbnails(arr){
@@ -99,7 +99,7 @@
     }
 
     function createImage(height, width, src, index){
-        imageHTML = "<div class=\"col-xs-2\" id=\"img" + index + "\" onclick=\"viewImage(" + index + ");\"   style=\"height:" + height + "px; width:" + width + "px" + style + ";background-image:" + src + ";margin: 5px;\"></div>"
+        imageHTML = "<div class=\"col-xs-2\" id=\"img" + index + "\" onclick=\"viewImage(" + index + ");\"   style=\"height:" + height + "px; width:" + width + "px" + style + ";background-image:" + src + ";margin: 5px; cursor: pointer;\"></div>"
         return imageHTML;
     }
 
