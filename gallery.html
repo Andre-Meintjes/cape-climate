@@ -86,9 +86,9 @@
 
     function viewImage(imgIndexInArray){
         document.getElementById(imgHQContainer).style.backgroundImage = "url(\'img/gallery/" + arrImages[imgIndexInArray] + ".jpg\')";
-        borderedElement.style.borderRadius = "0%";
+        borderedElement.style.border = "none";
         borderedElement = document.getElementById("img" + imgIndexInArray);
-        borderedElement.style.borderRadius = "100%";
+        borderedElement.style.border = "2px solid #0b70b6";
     }
 
     function loadThumbnails(arr){
